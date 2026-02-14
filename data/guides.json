@@ -1,0 +1,115 @@
+[
+  {
+    "slug": "the-medina",
+    "title": "The Medina",
+    "subtitle": "A city inside a city",
+    "description": "What a medina is, why GPS fails, why streets look sketchy, and how centuries-old infrastructure shapes daily life.",
+    "questions": [
+      "what-is-a-medina",
+      "why-is-my-gps-wrong",
+      "what-does-balak-mean",
+      "why-does-the-bathroom-smell",
+      "why-is-the-riad-so-hard-to-find",
+      "why-is-it-so-cold-inside-in-winter",
+      "why-can-you-hear-everything",
+      "why-are-the-beds-so-hard",
+      "why-are-there-cockroaches-in-a-clean-riad",
+      "why-is-it-so-loud-at-430am",
+      "what-was-the-2023-earthquake",
+      "why-are-the-walls-stained-or-bubbling",
+      "why-are-the-floors-stained-or-uneven",
+      "why-does-the-wifi-barely-work",
+      "why-does-the-electricity-flicker",
+      "why-are-there-cats-everywhere"
+    ]
+  },
+  {
+    "slug": "getting-around",
+    "title": "Getting Around",
+    "subtitle": "Nothing works the way you expect",
+    "description": "Taxis, trains, buses, ride-hailing apps, plugs, and the tourist tax.",
+    "questions": [
+      "why-cant-taxi-take-me-to-the-door",
+      "what-is-the-tourist-tax",
+      "is-there-a-ride-hailing-app",
+      "how-do-i-get-a-petit-taxi-to-use-the-meter",
+      "whats-the-difference-between-petit-and-grand-taxis",
+      "how-do-trains-work",
+      "how-do-buses-work",
+      "what-plugs-do-they-use"
+    ]
+  },
+  {
+    "slug": "social-and-cultural",
+    "title": "Social & Cultural",
+    "subtitle": "The unwritten rules",
+    "description": "Tea, bargaining, dress codes, photography, time, cash, staring, and the social codes visitors encounter.",
+    "questions": [
+      "is-it-rude-to-refuse-tea",
+      "what-should-i-wear",
+      "can-i-photograph-people",
+      "can-you-show-affection-in-public",
+      "is-morocco-safe-for-lgbtq-visitors",
+      "should-you-remove-shoes",
+      "why-does-time-work-differently-here",
+      "why-does-everyone-want-cash",
+      "how-does-bargaining-work",
+      "why-does-everyone-ask-where-im-from",
+      "why-do-people-stare"
+    ]
+  },
+  {
+    "slug": "food-and-drink",
+    "title": "Food & Drink",
+    "subtitle": "The table is the centre of everything",
+    "description": "Tap water, shared tagines, hammams, mint tea, vegan food, alcohol, and stomach adjustment.",
+    "questions": [
+      "can-i-drink-the-tap-water",
+      "how-do-you-eat-from-a-shared-tagine",
+      "whats-the-difference-between-a-local-and-a-spa-hammam",
+      "why-does-mint-tea-taste-different-here",
+      "can-you-eat-vegan",
+      "can-you-drink-alcohol",
+      "why-is-my-stomach-upset"
+    ]
+  },
+  {
+    "slug": "staying-safe",
+    "title": "Staying Safe",
+    "subtitle": "What to watch for",
+    "description": "Henna scams, fake guides, tourist police, horse carriages, LGBTQ+ safety, and navigating the medina at night.",
+    "questions": [
+      "why-do-the-henna-ladies-grab-your-hand",
+      "are-the-monkeys-in-the-square-ethical",
+      "should-i-take-a-horse-carriage",
+      "what-is-the-police-touristique",
+      "how-do-i-tell-a-real-guide-from-a-fake-one",
+      "what-do-i-do-if-i-get-lost-at-night",
+      "why-do-the-streets-look-sketchy"
+    ]
+  },
+  {
+    "slug": "religious-calendar",
+    "title": "Religious Calendar",
+    "subtitle": "The rhythm beneath everything",
+    "description": "Ramadan, Eid al-Adha, public holidays, and how the religious calendar shapes daily life.",
+    "questions": [
+      "what-is-ramadan",
+      "what-is-eid-al-adha",
+      "when-are-public-holidays"
+    ]
+  },
+  {
+    "slug": "the-cities",
+    "title": "The Cities",
+    "subtitle": "Each one is a different country",
+    "description": "Marrakech mosques, Casablanca's Art Deco, Agadir's earthquake, Rabat as capital, and Taghazout's surf coast.",
+    "questions": [
+      "can-you-go-inside-the-koutoubia-mosque",
+      "why-does-agadir-look-nothing-like-other-moroccan-cities",
+      "is-casablanca-worth-visiting",
+      "is-rabat-the-capital",
+      "is-taghazout-still-a-surf-village"
+    ]
+  }
+]
