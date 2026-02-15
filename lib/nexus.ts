@@ -10,7 +10,7 @@ const nexusKey = process.env.NEXUS_SUPABASE_ANON_KEY || "placeholder";
 
 const nexus = createClient(nexusUrl, nexusKey);
 
-const SITE_ID = process.env.SITE_ID || "riad-di-siena";
+const SITE_ID = process.env.SITE_ID || "derb";
 
 // ============================================================
 // Site Configuration
@@ -67,10 +67,10 @@ export async function replaceTemplateVariables(content: string): Promise<string>
   const siteConfig = await getSiteConfig();
   if (!siteConfig) {
     const fallbackVars: Record<string, string> = {
-      "{{site_name}}": "Riad di Siena",
-      "{{site_url}}": "https://www.riaddisiena.com",
-      "{{legal_entity}}": "Riad di Siena",
-      "{{contact_email}}": "happy@riaddisiena.com",
+      "{{site_name}}": "Derb",
+      "{{site_url}}": "https://www.derb.so",
+      "{{legal_entity}}": "Derb",
+      "{{contact_email}}": "hello@derb.so",
       "{{jurisdiction_country}}": "Morocco",
       "{{jurisdiction_city}}": "Marrakech",
       "{{address_line1}}": "37 Derb Fhal Zefriti, Laksour",

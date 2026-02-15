@@ -65,7 +65,7 @@ export async function sendGuestConfirmationEmail(data: BookingEmailData) {
 </head>
 <body>
   <div class="header">
-    <div class="logo">RIAD DI SIENA</div>
+    <div class="logo">DERB</div>
   </div>
   
   <div class="content">
@@ -112,12 +112,12 @@ export async function sendGuestConfirmationEmail(data: BookingEmailData) {
     
     <p>If you have any questions, please don't hesitate to contact us.</p>
     <p>We look forward to welcoming you.</p>
-    <p style="margin-top: 30px;">Warm regards,<br>Riad di Siena</p>
+    <p style="margin-top: 30px;">Warm regards,<br>Derb</p>
   </div>
   
   <div class="footer">
-    <p>Riad di Siena · Marrakech Medina, Morocco</p>
-    <p>riaddisiena.com</p>
+    <p>Derb · Morocco</p>
+    <p>derb.so</p>
   </div>
 </body>
 </html>
@@ -125,7 +125,7 @@ export async function sendGuestConfirmationEmail(data: BookingEmailData) {
 
   try {
     const result = await resend.emails.send({
-      from: 'Riad di Siena <bookings@mail.riaddisiena.com>',
+      from: 'Derb <hello@derb.so>',
       to: data.email,
       subject: `Booking Confirmed - ${accommodationName} - ${data.bookingId}`,
       html,
@@ -220,7 +220,7 @@ export async function sendOwnerNotificationEmail(data: BookingEmailData) {
     </table>
     
     <div class="actions">
-      <a href="https://www.riaddisiena.com/admin/bookings" class="btn">View in Admin</a>
+      <a href="https://www.derb.so/admin/bookings" class="btn">View in Admin</a>
     </div>
   </div>
 </body>
@@ -229,8 +229,8 @@ export async function sendOwnerNotificationEmail(data: BookingEmailData) {
 
   try {
     const result = await resend.emails.send({
-      from: 'Riad di Siena Bookings <bookings@mail.riaddisiena.com>',
-      to: 'happy@riaddisiena.com',
+      from: 'Derb <hello@derb.so>',
+      to: 'hello@derb.so',
       subject: `💰 New Booking: ${data.firstName} ${data.lastName} - €${data.total} - ${accommodationName}`,
       html,
     });
@@ -307,8 +307,8 @@ export async function sendContactEmail(data: ContactEmailData) {
 
   try {
     const result = await resend.emails.send({
-      from: 'Riad di Siena <hello@mail.riaddisiena.com>',
-      to: 'happy@riaddisiena.com',
+      from: 'Derb <hello@derb.so>',
+      to: 'hello@derb.so',
       replyTo: data.email,
       subject: `Message from ${data.name}`,
       html,

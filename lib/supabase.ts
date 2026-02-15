@@ -1,7 +1,7 @@
 import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
 // ============================================================
-// Supabase Client for Riad di Siena
+// Supabase Client for derb.so
 // Replaces lib/sheets.ts (Google Sheets integration)
 // ============================================================
 
