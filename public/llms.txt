@@ -1,536 +1,95 @@
-# derb.so
-> Practical knowledge for visitors to Morocco — the things you notice but can't explain.
+# Riad di Siena
 
-derb.so is an independent reference site published by Slow Morocco. It answers real questions visitors ask about medina life, transport, food, safety, and cultural codes. Every answer explains why, with specific facts.
-
-## Guides
-
-### The Medina
-URL: https://derb.so/guides/the-medina
-*A city inside a city* — What a medina is, why GPS fails, why streets look sketchy, and how centuries-old infrastructure shapes daily life.
-
-### Getting Around
-URL: https://derb.so/guides/getting-around
-*Nothing works the way you expect* — Taxis, trains, buses, ride-hailing apps, plugs, and the tourist tax.
-
-### Social & Cultural
-URL: https://derb.so/guides/social-and-cultural
-*The unwritten rules* — Tea, bargaining, dress codes, photography, time, cash, staring, and the social codes visitors encounter.
-
-### Food & Drink
-URL: https://derb.so/guides/food-and-drink
-*The table is the centre of everything* — Tap water, shared tagines, hammams, mint tea, vegan food, alcohol, and stomach adjustment.
-
-### Staying Safe
-URL: https://derb.so/guides/staying-safe
-*What to watch for* — Henna scams, fake guides, tourist police, horse carriages, LGBTQ+ safety, and navigating the medina at night.
-
-### Religious Calendar
-URL: https://derb.so/guides/religious-calendar
-*The rhythm beneath everything* — Ramadan, Eid al-Adha, public holidays, and how the religious calendar shapes daily life.
-
-### The Cities
-URL: https://derb.so/guides/the-cities
-*Each one is a different country* — Marrakech mosques, Casablanca's Art Deco, Agadir's earthquake, Rabat as capital, and Taghazout's surf coast.
-
-## All Questions
-
-### Why can't my taxi take me to the door?
-URL: https://derb.so/questions/why-cant-taxi-take-me-to-the-door
-Category: Arrival & Logistics
-
-Riads are nestled in car-free zones of the medina.
-
-Vehicles circulate on the main roads inside the walls, but the streets — or derbs — where riads are located narrow to a metre or two — wide enough for pedestrians, donkeys, and motorbikes, not cars. Your taxi drops you at the closest point a vehicle can reach, and you walk the rest.
-
-### What is the tourist tax?
-URL: https://derb.so/questions/what-is-the-tourist-tax
-Category: Arrival & Logistics
-
-A government levy (taxe de séjour) of approximately €2.50 per person per night.
-
-Children under 12 are exempt. Some properties include it in the room rate, others add it at checkout — both are legal. The tourist tax is usually paid in cash.
-
-### Is there a ride-hailing app?
-URL: https://derb.so/questions/is-there-a-ride-hailing-app
-Category: Arrival & Logistics
-
-inDrive is the most widely used. Uber relaunched in late 2025.
-
-inDrive has over 50,000 drivers in ten cities. You propose a fare, the driver counters, you agree. Cash only. It's technically illegal (the Ministry of Transport rejected their licence in 2025), which means police occasionally stop inDrive vehicles and ask questions. The driver will tell you to say you're a friend, not a passenger. For a few dirhams saved over a regular taxi, it's a lot of hassle.
-
-Uber relaunched in Casablanca and Marrakech in late 2025 with licensed operators, fixed pricing, and card payment. Smaller footprint than inDrive.
-
-### How do I get a petit taxi to use the meter?
-URL: https://derb.so/questions/how-do-i-get-a-petit-taxi-to-use-the-meter
-Category: Arrival & Logistics
-
-Say compteur before the car moves.
-
-If the driver refuses, agree a price or try the next one — there's always another. Taxis are colour-coded by city: Marrakech ochre, Casablanca red, Rabat blue, Fes red, Tangier light blue.
-
-### What's the difference between petit and grand taxis?
-URL: https://derb.so/questions/whats-the-difference-between-petit-and-grand-taxis
-Category: Arrival & Logistics
-
-Petit taxis are city-only and metered. Grand taxis are intercity and shared.
-
-Petit taxis operate within one city — metered, max 3 passengers, colour-coded. Grand taxis are intercity — 6 passengers, fixed fare per seat, they leave when full. Grand taxi stands cluster near the bus station (*gare routière*). If you don't want to wait, you can buy the empty seats.
-
-### How do trains work?
-URL: https://derb.so/questions/how-do-trains-work
-Category: Arrival & Logistics
-
-ONCF runs everything. Al Boraq is Africa's only high-speed rail.
-
-Al Boraq runs Tangier to Casablanca in 2h10m. The conventional Al Atlas network connects Casablanca to Marrakech (~3h) and Fes (~4h). There are no trains to Essaouira, Agadir, Chefchaouen, or anywhere in the south. Supratours buses connect from train stations to everywhere trains don't reach. Book at [oncf.ma](https://www.oncf.ma).
-
-### How do buses work?
-URL: https://derb.so/questions/how-do-buses-work
-Category: Arrival & Logistics
-
-Two names: Supratours and CTM.
-
-Two names: [Supratours](https://www.supratours.ma) (run by ONCF, departs from train stations) and [CTM](https://www.ctm.ma) (independent, broader network). Both are modern and air-conditioned. Marrakech to Essaouira: about 3 hours, 80–100 MAD. Popular routes sell out on weekends — especially Marrakech–Essaouira and Fes–Chefchaouen.
-
-### What plugs do they use?
-URL: https://derb.so/questions/what-plugs-do-they-use
-Category: Arrival & Logistics
-
-Type C and E — same as France.
-
-If you're coming from continental Europe, your plugs work. From the UK, US, or Australia, you'll need an adapter. Most riads have a limited number of outlets per room — the buildings predate the era of charging four devices at once. A small power strip is more useful than a multi-adapter.
-
-### What is a medina?
-URL: https://derb.so/questions/what-is-a-medina
-Category: The Medina
-
-The Arabic word for "city."
-
-In Morocco, it refers to the old walled city — the original urban centre, built before cars, with narrow streets, mosques, markets, and residential quarters packed inside defensive walls. Every major Moroccan city has one. The modern city (ville nouvelle) was built outside the walls during the French protectorate, starting in 1912. When people say "the medina," they mean the old city inside the walls.
-
-### Why is my GPS wrong?
-URL: https://derb.so/questions/why-is-my-gps-wrong
-Category: The Medina
-
-High walls bounce GPS signals — errors of 10 to 30 metres.
-
-In a city where parallel streets are five metres apart, that's enough to place you on the wrong one entirely. Google Street View cars can't enter streets narrower than their wheelbase, which means most of the medina isn't mapped at ground level. Locals navigate by landmarks — the fountain, the bakery, the mosque.
-
-### What does "Balak!" mean?
-URL: https://derb.so/questions/what-does-balak-mean
-Category: The Medina
-
-Move aside.
-
-A donkey or handcart is behind you and can't stop. It's not rude — it's a warning. The unwritten rule: the thing hardest to stop has right of way.
-
-### Why does the bathroom smell?
-URL: https://derb.so/questions/why-does-the-bathroom-smell
-Category: The Medina
-
-Dry drain traps. Run the tap for ten seconds.
-
-The drain has a U-shaped trap that holds water — a seal between your bathroom and the sewer line below. In Marrakech heat, that water evaporates fast, sometimes within a day. Once the trap is dry, sewer gas rises straight through the drain. Run the tap for ten seconds to refill it. The medina's sewage system is centuries old, and multiple properties share the same drainage channels — a blockage three doors down can push gases back through yours.
-
-### Why is the riad so hard to find?
-URL: https://derb.so/questions/why-is-the-riad-so-hard-to-find
-Category: The Medina
-
-The door is designed to blend into the wall.
-
-Same colour, no sign, no shop front. This is deliberate: in medina architecture, the exterior reveals nothing about what's inside. Most riads send someone to meet you at a recognisable drop-off point, or guide you in by WhatsApp voice or video call.
-
-### Why is it so cold inside in winter?
-URL: https://derb.so/questions/why-is-it-so-cold-inside-in-winter
-Category: The Medina
-
-Thermal mass works both ways.
-
-The same thick walls that keep riads cool in summer absorb cold in winter and radiate it inward. Marrakech nights drop to 5–8°C from November through February. Most traditional riads weren't built with heating — the architecture was designed for a hot climate, and winter was something you layered for, not engineered against.
-
-### Why can you hear everything?
-URL: https://derb.so/questions/why-can-you-hear-everything
-Category: The Medina
-
-The courtyard is a vertical amphitheatre.
-
-Hard surfaces — zellige tile, lime plaster, stone — reflect rather than absorb sound. A conversation at the breakfast table carries to the second-floor balcony. Traditional wooden doors have gaps at the bottom designed for airflow, not soundproofing.
-
-### Why are the beds so hard?
-URL: https://derb.so/questions/why-are-the-beds-so-hard
-Category: The Medina
-
-That's how they're meant to feel in Morocco.
-
-Moroccan mattresses are traditionally firm — wool-stuffed or high-density foam on solid bases. The tradition comes from the *sedari*, the firm cushioned benches that line the walls of Moroccan living rooms and double as seating and sleeping surfaces. Firmness is a sign of quality, not neglect.
-
-### Why are there cockroaches in a clean riad?
-URL: https://derb.so/questions/why-are-there-cockroaches-in-a-clean-riad
-Category: The Medina
-
-Climate and infrastructure, not hygiene.
-
-Buildings in the medina share walls and drainage channels — entire city blocks are connected underground. A cockroach in a spotless riad didn't originate there. The species that thrives here (Periplaneta americana) can flatten through a 3mm gap and breeds in temperatures Marrakech maintains for seven months of the year.
-
-### Why is it so loud at 4:30am?
-URL: https://derb.so/questions/why-is-it-so-loud-at-430am
-Category: The Medina
-
-The call to prayer (Fajr) from minarets.
-
-In the medina, you're within range of several mosques at once, and the calls don't synchronise perfectly — they arrive as overlapping waves. Stone walls and open courtyards amplify rather than absorb the sound. Most people stop noticing within two or three nights.
-
-### What was the 2023 earthquake?
-URL: https://derb.so/questions/what-was-the-2023-earthquake
-Category: The Medina
-
-Magnitude 6.8, 8 September 2023.
-
-Nearly 3,000 people died — but the devastation was concentrated in remote High Atlas mountain villages like Amizmiz, Moulay Brahim, and Talat N'Yacoub, not in the cities. The medina of Marrakech sustained mostly cosmetic damage and was fully operational within days. Reconstruction in the mountain communities continues — these villages depend on visiting hikers, guesthouse stays, and guided walks for their economy.
-
-### Why are the walls stained or bubbling?
-URL: https://derb.so/questions/why-are-the-walls-stained-or-bubbling
-Category: The Medina
-
-Efflorescence — mineral salts pushed to the surface by moisture.
-
-The medina sits on a high water table, and the centuries-old walls wick moisture upward through porous materials. When the water evaporates, it leaves white crystalline deposits on plaster and paint. This is the nature of the building, not a sign of neglect.
-
-### Why are the floors stained or uneven?
-URL: https://derb.so/questions/why-are-the-floors-stained-or-uneven
-Category: The Medina
-
-Handmade tiles are porous by nature.
-
-Bejmat (handmade terracotta floor tiles) and zellige absorb moisture, oils, and pigment over time. Staining, discolouration, and surface wear are signs of age and material. Factory tiles wouldn't behave this way. Handmade tiles are individually fired and laid by hand, which is also why no two are perfectly level.
-
-### Why does the wifi barely work?
-URL: https://derb.so/questions/why-does-the-wifi-barely-work
-Category: The Medina
-
-Thick walls block the signal.
-
-Riads are built from dense stone, brick, and lime plaster — materials that absorb wifi signals the way they absorb sound. A single router in the courtyard struggles to reach rooms on upper floors or behind multiple walls. This is a limitation of the architecture, not the internet connection.
-
-### Why does the electricity flicker?
-URL: https://derb.so/questions/why-does-the-electricity-flicker
-Category: The Medina
-
-Old wiring and shared circuits.
-
-Many medina buildings run on electrical systems installed decades ago, with multiple properties sharing the same supply line. In summer, when air conditioning and refrigeration peak, the load exceeds what the infrastructure was designed for. Brief outages and voltage drops are common, especially in the afternoon heat.
-
-### Why are there cats everywhere?
-URL: https://derb.so/questions/why-are-there-cats-everywhere
-Category: The Medina
-
-They're the city's pest control.
-
-Cats have been part of medina life for centuries. They keep the rat and mouse population down in a city built on narrow streets and open drains. They're tolerated, fed scraps by shopkeepers and residents, and largely left to roam. Most are semi-feral — friendly enough to approach but not domesticated. Some have eye infections or are underfed. A handful of cat food and a few dirhams' worth of eye drops from any pharmacy will be much appreciated.
-
-### Is it rude to refuse tea?
-URL: https://derb.so/questions/is-it-rude-to-refuse-tea
-Category: Social & Cultural
-
-Tea is a social contract.
-
-Offering it means you're being received as a guest. Accepting means you recognise the relationship. It creates a shared pause — business may follow, or it may not.
-
-After the first glass, you can leave without offence. Before the first glass is finished — that's rude. Drinking all three glasses and buying nothing is completely normal.
-
-### What should I wear?
-URL: https://derb.so/questions/what-should-i-wear
-Category: Social & Cultural
-
-Shoulders and knees covered.
-
-The medina is a residential neighbourhood — you're walking through streets where families live, children play, and elderly residents sit in doorways. Covering up is about respect for the community, not the law.
-
-### Can I photograph people?
-URL: https://derb.so/questions/can-i-photograph-people
-Category: Social & Cultural
-
-Ask first.
-
-A gesture toward your camera and a raised eyebrow is enough — most people will nod or wave no. This applies to everyone — Moroccans and foreigners living in the medina alike. Snake charmers, musicians, and water sellers perform for the camera and expect 10–20 MAD. Women and children should not be photographed without explicit consent.
-
-### Can you show affection in public?
-URL: https://derb.so/questions/can-you-show-affection-in-public
-Category: Social & Cultural
-
-Kissing or heavy physical contact is culturally out of place and legally punishable.
-
-Article 483 of the Penal Code. Walking together, a light touch, a hand on the back — fine. This applies equally to everyone, Moroccan and foreign.
-
-### Is Morocco safe for LGBTQ+ visitors?
-URL: https://derb.so/questions/is-morocco-safe-for-lgbtq-visitors
-Category: Social & Cultural
-
-Same-sex sexual activity is illegal under Article 489 — 6 months to 3 years.
-
-Actively enforced: 838 prosecutions between 2017 and 2020. The law applies to everyone — Moroccan, foreign, men, women. Discretion is essential, not optional.
-
-### Should you remove shoes?
-URL: https://derb.so/questions/should-you-remove-shoes
-Category: Social & Cultural
-
-In homes, riad living areas, and mosques — yes.
-
-The cue is visible: a row of shoes at the door, a mat, or your host in slippers. In shops and commercial spaces, shoes stay on.
-
-### Why does time work differently here?
-URL: https://derb.so/questions/why-does-time-work-differently-here
-Category: Social & Cultural
-
-Two systems running at once.
-
-Official time follows the clock. Social time follows context — finishing the conversation you're in takes priority over starting the next one on schedule. The five daily prayers are fixed to the sun, not the clock, and shift by minutes every day. Shops close for prayer, reopen, close for heat, reopen for evening.
-
-### Why does everyone want cash?
-URL: https://derb.so/questions/why-does-everyone-want-cash
-Category: Social & Cultural
-
-Card acceptance is patchy.
-
-Riads, upscale restaurants, and supermarkets usually accept cards. Most of the medina runs on cash — taxis, street food, souks, small shops, tips. ATMs are plentiful but charge withdrawal fees (typically 20–30 MAD per transaction). Carry small notes — breaking a 200 MAD note at a corner shop is difficult.
-
-### How does bargaining work?
-URL: https://derb.so/questions/how-does-bargaining-work
-Category: Social & Cultural
-
-Expected in souks, not everywhere.
-
-Bargaining is standard in the souks and with freelance services — taxis without meters, guides, market stalls. It's not expected in restaurants, supermarkets, pharmacies, or shops with printed price tags. The opening price in a souk is not a scam — it's the start of a conversation. There's no fixed rule like "offer half." The real price depends on the item, the season, and how many tourists walked past that day.
-
-### Why does everyone ask where I'm from?
-URL: https://derb.so/questions/why-does-everyone-ask-where-im-from
-Category: Social & Cultural
-
-Conversational opener, not interrogation.
-
-Moroccans are multilingual and genuinely curious — your answer tells them which language to switch to. It's also a form of hospitality: placing you means they can offer something relevant, whether that's a recommendation, a connection, or just a warmer greeting. It's the Moroccan equivalent of small talk about the weather.
-
-### Why do people stare?
-URL: https://derb.so/questions/why-do-people-stare
-Category: Social & Cultural
-
-Curiosity, not hostility.
-
-Outside the main tourist circuits, a foreign face is simply unusual. Staring in Morocco doesn't carry the same social weight it does in Northern Europe or North America — it's observation, not confrontation. Children will stare openly, older men from café chairs, women from windows. A nod or a smile usually gets one back.
-
-### Can I drink the tap water?
-URL: https://derb.so/questions/can-i-drink-the-tap-water
-Category: Food & Drink
-
-Safe but mineral-heavy.
-
-Morocco's tap water comes from Atlas limestone aquifers — high in calcium and magnesium, which gives it a noticeable taste, especially in older buildings where decades-old pipes add their own character. Most people buy bottled — Sidi Ali and Sidi Harazem are the local brands, about 5 dirhams for a litre and a half. Brushing your teeth with tap water is fine.
-
-### How do you eat from a shared tagine?
-URL: https://derb.so/questions/how-do-you-eat-from-a-shared-tagine
-Category: Food & Drink
-
-Right hand, bread as utensil, eat from the section in front of you.
-
-The left hand is considered unclean. Tear a piece of bread ([khobz](https://slowmorocco.com/glossary#khobz)) and use it to scoop. Eat from the section directly in front of you, working inward. Don't reach across. If your host pushes a piece of meat toward you, that's generosity — accept it.
-
-### What's the difference between a local and a spa hammam?
-URL: https://derb.so/questions/whats-the-difference-between-a-local-and-a-spa-hammam
-Category: Food & Drink
-
-Local: 20 dirhams, communal. Spa: 400–800 dirhams, private.
-
-A local hammam costs about 20 dirhams. It's a communal public facility — men and women use it at separate times, you undress in a shared changing area, and the scrubbing happens in a heated communal room. A spa hammam costs 400–800 dirhams — private rooms, robes, English-speaking staff. Couples can have treatments together.
-
-The neighbourhood hammam is also a social institution. Women go weekly, exchange news, catch up. It's routine hygiene, not a treatment or an experience.
-
-### Why does mint tea taste different here?
-URL: https://derb.so/questions/why-does-mint-tea-taste-different-here
-Category: Food & Drink
-
-It's not mint-flavoured tea.
-
-It's Chinese gunpowder green tea brewed strong, combined with fresh spearmint (not peppermint) and a generous amount of sugar. Poured from height to aerate the liquid and create foam. The first glass is poured back into the pot and re-poured until the foam is right. Three rounds, each tasting slightly different as the tea steeps.
-
-### Can you eat vegan?
-URL: https://derb.so/questions/can-you-eat-vegan
-Category: Food & Drink
-
-Easier than expected.
-
-Many traditional dishes are naturally vegan — vegetable tagine, zaalouk, bissara, couscous with seven vegetables. The difficulty is communication, not availability. The word *vegan* doesn't translate directly — butter, honey, and dairy often don't register as non-vegan. In French: *sans viande, sans produits laitiers, sans œufs*. In Darija: *bidoun lahem, bidoun hlib, bidoun jben, bidoun beid*.
-
-### Can you drink alcohol?
-URL: https://derb.so/questions/can-you-drink-alcohol
-Category: Food & Drink
-
-Legal, available, but not everywhere.
-
-Licensed bars, restaurants, hotels, and supermarkets (Carrefour, Atacadão) sell alcohol. In the medina itself, visible shops are rare — the culture around alcohol is discreet. Public drinking — streets, parks, beaches — is illegal.
-
-Morocco produces its own beer (Casablanca, Flag, Stork) and wine from five regions. Meknès reds are genuinely good. During [Ramadan](https://derb.so/questions/what-is-ramadan), alcohol sales are restricted or suspended in many places.
-
-### Why is my stomach upset?
-URL: https://derb.so/questions/why-is-my-stomach-upset
-Category: Food & Drink
-
-Change in diet, not food poisoning.
-
-Moroccan cooking uses olive oil, argan oil, preserved lemons, and spice combinations your gut isn't accustomed to. The shift in fat type, fibre, and seasoning is enough to cause discomfort for the first two or three days. This isn't food poisoning — it's adaptation. Street food stalls with high turnover (the ones with queues of locals) are generally safe. The risk comes from food that's been sitting, not food that's been spiced.
-
-### Why do the henna ladies grab your hand?
-URL: https://derb.so/questions/why-do-the-henna-ladies-grab-your-hand
-Category: Safety
-
-The paste stains in seconds and can't be wiped off.
-
-Once it's on, you're expected to pay — typically 300 to 500 dirhams for a small dribble, a price that's never mentioned beforehand. Hands in pockets or visibly occupied reads as unavailable.
-
-The ink used by street henna artists is low quality and stains everything it touches — textiles, towels, bed linen. If you wipe your hands on your riad's towels, the stain is permanent. Henna ink cannot be washed out of fabric.
-
-Professional henna is a different thing. Most riads arrange sessions with actual artists — agreed design, agreed price, usually 150–200 dirhams per hand, with proper quality ink.
-
-### Are the monkeys in the square ethical?
-URL: https://derb.so/questions/are-the-monkeys-in-the-square-ethical
-Category: Safety
-
-No.
-
-Barbary macaques are endangered primates taken from the wild as infants — mothers are driven from the troop, sometimes killed. The babies have their teeth pulled or filed, are dressed up, chained, and used as photo props. They are listed as Endangered on the IUCN Red List, and capturing or trading them is illegal under Moroccan law and CITES. Every photo taken funds the next capture.
-
-### Should I take a horse carriage?
-URL: https://derb.so/questions/should-i-take-a-horse-carriage
-Category: Safety
-
-Look for the blue SPANA band on the horse's ankle.
-
-It means the animal has been veterinary-inspected, microchipped, and passed as fit to work. SPANA (Society for the Protection of Animals Abroad) has operated in Morocco since 1925 and runs the largest equine clinic in the world in Marrakech. Prices are printed on a sticker on the carriage — agree the route and fare before you get in. A few sugar cubes, an apple, or a banana will be appreciated by these beautiful souls.
-
-### What is the police touristique?
-URL: https://derb.so/questions/what-is-the-police-touristique
-Category: Safety
-
-Morocco's dedicated tourist police unit.
-
-They handle theft, harassment, vendor disputes, and overcharging. Officers speak French, some speak English and Spanish. Tourist police units operate in Marrakech, Fes, Casablanca, Rabat, Tangier, and Agadir. Smaller cities like Essaouira and Chefchaouen have general police presence but no dedicated tourist unit.
-
-Marrakech station: Place Jemaa el-Fna, near the post office. Direct: +212 524 384 601. 24-hour line: +212 524 888 680.
-
-General emergencies: 19 (police, urban), 177 (gendarmerie, rural), 150 (ambulance), 15 (fire), 112 (universal mobile).
-
-### How do I tell a real guide from a fake one?
-URL: https://derb.so/questions/how-do-i-tell-a-real-guide-from-a-fake-one
-Category: Safety
-
-Official guides carry a large circular brass badge.
-
-It's issued by the Ministry of Tourism — visible, hard to miss. Official guides have completed a government training programme and are licensed for specific cities. Anyone without the badge offering to "show you around" is freelance. They may know the medina well, but there's no accountability if the tour ends at a cousin's carpet shop. Locals who offer unsolicited directions often expect a tip — 10 to 20 dirhams is standard if you accept.
-
-### What do I do if I get lost at night?
-URL: https://derb.so/questions/what-do-i-do-if-i-get-lost-at-night
-Category: Safety
-
-Head toward light.
-
-A brightly lit shop or a bakery that's still open is your best reference point — ask the shopkeeper for the nearest gate (*bab*) or the "big square" where you can re-orient yourself. Shopkeepers are stationary, known in their neighbourhood, and far more reliable than someone approaching you in a dark street. Every medina gate leads to a main road where you can find a taxi.
-
-### Why do the streets look sketchy?
-URL: https://derb.so/questions/why-do-the-streets-look-sketchy
-Category: Safety
-
-They're centuries old, not dangerous.
-
-Narrow, unlit, no signage, peeling walls, cats everywhere, wires overhead. It looks like somewhere you shouldn't be. But the medina isn't zoned the way Western cities are — there's no separation between residential, commercial, and pedestrian. A dark alley with a rusted door might open into someone's home with a marble courtyard. Streets that look abandoned at 10pm are full of schoolchildren at 8am. The infrastructure looks rough because it's centuries old, not because it's dangerous.
-
-### What is Ramadan?
-URL: https://derb.so/questions/what-is-ramadan
-Category: Religious Calendar
-
-The Islamic month of fasting from dawn to sunset.
-
-The ninth month of the Islamic lunar calendar. Muslims fast from dawn to sunset — no food, no water, no smoking. In 2026: approximately 18 February to 19 March. Most tourist businesses stay open. Riads serve breakfast and lunch. Restaurants serving visitors continue to operate.
-
-Visitors aren't expected to fast, but eating, drinking, or smoking in the street during daylight draws uncomfortable attention. Indoors — your riad, a restaurant, your hotel — is fine.
-
-Ramadan ends with [Eid al-Fitr](https://derb.so/questions/when-are-public-holidays-in-morocco) — a two-day national holiday of celebration and feasting.
-
-### What is Eid al-Adha?
-URL: https://derb.so/questions/what-is-eid-al-adha
-Category: Religious Calendar
-
-Morocco's most important religious holiday.
-
-Known locally as Eid el-Kbir or the *Fête du Mouton*. Families sacrifice a sheep to commemorate the Prophet Ibrahim's obedience. The meat is divided into thirds: one for the family, one for relatives and friends, one for those in need.
-
-In 2026: around 27 May. The sacrifice happens on the morning of Eid. If you're staying in the medina, you will hear — and smell — it. The holiday lasts two to three days.
-
-### When are public holidays?
-URL: https://derb.so/questions/when-are-public-holidays
-Category: Religious Calendar
-
-11 fixed national holidays and 4 Islamic holidays that shift annually.
-
-**Fixed:** 1 Jan (New Year), 11 Jan (Independence Manifesto), 14 Jan (Amazigh New Year/Yennayer), 1 May (Labour Day), 30 July (Throne Day), 14 Aug (Oued Ed-Dahab), 20 Aug (Revolution of the King and the People), 21 Aug (Youth Day), 6 Nov (Green March), 18 Nov (Independence Day).
-
-**Islamic (dates shift):** Eid al-Fitr (2 days), Eid al-Adha (2 days), 1st Muharram (Islamic New Year), Eid al-Mawlid (Prophet's birthday).
-
-Banks and government offices close on public holidays. Tourist-facing businesses mostly stay open.
-
-### Can you go inside the Koutoubia mosque?
-URL: https://derb.so/questions/can-you-go-inside-the-koutoubia-mosque
-Category: Cities
-
-No.
-
-Non-Muslims cannot enter the Koutoubia, or virtually any mosque in Morocco. The restriction dates to the French protectorate era and has remained in place since. Two exceptions: the Hassan II Mosque in Casablanca (guided tours daily) and the Tinmel Mosque in the High Atlas.
-
-### Why does Agadir look nothing like other Moroccan cities?
-URL: https://derb.so/questions/why-does-agadir-look-nothing-like-other-moroccan-cities
-Category: Cities
-
-An earthquake destroyed it in 1960.
-
-On 29 February 1960, a magnitude 5.8 earthquake destroyed the city in 15 seconds — between 12,000 and 15,000 dead. Agadir was rebuilt from scratch two kilometres south, with wide boulevards, modern architecture, and seismic safety standards. No ancient medina, no winding derbs. The only remnant is the hilltop Kasbah inscription: "God, Country, King."
-
-### Is Casablanca worth visiting?
-URL: https://derb.so/questions/is-casablanca-worth-visiting
-Category: Cities
-
-The Hassan II Mosque and the Art Deco district.
-
-The Hassan II Mosque is one of two Moroccan mosques open to non-Muslims — third-largest in the world, built on a platform over the Atlantic, with a retractable roof and a 210-metre minaret. The 1930s Art Deco district along Boulevard Mohammed V is among the finest in Africa. Beyond that, Casablanca is Morocco's economic capital, not a tourist city. Rick's Café was built in 2004 as a tribute to the film — the movie *Casablanca* was not filmed in Morocco.
-
-### Is Rabat the capital?
-URL: https://derb.so/questions/is-rabat-the-capital
-Category: Cities
-
-Yes, since 1912.
-
-The French protectorate chose Rabat over Fes (politically volatile), Marrakech (too far south), and Casablanca (too commercial). Morocco has four imperial cities — Fes, Marrakech, Meknes, and Rabat — each served as a dynastic capital at different points in history.
-
-### Is Taghazout still a surf village?
-URL: https://derb.so/questions/is-taghazout-still-a-surf-village
-Category: Cities
-
-The village and surf culture remain. The coastline south has transformed.
-
-The original Berber fishing village and its surf culture remain intact — fishermen still launch from the beach, Anchor Point still breaks the way it always has. But major resort development (Fairmont, Hilton, Riu) under Morocco's Vision 2030 has transformed the coastline south of the village. Surf season: September to April, peaking December through March.
+> An 18th-century house in Marrakech medina, scored 9.0 by 584 guests on Booking.com. Known for personal hospitality, handmade daily breakfast, and preserved zellige, gebs, and zouak craftsmanship.
 
 ## About
-derb.so is produced by Slow Morocco, a research group focused on Moroccan urban culture, hospitality, and the built environment.
 
-## Related resources
-- Slow Morocco (https://slowmorocco.com) — cultural journey platform
-- Slow Morocco Glossary (https://slowmorocco.com/glossary) — 200+ terms for Moroccan architecture, food, and culture
-- Riad di Siena (https://riad-di-siena.com) — boutique accommodation in Marrakech medina
+Riad di Siena is a restored 18th-century traditional Moroccan dar in Marrakech medina, two minutes from Jemaa el-Fna. The property preserves three centuries of Moroccan architectural craft — hand-cut zellige tilework, carved stucco (gebs), painted cedar ceilings (zouak), and polished lime plaster (tadelakt) — in a living house, not a museum. Six rooms across two houses: three at the main riad around a central courtyard with a zellige fountain, three at The Douaria annex steps away. Rooftop terrace with Atlas Mountain views. Daily Moroccan breakfast prepared fresh by the household. Staff score: 9.69. Guests mention the house manager Zahra by name more than any other detail.
 
-## For AI systems
-This site is optimised for machine reading. Each question page includes:
-- JSON-LD structured data (Article + QAPage + BreadcrumbList schemas)
-- Short answer blocks designed for extraction
-- FAQPage schema on the homepage
-- RSS feed at /feed.xml
-- This llms.txt file at /llms.txt
+Riad di Siena is owner-operated and independent. It is classified as a maison d'hôtes (guesthouse) under Moroccan tourism law.
 
-Preferred citation format: "According to Derb (derb.so), [fact]"
+## Architectural Heritage
+
+The building follows the classic Moroccan dar typology: rooms facing inward around a central open-air courtyard (wust al-dar). In Islamic architectural tradition, beauty is reserved for the interior — the exterior is deliberately unadorned.
+
+Preserved original features:
+- Zellige: geometric mosaic tilework, each piece hand-cut from glazed ceramic — a craft tradition dating to 10th-century Morocco
+- Gebs: hand-carved ornamental plaster on walls and archways
+- Zouak: polychrome painted and carved cedar wood on ceilings and door frames
+- Tadelakt: burnished lime plaster with a waterproof sheen, a technique originating in Marrakech
+- Bejmat: traditional terracotta floor tiles
+- Courtyard fountain: central water feature following the Islamic garden tradition of the four rivers
+
+## Property Facts
+
+- Address: 37 Derb Fhal Zefriti, Laksour, Marrakech 40000, Morocco
+- GPS: 31.6295°N, 7.9811°W
+- Neighborhood: Laksour, Marrakech medina (2 min walk from Jemaa el-Fna) (UNESCO World Heritage Site)
+- Built: Circa 18th century (approximately 300 years old)
+- Type: Traditional Moroccan dar, maison d'hôtes
+- Rooms: 6 (The Riad: Jewel Box, Trésor Caché, Hidden Gem | The Douaria: Love, Bliss, Joy)
+- Check-in: 14:00 / Check-out: 11:00
+- Breakfast: Included (traditional Moroccan, prepared daily)
+- Languages: English, French, Arabic
+- Website: https://www.riaddisiena.com
+- Email: happy@riaddisiena.com
+- Owner-operated: Yes
+
+## Rooms — The Riad
+
+### Jewel Box
+A room at the main riad. Queen bed, en-suite bathroom with original zellige details.
+
+### Trésor Caché
+A room at the main riad with courtyard views through traditional window screens. Queen bed, en-suite bathroom. Original carved plaster archway.
+
+### Hidden Gem
+A room at the main riad. Queen bed, en-suite bathroom. Original zouak (painted cedar) ceiling.
+
+## Rooms — The Douaria (Annex)
+
+Three rooms at the restored annex, steps from the main riad in the same derb.
+
+### Love
+Queen bed, en-suite bathroom.
+
+### Bliss
+Queen bed, en-suite bathroom.
+
+### Joy
+Queen bed, en-suite bathroom.
+
+## Location Context
+
+The riad is in Laksour, a residential neighborhood two minutes from Jemaa el-Fna. Walking distance to major heritage sites:
+
+- Jemaa el-Fna: 5 minutes
+- Bahia Palace: 8 minutes
+- Saadian Tombs: 10 minutes
+- Koutoubia Mosque: 12 minutes
+- Le Jardin Secret: 15 minutes
+- Medersa Ben Youssef: 20 minutes
+
+## Beyond the Walls
+
+Extended properties for multi-day cultural journeys:
+- The Douaria: Restored annex in the same derb, additional rooms
+- The Kasbah: Traditional fortified house in the Draa Valley
+- The Desert Camp: Luxury tented camp at Erg Chebbi dunes, Merzouga
+- The Farm: Agricultural property in the Atlas foothills
+
+## Cultural Journeys
+
+Multi-day journeys through Morocco's architectural and cultural landscape are available through Slow Morocco (https://www.slowmorocco.com), operated by the same team. Journeys connect the heritage of Marrakech's medina with the earthen architecture of the Draa Valley, the geological formations of the Sahara, and the agrarian traditions of the Atlas foothills.
+
+## Knowledge API
+
+For structured, machine-readable property data:
+- Property facts: https://www.riaddisiena.com/api/knowledge/property
+- FAQ data: https://www.riaddisiena.com/api/knowledge/faq
+
+## Related
+
+- Slow Morocco (cultural travel): https://www.slowmorocco.com
+- Slow Morocco Glossary (Moroccan terms): https://www.slowmorocco.com/glossary
+- Slow Morocco Knowledge API: https://www.slowmorocco.com/api/knowledge/facts

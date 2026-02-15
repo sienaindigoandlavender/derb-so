@@ -1,38 +1,99 @@
 import type { Config } from "tailwindcss";
 
+/**
+ * SLOW WORLD DESIGN SYSTEM - Tailwind Configuration
+ * 
+ * Shared by: Riad di Siena, Slow Morocco, Slow Namibia,
+ *            Slow Türkiye, Slow Tunisia, Slow Mauritius
+ * 
+ * Last updated: December 24, 2025
+ */
+
 const config: Config = {
+  darkMode: ["class"],
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      /* ═══════════════════════════════════════════════════════════
+         COLORS
+         All colors use CSS variables for consistency
+         ═══════════════════════════════════════════════════════════ */
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        muted: "var(--muted)",
-        border: "var(--border)",
-        accent: "var(--accent)",
-        surface: "var(--surface)",
-        terracotta: "var(--terracotta)",
-        cream: "var(--cream)",
-        dark: "var(--dark)",
-        indigo: "var(--indigo)",
-        sage: "var(--sage)",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        sand: "hsl(var(--sand))",
+        "footer-background": "hsl(var(--footer-background))",
+        "footer-foreground": "hsl(var(--footer-foreground))",
       },
+
+      /* ═══════════════════════════════════════════════════════════
+         TYPOGRAPHY
+         ═══════════════════════════════════════════════════════════ */
       fontFamily: {
-        sans: ["var(--font-sans)", "'DM Sans'", "sans-serif"],
-        serif: ["var(--font-serif)", "'Libre Baskerville'", "Georgia", "serif"],
+        sans: ["var(--font-body)", "system-ui", "sans-serif"],
+        serif: ["var(--font-display)", "Georgia", "serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
+        body: ["var(--font-body)", "system-ui", "sans-serif"],
       },
-      fontSize: {
-        "display": ["3.5rem", { lineHeight: "1.1", letterSpacing: "-0.02em" }],
-        "title": ["2rem", { lineHeight: "1.2", letterSpacing: "-0.01em" }],
-        "body": ["1.125rem", { lineHeight: "1.7" }],
-        "small": ["0.875rem", { lineHeight: "1.6" }],
+
+      /* ═══════════════════════════════════════════════════════════
+         SPACING
+         ═══════════════════════════════════════════════════════════ */
+      spacing: {
+        section: "clamp(80px, 12vh, 120px)",
+        "section-sm": "clamp(48px, 8vh, 80px)",
       },
+
+      /* ═══════════════════════════════════════════════════════════
+         MAX WIDTHS
+         ═══════════════════════════════════════════════════════════ */
       maxWidth: {
-        "prose": "65ch",
-        "content": "720px",
+        content: "680px",
+        wide: "1200px",
+      },
+
+      /* ═══════════════════════════════════════════════════════════
+         BORDER RADIUS
+         ═══════════════════════════════════════════════════════════ */
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },

@@ -1,148 +1,58 @@
-# Derb
+# Riad di Siena
 
-An urban reference explaining the everyday realities of Marrakech.
-
-**Website:** [derb.so](https://derb.so)
-
-## About
-
-Derb explains questions visitors are often ashamed to ask:
-
-- Why are there cockroaches in Marrakech?
-- Why do bathrooms sometimes smell in old houses?
-- Why are there so many cats?
-- Why is noise unpredictable?
-
-This is not a travel guide. There are no recommendations, no hidden gems, no hospitality language. Derb explains infrastructure, ecology, and history in plain terms.
+A 300-year-old guesthouse in the heart of Marrakech medina. Not a hotel—a house with soul.
 
 ## Tech Stack
 
-- **Framework:** Next.js 14 (App Router)
-- **Styling:** Tailwind CSS
-- **Content:** JSON (with optional Google Sheets CMS)
-- **Hosting:** Vercel (static export)
-- **Illustrations:** Inline SVGs
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS
+- **Fonts**: Playfair Display + Inter
+- **Database**: Google Sheets
+- **Hosting**: Vercel
 
-## Local Development
+## Setup
 
-```bash
-# Install dependencies
-npm install
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Copy `.env.example` to `.env.local` and fill in values
+4. Run development server: `npm run dev`
 
-# Start development server
-npm run dev
+## Environment Variables
 
-# Build for production
-npm run build
-
-# Preview production build
-npm run start
+```
+GOOGLE_SHEETS_ID=your-sheet-id
+GOOGLE_SERVICE_ACCOUNT_EMAIL=your-service-account@project.iam.gserviceaccount.com
+GOOGLE_PRIVATE_KEY_BASE64=your-base64-encoded-private-key
+NEXT_PUBLIC_SITE_URL=https://riaddisiena.com
 ```
 
-## Content Management
+## Google Sheets Structure
 
-### Option 1: Edit JSON directly
+The site pulls content from these sheets:
 
-Edit `data/questions.json` to add or modify content. Each question has:
+- **Rooms**: Room listings with prices and features
+- **House_Rules**: Guidelines for guests
+- **Directions**: Step-by-step walking directions
+- **Settings**: Site configuration
+- **Bookings**: Booking inquiries
 
-```json
-{
-  "slug": "url-safe-identifier",
-  "title": "Full question title?",
-  "subtitle": "Optional subtitle",
-  "sections": [
-    { "content": "Introduction paragraph..." },
-    { "heading": "Section Title", "content": "Section content..." }
-  ],
-  "illustrations": [
-    { "id": "illustration-id", "caption": "Caption text", "afterSection": 1 }
-  ],
-  "lastUpdated": "2024-12"
-}
-```
+## Pages
 
-### Option 2: Google Sheets CMS
-
-See `SHEETS_SCHEMA.md` for setup instructions. Configure environment variables:
-
-```env
-GOOGLE_SHEET_ID=your-sheet-id
-GOOGLE_SHEETS_API_KEY=your-api-key
-```
-
-## Adding Illustrations
-
-Illustrations are defined as inline SVGs in `components/Illustration.tsx`. 
-
-Design guidelines:
-- Simple, diagrammatic style
-- Neutral colors (use `currentColor`)
-- No decorative elements
-- Explain systems, not scenes
-- 400x200 typical viewBox
+- `/` - Homepage
+- `/the-riad` - About the property
+- `/rooms` - Room listings (dynamic from Sheets)
+- `/amenities` - What's included
+- `/philosophy` - Wabi-sabi and values
+- `/contact` - Booking inquiry form
+- `/faq` - Frequently asked questions
+- `/house-rules` - Guidelines (dynamic from Sheets)
+- `/directions` - Walking directions (dynamic from Sheets, hidden from nav)
+- `/disclaimer` - Booking disclaimer
+- `/booking-conditions` - Terms for booking
+- `/privacy` - Privacy policy
+- `/terms` - Terms & conditions
+- `/journeys` - Placeholder for Slow Morocco integration
 
 ## Deployment
 
-### Vercel (Recommended)
-
-1. Push to GitHub
-2. Import project in Vercel
-3. Deploy (auto-detected as Next.js)
-
-The site uses static export by default (`output: 'export'` in next.config.mjs).
-
-### Manual Deployment
-
-```bash
-npm run build
-# Output in /out directory - deploy to any static host
-```
-
-## Project Structure
-
-```
-derb/
-├── app/
-│   ├── layout.tsx          # Root layout with header/footer
-│   ├── page.tsx             # Home page
-│   ├── globals.css          # Design system
-│   └── questions/
-│       └── [slug]/page.tsx  # Question pages
-├── components/
-│   └── Illustration.tsx     # SVG illustrations
-├── lib/
-│   ├── questions.ts         # Content loader
-│   ├── sheets.ts            # Google Sheets integration
-│   └── types.ts             # TypeScript types
-├── data/
-│   └── questions.json       # Content data
-└── public/
-    └── illustrations/       # External assets (if needed)
-```
-
-## Content Guidelines
-
-**Tone:**
-- Adult, calm, factual
-- Non-humorous, non-defensive, non-romanticized
-- No tourism language, no "hidden gems"
-- Explain systems, not experiences
-
-**Structure:**
-- 4-6 sections per question
-- 100-200 words per section
-- First section: no heading (introduction)
-- Subsequent sections: clear descriptive headings
-
-**Illustrations:**
-- 1-3 per question
-- Diagrammatic, instructional
-- Placed after relevant sections
-
-## Attribution
-
-Produced by the team behind [Riad di Siena](https://riaddelasiena.com) / [Slow Morocco](https://slowmorocco.com)
-
----
-
-*Derb is an independent urban reference. It is not a travel guide, hospitality site, or marketing material.*
+Push to GitHub, connect to Vercel, add environment variables.
