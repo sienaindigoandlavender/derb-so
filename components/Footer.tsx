@@ -33,7 +33,6 @@ export default function Footer() {
       .catch((err) => console.error("Failed to fetch content sites:", err));
   }, []);
 
-  // Close dropdown on outside click + load Google Translate
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       if (langRef.current && !langRef.current.contains(e.target as Node)) {
@@ -42,7 +41,6 @@ export default function Footer() {
     };
     document.addEventListener("click", handleClick);
 
-    // Inject Google Translate script
     if (!document.getElementById("google-translate-script")) {
       (window as any).googleTranslateElementInit = () => {
         new (window as any).google.translate.TranslateElement(
@@ -90,42 +88,31 @@ export default function Footer() {
 
   return (
     <footer>
-      {/* Level 1: Methodology */}
-      <div className="bg-[#1C1917] text-[#FAF9F6]">
-        <div className="max-w-7xl mx-auto px-6 py-12">
-          <p className="text-xs tracking-wide text-[#A8A29E] max-w-xl leading-relaxed">
-            <span className="text-[#78716C] text-[10px] tracking-[0.2em] uppercase block mb-3">Methodology</span>
-            Derb is an independent urban reference. Content is based on direct observation, local residents, and research into how Morocco&apos;s cities actually work. Cockroaches, plumbing, heat, cats, and everything else.
-          </p>
-        </div>
-      </div>
-
-      {/* Level 2: Navigation + Content Network */}
-      <div className="bg-[#292524] text-[#FAF9F6]">
-        <div className="max-w-7xl mx-auto px-6 py-8">
-          <div className="flex flex-wrap items-start gap-x-12 gap-y-6">
-            {/* Site Nav */}
-            <div className="flex flex-wrap gap-6 text-xs">
-              <Link href="/guides" className="text-[#A8A29E] hover:text-[#FAF9F6] transition-colors">Guides</Link>
-              <Link href="/questions" className="text-[#A8A29E] hover:text-[#FAF9F6] transition-colors">All Questions</Link>
-              <Link href="/about" className="text-[#A8A29E] hover:text-[#FAF9F6] transition-colors">About</Link>
-            </div>
+      {/* Level 1: Navigation + Methodology + Content Network */}
+      <div className="bg-[#1f1f1f]">
+        <div className="max-w-7xl mx-auto px-6 py-5">
+          <div className="flex flex-wrap items-center gap-6 text-xs mb-4">
+            <Link href="/guides" className="text-white/90 hover:text-white transition-colors uppercase tracking-[0.1em]">Guides</Link>
+            <Link href="/questions" className="text-white/90 hover:text-white transition-colors uppercase tracking-[0.1em]">All Questions</Link>
+            <Link href="/about" className="text-white/90 hover:text-white transition-colors uppercase tracking-[0.1em]">About</Link>
           </div>
 
-          {/* Content Network */}
+          <p className="text-xs text-white/70 max-w-xl leading-relaxed mb-4">
+            <span className="text-white/80 text-[10px] tracking-[0.2em] uppercase block mb-2">Methodology</span>
+            Derb is an independent urban reference. Content is based on direct observation, local residents, and research into how Morocco&apos;s cities actually work. Cockroaches, plumbing, heat, cats, and everything else.
+          </p>
+
           {contentSites.length > 0 && (
-            <div className="mt-6 pt-6 border-t border-[#FAF9F6]/10">
+            <div className="pt-4 border-t border-white/10">
               <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-                <span className="text-[10px] tracking-[0.2em] uppercase text-[#FAF9F6]/20">
-                  Explore
-                </span>
+                <span className="text-[9px] tracking-[0.2em] uppercase text-white/70">Explore</span>
                 {contentSites.map((site, idx) => (
                   <a
                     key={idx}
                     href={site.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs tracking-wide text-[#78716C] hover:text-[#A8A29E] transition-colors"
+                    className="text-[10px] text-white/85 hover:text-white transition-colors"
                   >
                     {site.label}
                   </a>
@@ -136,22 +123,20 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Level 3: Legal + Language */}
-      <div className="bg-[#1C1917] text-[#FAF9F6]">
-        <div className="max-w-7xl mx-auto px-6 py-5">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            {/* Legal Links */}
-            <div className="flex flex-wrap gap-6 text-xs">
-              <Link href="/privacy" className="text-[#78716C] hover:text-[#A8A29E] transition-colors">Privacy</Link>
-              <Link href="/terms" className="text-[#78716C] hover:text-[#A8A29E] transition-colors">Terms</Link>
+      {/* Level 2: Legal + Language */}
+      <div className="bg-[#161616]">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
+            <div className="flex flex-wrap items-center gap-6 text-xs">
+              <Link href="/privacy" className="text-white/85 hover:text-white transition-colors">Privacy</Link>
+              <Link href="/terms" className="text-white/85 hover:text-white transition-colors">Terms</Link>
             </div>
 
-            {/* Language Switcher */}
             <div className="flex items-center gap-4 text-xs">
               <div ref={langRef} className="relative">
                 <button
                   onClick={() => setLangOpen(!langOpen)}
-                  className="flex items-center gap-1.5 text-[#78716C] hover:text-[#A8A29E] transition-colors"
+                  className="flex items-center gap-1.5 text-white/85 hover:text-white transition-colors"
                 >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="10" />
@@ -161,48 +146,37 @@ export default function Footer() {
                   <IconChevronDown size={10} />
                 </button>
                 {langOpen && (
-                  <div className="absolute bottom-full mb-2 right-0 bg-[#292524] border border-[#FAF9F6]/10 py-1 min-w-[120px] shadow-lg">
+                  <div className="absolute bottom-full mb-2 right-0 bg-[#292524] border border-white/10 py-1 min-w-[120px] shadow-lg">
                     {LANGUAGES.map((l) => (
                       <button
                         key={l.code}
                         onClick={() => translateTo(l.code, l.label)}
                         className={`block w-full text-left px-3 py-1.5 transition-colors ${
-                          currentLang === l.label ? "text-[#FAF9F6]/90" : "text-[#78716C] hover:text-[#FAF9F6]/90"
+                          currentLang === l.label ? "text-white/90" : "text-white/70 hover:text-white/90"
                         }`}
                       >
                         <span className="inline-block w-6">{l.label}</span>
-                        <span className="text-[#78716C]/60 ml-1">{l.name}</span>
+                        <span className="text-white/50 ml-1">{l.name}</span>
                       </button>
                     ))}
                   </div>
                 )}
               </div>
-
-              {/* Hidden Google Translate container */}
               <div id="google-translate-hidden" className="hidden" />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Level 4: Copyright */}
-      <div className="bg-[#0e0e0e] text-[#FAF9F6]">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
-            <p className="text-[#78716C] text-xs">
-              © {new Date().getFullYear()} Derb. All rights reserved.
-            </p>
-            <p className="text-[#78716C]/60 text-xs">
-              Powered by{" "}
-              <a href="https://slowmorocco.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#A8A29E] transition-colors">Slow Morocco</a>
-              {" · "}
-              <a href="https://derb.so" className="hover:text-[#A8A29E] transition-colors">derb.so</a>
-            </p>
-          </div>
+      {/* Level 3: Powered by */}
+      <div className="bg-[#0e0e0e]">
+        <div className="max-w-7xl mx-auto px-6 py-3">
+          <p className="text-[9px] tracking-[0.15em] uppercase text-white/70 text-center">
+            A <a href="https://www.slowmorocco.com" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">Slow Morocco</a> project / Powered by <a href="https://www.dancingwiththelions.com" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-white transition-colors">Dancing with Lions</a>
+          </p>
         </div>
       </div>
 
-      {/* Hide Google Translate bar and artifacts */}
       <style jsx global>{`
         .goog-te-banner-frame,
         #goog-gt-tt,
