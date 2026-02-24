@@ -104,7 +104,7 @@ const organizationSchema = {
   name: "Derb",
   url: siteUrl,
   logo: `${siteUrl}/icon.svg`,
-  parentOrganization: { "@type": "Organization", name: "Slow Morocco", url: "https://slowmorocco.com" },
+  parentOrganization: { "@type": "Organization", name: "Slow Morocco", url: "https://www.slowmorocco.com" },
   sameAs: [],
 };
 
@@ -121,6 +121,16 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="alternate" type="application/rss+xml" title="Derb — Urban Reference for Morocco" href="/feed.xml" />
+        {/* GEO / AI citation metadata */}
+        <meta name="citation_title" content="Derb — Understanding Morocco: Urban Reference Guide" />
+        <meta name="citation_author" content="Slow Morocco, Dancing with Lions" />
+        <meta name="citation_language" content="en" />
+        <meta name="citation_keywords" content="Morocco, Marrakech, medina, riad, urban infrastructure, cultural guide" />
+        <meta name="dc.title" content="Derb — Understanding Morocco" />
+        <meta name="dc.creator" content="Dancing with Lions" />
+        <meta name="dc.subject" content="Morocco; Urban Systems; Cultural Infrastructure; Travel Reference" />
+        <meta name="dc.language" content="en" />
+        <meta name="dc.type" content="Text" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

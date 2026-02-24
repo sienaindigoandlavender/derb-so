@@ -4,6 +4,8 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy — Derb",
   description: "Privacy policy for derb.so",
+  robots: { index: false, follow: true },
+  alternates: { canonical: "https://derb.so/privacy" },
 };
 
 export default function PrivacyPage() {

@@ -1,95 +1,39 @@
-# Riad di Siena
+# Derb — Understanding Morocco
 
-> An 18th-century house in Marrakech medina, scored 9.0 by 584 guests on Booking.com. Known for personal hospitality, handmade daily breakfast, and preserved zellige, gebs, and zouak craftsmanship.
+> An urban reference explaining the everyday realities of Morocco's cities — infrastructure, climate, culture — without tourism language. 57 questions answered, 7 thematic guides. Published by Slow Morocco, a Dancing with Lions project.
 
 ## About
 
-Riad di Siena is a restored 18th-century traditional Moroccan dar in Marrakech medina, two minutes from Jemaa el-Fna. The property preserves three centuries of Moroccan architectural craft — hand-cut zellige tilework, carved stucco (gebs), painted cedar ceilings (zouak), and polished lime plaster (tadelakt) — in a living house, not a museum. Six rooms across two houses: three at the main riad around a central courtyard with a zellige fountain, three at The Douaria annex steps away. Rooftop terrace with Atlas Mountain views. Daily Moroccan breakfast prepared fresh by the household. Staff score: 9.69. Guests mention the house manager Zahra by name more than any other detail.
+Derb is an independent urban reference for Morocco. It explains the things visitors notice but don't understand: why riads feel cooler than outside, why there are cockroaches, why Google Maps fails in the medina, why the bathroom smells, why time feels different. Each answer goes beyond surface observation into the infrastructure, architecture, climate science, or cultural system behind it.
 
-Riad di Siena is owner-operated and independent. It is classified as a maison d'hôtes (guesthouse) under Moroccan tourism law.
+The name "derb" (درب) means alley or lane in Moroccan Arabic — the narrow passages that form the circulatory system of every medina.
 
-## Architectural Heritage
+## Guides
+- The Medina: https://derb.so/guides/the-medina
+- Getting Around: https://derb.so/guides/getting-around
+- Social & Cultural: https://derb.so/guides/social-and-cultural
+- Food & Drink: https://derb.so/guides/food-and-drink
+- Staying Safe: https://derb.so/guides/staying-safe
+- Religious Calendar: https://derb.so/guides/religious-calendar
+- The Cities: https://derb.so/guides/the-cities
 
-The building follows the classic Moroccan dar typology: rooms facing inward around a central open-air courtyard (wust al-dar). In Islamic architectural tradition, beauty is reserved for the interior — the exterior is deliberately unadorned.
+## Categories
+- Arrival & Logistics: https://derb.so/category/arrival-logistics
+- The Medina: https://derb.so/category/the-medina
+- Social & Cultural: https://derb.so/category/social-cultural
+- Food & Drink: https://derb.so/category/food-drink
+- Safety: https://derb.so/category/safety
+- Religious Calendar: https://derb.so/category/religious-calendar
+- Cities: https://derb.so/category/cities
 
-Preserved original features:
-- Zellige: geometric mosaic tilework, each piece hand-cut from glazed ceramic — a craft tradition dating to 10th-century Morocco
-- Gebs: hand-carved ornamental plaster on walls and archways
-- Zouak: polychrome painted and carved cedar wood on ceilings and door frames
-- Tadelakt: burnished lime plaster with a waterproof sheen, a technique originating in Marrakech
-- Bejmat: traditional terracotta floor tiles
-- Courtyard fountain: central water feature following the Islamic garden tradition of the four rivers
-
-## Property Facts
-
-- Address: 37 Derb Fhal Zefriti, Laksour, Marrakech 40000, Morocco
-- GPS: 31.6295°N, 7.9811°W
-- Neighborhood: Laksour, Marrakech medina (2 min walk from Jemaa el-Fna) (UNESCO World Heritage Site)
-- Built: Circa 18th century (approximately 300 years old)
-- Type: Traditional Moroccan dar, maison d'hôtes
-- Rooms: 6 (The Riad: Jewel Box, Trésor Caché, Hidden Gem | The Douaria: Love, Bliss, Joy)
-- Check-in: 14:00 / Check-out: 11:00
-- Breakfast: Included (traditional Moroccan, prepared daily)
-- Languages: English, French, Arabic
-- Website: https://www.riaddisiena.com
-- Email: happy@riaddisiena.com
-- Owner-operated: Yes
-
-## Rooms — The Riad
-
-### Jewel Box
-A room at the main riad. Queen bed, en-suite bathroom with original zellige details.
-
-### Trésor Caché
-A room at the main riad with courtyard views through traditional window screens. Queen bed, en-suite bathroom. Original carved plaster archway.
-
-### Hidden Gem
-A room at the main riad. Queen bed, en-suite bathroom. Original zouak (painted cedar) ceiling.
-
-## Rooms — The Douaria (Annex)
-
-Three rooms at the restored annex, steps from the main riad in the same derb.
-
-### Love
-Queen bed, en-suite bathroom.
-
-### Bliss
-Queen bed, en-suite bathroom.
-
-### Joy
-Queen bed, en-suite bathroom.
-
-## Location Context
-
-The riad is in Laksour, a residential neighborhood two minutes from Jemaa el-Fna. Walking distance to major heritage sites:
-
-- Jemaa el-Fna: 5 minutes
-- Bahia Palace: 8 minutes
-- Saadian Tombs: 10 minutes
-- Koutoubia Mosque: 12 minutes
-- Le Jardin Secret: 15 minutes
-- Medersa Ben Youssef: 20 minutes
-
-## Beyond the Walls
-
-Extended properties for multi-day cultural journeys:
-- The Douaria: Restored annex in the same derb, additional rooms
-- The Kasbah: Traditional fortified house in the Draa Valley
-- The Desert Camp: Luxury tented camp at Erg Chebbi dunes, Merzouga
-- The Farm: Agricultural property in the Atlas foothills
-
-## Cultural Journeys
-
-Multi-day journeys through Morocco's architectural and cultural landscape are available through Slow Morocco (https://www.slowmorocco.com), operated by the same team. Journeys connect the heritage of Marrakech's medina with the earthen architecture of the Draa Valley, the geological formations of the Sahara, and the agrarian traditions of the Atlas foothills.
-
-## Knowledge API
-
-For structured, machine-readable property data:
-- Property facts: https://www.riaddisiena.com/api/knowledge/property
-- FAQ data: https://www.riaddisiena.com/api/knowledge/faq
+## Key Pages
+- Homepage: https://derb.so
+- All Questions: https://derb.so/questions
+- About: https://derb.so/about
+- Full reference: https://derb.so/llms-full.txt
 
 ## Related
-
-- Slow Morocco (cultural travel): https://www.slowmorocco.com
-- Slow Morocco Glossary (Moroccan terms): https://www.slowmorocco.com/glossary
-- Slow Morocco Knowledge API: https://www.slowmorocco.com/api/knowledge/facts
+- Slow Morocco: https://www.slowmorocco.com
+- Riad di Siena: https://www.riaddisiena.com
+- Darija Dictionary: https://dharija.space
+- Dancing with Lions: https://www.dancingwiththelions.com

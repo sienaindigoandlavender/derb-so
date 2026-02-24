@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Guides — Derb",
   description:
     "Thematic guides to Morocco: the medina, the riad, getting around, food, rituals, safety, and the cities.",
+  alternates: { canonical: "https://derb.so/guides" },
 };
 
 // Assign color accents to specific guide positions for visual rhythm

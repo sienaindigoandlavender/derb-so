@@ -22,6 +22,7 @@ export async function generateMetadata({
   return {
     title: `${guide.title} — Derb`,
     description: guide.description,
+    alternates: { canonical: `https://derb.so/guides/${guide.slug}` },
     openGraph: {
       title: `${guide.title} — Derb`,
       description: guide.description,

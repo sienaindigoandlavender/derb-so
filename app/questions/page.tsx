@@ -5,6 +5,7 @@ export const metadata = {
   title: "Questions",
   description:
     "Browse questions about Morocco: buildings, daily life, getting around, and cultural observations explained.",
+  alternates: { canonical: "https://derb.so/questions" },
 };
 
 export default function QuestionsPage() {
