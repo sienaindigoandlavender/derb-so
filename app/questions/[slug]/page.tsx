@@ -88,7 +88,7 @@ function generateQuestionSchema(question: ReturnType<typeof getQuestionBySlug>) 
       datePublished: question.lastUpdated,
       inLanguage: "en",
       isPartOf: { "@type": "WebSite", name: "Derb", url: siteUrl },
-      publisher: { "@type": "Organization", name: "Slow Morocco", url: "https://slowmorocco.com" },
+      publisher: { "@type": "Organization", name: "Slow Morocco", url: "https://www.slowmorocco.com" },
       author: { "@type": "Organization", name: "Derb", url: siteUrl },
       about: { "@type": "Place", name: "Marrakech, Morocco", geo: { "@type": "GeoCoordinates", latitude: 31.6295, longitude: -7.9811 } },
       ...(question.sources && question.sources.length > 0

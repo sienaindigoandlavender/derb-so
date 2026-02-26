@@ -25,7 +25,7 @@ export default function AboutPage() {
       name: "Derb",
       url: siteUrl,
       description: "An independent urban reference for Morocco.",
-      parentOrganization: { "@type": "Organization", name: "Slow Morocco", url: "https://slowmorocco.com" },
+      parentOrganization: { "@type": "Organization", name: "Slow Morocco", url: "https://www.slowmorocco.com" },
     },
   };
 
@@ -70,11 +70,11 @@ export default function AboutPage() {
             <div className="mb-8">
               <p>
                 Published by{" "}
-                <a href="https://slowmorocco.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.slowmorocco.com" target="_blank" rel="noopener noreferrer">
                   Slow Morocco
                 </a>
                 . If you find an error,{" "}
-                <a href="https://slowmorocco.com/contact" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.slowmorocco.com/contact" target="_blank" rel="noopener noreferrer">
                   let us know
                 </a>
                 .

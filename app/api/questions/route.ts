@@ -17,7 +17,7 @@ export async function GET() {
     publisher: {
       "@type": "Organization",
       name: "Slow Morocco",
-      url: "https://slowmorocco.com",
+      url: "https://www.slowmorocco.com",
     },
     itemListElement: questions.map((q, i) => ({
       "@type": "ListItem",

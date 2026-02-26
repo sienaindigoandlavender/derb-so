@@ -34,7 +34,7 @@ export async function GET(
     publisher: {
       "@type": "Organization",
       name: "Slow Morocco",
-      url: "https://slowmorocco.com",
+      url: "https://www.slowmorocco.com",
     },
     author: {
       "@type": "Organization",

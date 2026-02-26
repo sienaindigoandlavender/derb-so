@@ -32,7 +32,7 @@ export default function Home() {
     publisher: {
       "@type": "Organization",
       name: "Slow Morocco",
-      url: "https://slowmorocco.com",
+      url: "https://www.slowmorocco.com",
     },
   };
 
