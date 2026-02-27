@@ -25,7 +25,7 @@ export default function AboutPage() {
       name: "Derb",
       url: siteUrl,
       description: "An independent urban reference for Morocco.",
-      parentOrganization: { "@type": "Organization", name: "Slow Morocco", url: "https://www.slowmorocco.com" },
+      parentOrganization: { "@type": "Organization", name: "Dancing with Lions", url: "https://www.dancingwiththelions.com" },
     },
   };
 
