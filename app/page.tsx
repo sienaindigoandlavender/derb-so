@@ -8,33 +8,8 @@ export default function Home() {
   const guides = getGuides();
   const questions = getQuestions();
 
-  // FAQPage schema for AI systems
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: questions.map((q) => ({
-      "@type": "Question",
-      name: q.title,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: q.shortAnswer || q.sections[0]?.content || "",
-        url: `https://derb.so/questions/${q.slug}`,
-      },
-    })),
-  };
-
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Derb",
-    url: "https://derb.so",
-    description: "Practical knowledge for visitors to Morocco — the things you notice but can't explain.",
-    publisher: {
-      "@type": "Organization",
-      name: "Slow Morocco",
-      url: "https://www.slowmorocco.com",
-    },
-  };
+  // NOTE: FAQPage and WebSite schemas are rendered in layout.tsx (global)
+  // Do NOT duplicate them here — Google flags "Duplicate field FAQPage"
 
   // Pick a featured question — first question from first guide
   const firstGuide = guides[0];
@@ -51,14 +26,6 @@ export default function Home() {
 
   return (
     <div className="home-page">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-      />
       {/* ZONE 1 — Dark hero */}
       <div className="home-hero">
         <div className="home-hero-inner">
