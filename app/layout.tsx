@@ -104,7 +104,7 @@ const organizationSchema = {
   name: "Derb",
   url: siteUrl,
   logo: `${siteUrl}/icon.svg`,
-  parentOrganization: { "@type": "Organization", name: "Slow Morocco", url: "https://www.slowmorocco.com" },
+  parentOrganization: { "@type": "Organization", name: "Dancing with Lions", url: "https://www.dancingwiththelions.com" },
   sameAs: [],
 };
 
