@@ -6,31 +6,31 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/'],
+        disallow: ['/api/sheets/', '/api/google-index/', '/api/footer/'],
       },
       {
         userAgent: 'GPTBot',
-        allow: '/',
+        allow: ['/', '/api/questions/'],
       },
       {
         userAgent: 'ChatGPT-User',
-        allow: '/',
+        allow: ['/', '/api/questions/'],
       },
       {
         userAgent: 'OAI-SearchBot',
-        allow: '/',
+        allow: ['/', '/api/questions/'],
       },
       {
         userAgent: 'ClaudeBot',
-        allow: '/',
+        allow: ['/', '/api/questions/'],
       },
       {
         userAgent: 'anthropic-ai',
-        allow: '/',
+        allow: ['/', '/api/questions/'],
       },
       {
         userAgent: 'PerplexityBot',
-        allow: '/',
+        allow: ['/', '/api/questions/'],
       },
       {
         userAgent: 'Googlebot',
