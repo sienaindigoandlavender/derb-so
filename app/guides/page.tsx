@@ -9,19 +9,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://derb.so/guides" },
 };
 
-// Assign color accents to specific guide positions for visual rhythm
-const cardColors: Record<number, string> = {
-  1: "terracotta",   // Inside the Riad
-  4: "indigo",       // Food & Drink
-  6: "dark",         // Staying Safe
-};
-
 export default function GuidesPage() {
   const guides = getGuides();
 
   return (
     <div className="guides-index">
-      {/* Dark header */}
+      {/* Header */}
       <div className="guides-index-header">
         <div className="guides-index-header-inner">
           <nav className="guide-breadcrumb">
@@ -29,36 +22,34 @@ export default function GuidesPage() {
           </nav>
           <h1 className="guides-index-title">Guides</h1>
           <p className="guides-index-subtitle">
-            Eight ways into Morocco
+            Seven ways into Morocco
           </p>
         </div>
       </div>
 
-      {/* Cards with color accents */}
-      <div className="guides-grid">
-        {guides.map((guide, i) => {
-          const questions = getGuideQuestions(guide.slug);
-          const isLarge = i === 0 || i === 3;
-          const colorClass = cardColors[i] ? `guides-card--${cardColors[i]}` : "";
-
-          return (
-            <Link
-              key={guide.slug}
-              href={`/guides/${guide.slug}`}
-              className={`guides-card ${isLarge ? "guides-card--large" : ""} ${colorClass}`}
-            >
-              <span className="guides-card-number">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <h2 className="guides-card-title">{guide.title}</h2>
-              <p className="guides-card-subtitle">{guide.subtitle}</p>
-              <p className="guides-card-description">{guide.description}</p>
-              <span className="guides-card-count">
-                {questions.length} observations
-              </span>
-            </Link>
-          );
-        })}
+      {/* List */}
+      <div className="guides-list-wrap">
+        <ol className="guides-list">
+          {guides.map((guide, i) => {
+            const questions = getGuideQuestions(guide.slug);
+            return (
+              <li key={guide.slug} className={`guides-list-item ${i === 0 ? "guides-list-item--lead" : ""}`}>
+                <Link href={`/guides/${guide.slug}`} className="guides-list-link">
+                  <span className="guides-list-num">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="guides-list-body">
+                    <span className="guides-list-title">{guide.title}</span>
+                    <span className="guides-list-sub">{guide.subtitle}</span>
+                    <span className="guides-list-desc">{guide.description}</span>
+                  </span>
+                  <span className="guides-list-meta">
+                    <span className="guides-list-count">{questions.length}</span>
+                    <span className="guides-list-arrow">→</span>
+                  </span>
+                </Link>
+              </li>
+            );
+          })}
+        </ol>
       </div>
     </div>
   );
