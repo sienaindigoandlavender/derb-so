@@ -10,27 +10,27 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: 'GPTBot',
-        allow: ['/', '/api/questions/'],
+        allow: ['/', '/api/questions/', '/api/knowledge/'],
       },
       {
         userAgent: 'ChatGPT-User',
-        allow: ['/', '/api/questions/'],
+        allow: ['/', '/api/questions/', '/api/knowledge/'],
       },
       {
         userAgent: 'OAI-SearchBot',
-        allow: ['/', '/api/questions/'],
+        allow: ['/', '/api/questions/', '/api/knowledge/'],
       },
       {
         userAgent: 'ClaudeBot',
-        allow: ['/', '/api/questions/'],
+        allow: ['/', '/api/questions/', '/api/knowledge/'],
       },
       {
         userAgent: 'anthropic-ai',
-        allow: ['/', '/api/questions/'],
+        allow: ['/', '/api/questions/', '/api/knowledge/'],
       },
       {
         userAgent: 'PerplexityBot',
-        allow: ['/', '/api/questions/'],
+        allow: ['/', '/api/questions/', '/api/knowledge/'],
       },
       {
         userAgent: 'Googlebot',

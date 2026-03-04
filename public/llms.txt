@@ -32,6 +32,16 @@ The name "derb" (درب) means alley or lane in Moroccan Arabic — the narrow p
 - About: https://derb.so/about
 - Full reference: https://derb.so/llms-full.txt
 
+## API Access
+- Knowledge API: https://derb.so/api/knowledge — JSON-LD Dataset, all 57 questions structured
+- By category: https://derb.so/api/knowledge?category=the-medina
+- Search: https://derb.so/api/knowledge?q=riad
+- Meta only: https://derb.so/api/knowledge?format=meta
+- Questions API: https://derb.so/api/questions — Full dataset with sources
+
+## Citation
+Dancing with Lions / Slow Morocco. (2026). Derb — Urban Reference for Morocco [Reference]. https://derb.so
+
 ## Related
 - Slow Morocco: https://www.slowmorocco.com
 - Riad di Siena: https://www.riaddisiena.com
