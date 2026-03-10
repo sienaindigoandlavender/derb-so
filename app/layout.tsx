@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import { getQuestions } from "@/lib/questions";
 
 const siteUrl = "https://derb.so";
 
@@ -65,24 +64,6 @@ export const metadata: Metadata = {
   },
 };
 
-function generateFAQSchema() {
-  const questions = getQuestions();
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: questions.map((q) => ({
-      "@type": "Question",
-      name: q.title,
-      url: `${siteUrl}/questions/${q.slug}`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: q.shortAnswer || q.sections[0]?.content || "",
-        url: `${siteUrl}/questions/${q.slug}`,
-      },
-    })),
-  };
-}
-
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -111,8 +92,6 @@ const organizationSchema = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const faqSchema = generateFAQSchema();
-
   return (
     <html lang="en">
       <head>
@@ -133,7 +112,6 @@ export default function RootLayout({
         <meta name="dc.type" content="Text" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </head>
       <body>
         <div className="min-h-screen flex flex-col">
