@@ -1,19 +1,11 @@
-import { createClient } from "@supabase/supabase-js";
+// ============================================
+// Formerly Nexus — now self-contained
+// All legal content hardcoded with Derb values
+// No external Supabase dependency
+// ============================================
 
 // ============================================================
-// Nexus Supabase — shared config across all brands
-// Replaces old Google Sheets–based nexus
-// ============================================================
-
-const nexusUrl = process.env.NEXUS_SUPABASE_URL || "https://placeholder.supabase.co";
-const nexusKey = process.env.NEXUS_SUPABASE_ANON_KEY || "placeholder";
-
-const nexus = createClient(nexusUrl, nexusKey);
-
-const SITE_ID = process.env.SITE_ID || "derb";
-
-// ============================================================
-// Site Configuration
+// Site Configuration (hardcoded)
 // ============================================================
 
 export interface SiteConfig {
@@ -32,122 +24,104 @@ export interface SiteConfig {
   parent_brand: string | null;
 }
 
-let siteConfigCache: SiteConfig | null = null;
-let siteConfigCacheTime = 0;
-const CACHE_TTL = 60 * 60 * 1000;
+const SITE_CONFIG: SiteConfig = {
+  site_id: "derb",
+  site_name: "Derb",
+  site_url: "https://derb.so",
+  legal_entity: "Derb",
+  contact_email: "hello@derb.so",
+  contact_phone: null,
+  whatsapp: null,
+  jurisdiction_country: "Morocco",
+  jurisdiction_city: "Marrakech",
+  address_line1: "37 Derb Fhal Zefriti, Laksour",
+  address_line2: "Marrakech 40000, Morocco",
+  site_type: "content",
+  parent_brand: "slow-morocco",
+};
 
-export async function getSiteConfig(): Promise<SiteConfig | null> {
-  if (siteConfigCache && Date.now() - siteConfigCacheTime < CACHE_TTL) {
-    return siteConfigCache;
-  }
-  try {
-    const { data, error } = await nexus
-      .from("nexus_sites")
-      .select("*")
-      .eq("site_id", SITE_ID)
-      .single();
-    if (error) {
-      console.error("[Nexus] Site config error:", error.message);
-      return null;
-    }
-    siteConfigCache = data as SiteConfig;
-    siteConfigCacheTime = Date.now();
-    return siteConfigCache;
-  } catch (err) {
-    console.error("[Nexus] Site config fetch failed:", err);
-    return null;
-  }
+export async function getSiteConfig(): Promise<SiteConfig> {
+  return SITE_CONFIG;
 }
 
 // ============================================================
-// Template Variable Resolution
+// Template Variable Resolution (no-op — already resolved)
 // ============================================================
 
 export async function replaceTemplateVariables(content: string): Promise<string> {
-  const siteConfig = await getSiteConfig();
-  if (!siteConfig) {
-    const fallbackVars: Record<string, string> = {
-      "{{site_name}}": "Derb",
-      "{{site_url}}": "https://www.derb.so",
-      "{{legal_entity}}": "Derb",
-      "{{contact_email}}": "hello@derb.so",
-      "{{jurisdiction_country}}": "Morocco",
-      "{{jurisdiction_city}}": "Marrakech",
-      "{{address_line1}}": "37 Derb Fhal Zefriti, Laksour",
-      "{{address_line2}}": "Marrakech 40000, Morocco",
-    };
-    let result = content;
-    for (const [placeholder, value] of Object.entries(fallbackVars)) {
-      result = result.replace(new RegExp(placeholder.replace(/[{}]/g, "\\$&"), "g"), value);
-    }
-    return result;
-  }
-  const templateVars: Record<string, string> = {
-    "{{site_name}}": siteConfig.site_name,
-    "{{site_url}}": siteConfig.site_url,
-    "{{legal_entity}}": siteConfig.legal_entity,
-    "{{contact_email}}": siteConfig.contact_email || "",
-    "{{contact_phone}}": siteConfig.contact_phone || "",
-    "{{whatsapp}}": siteConfig.whatsapp || "",
-    "{{jurisdiction_country}}": siteConfig.jurisdiction_country || "",
-    "{{jurisdiction_city}}": siteConfig.jurisdiction_city || "",
-    "{{address_line1}}": siteConfig.address_line1 || "",
-    "{{address_line2}}": siteConfig.address_line2 || "",
-  };
-  let result = content;
-  for (const [placeholder, value] of Object.entries(templateVars)) {
-    result = result.replace(new RegExp(placeholder.replace(/[{}]/g, "\\$&"), "g"), value);
-  }
-  return result;
+  return content;
 }
 
 // ============================================================
-// Legal Pages
+// Legal Pages (hardcoded)
 // ============================================================
+
+const LEGAL_PAGES: Record<string, { title: string; sections: { title: string; content: string }[] }> = {
+  terms: {
+    title: "Terms of Service",
+    sections: [
+      { title: "Agreement", content: "By accessing or using https://derb.so, operated by Derb, you agree to be bound by these Terms of Service. If you do not agree, please do not use our services." },
+      { title: "Services", content: "Derb provides services as described on our website. All content, features, and functionality are owned by Derb and are protected by international copyright, trademark, and other intellectual property laws." },
+      { title: "User Responsibilities", content: "You agree to provide accurate and complete information, maintain the confidentiality of your account, comply with all applicable laws, and not misuse or attempt to disrupt our services." },
+      { title: "Intellectual Property", content: "All content on this site, including text, graphics, logos, images, photography, videos, and design, is the property of Derb and is protected by copyright laws." },
+      { title: "Limitation of Liability", content: "To the maximum extent permitted by law, Derb shall not be liable for indirect, incidental, or consequential damages arising from use of our services." },
+      { title: "Governing Law", content: "These terms are governed by the laws of Morocco. Any disputes shall be resolved in the courts of Marrakech." },
+      { title: "Contact", content: "Derb, 37 Derb Fhal Zefriti, Laksour, Marrakech 40000, Morocco. Email: hello@derb.so" },
+    ],
+  },
+  privacy: {
+    title: "Privacy Policy",
+    sections: [
+      { title: "Introduction", content: "Derb (\"we\", \"us\", or \"our\") respects your privacy and is committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information when you visit https://derb.so." },
+      { title: "Information We Collect", content: "Information you provide: contact information (name, email) and communications you send us. Information collected automatically: device information, usage data, and cookies." },
+      { title: "How We Use Your Information", content: "To communicate with you about inquiries, improve our website and services, and send occasional updates if you have opted in." },
+      { title: "Your Rights", content: "You have the right to access, correct, or delete your personal data. To exercise these rights, contact us at hello@derb.so." },
+      { title: "Data Security", content: "We implement appropriate security measures including SSL/TLS encryption." },
+      { title: "Contact", content: "Derb, 37 Derb Fhal Zefriti, Laksour, Marrakech 40000, Morocco. Email: hello@derb.so" },
+    ],
+  },
+  disclaimer: {
+    title: "Disclaimer",
+    sections: [
+      { title: "General", content: "The information provided on https://derb.so by Derb is for general informational purposes only. This content does not constitute professional travel, medical, legal, or financial advice." },
+      { title: "Accuracy", content: "While we make every effort to ensure information is accurate and up-to-date, we cannot guarantee completeness. Conditions and regulations change frequently." },
+      { title: "Limitation of Liability", content: "Derb shall not be liable for any damages arising from use or inability to use this site, reliance on information provided, or errors or omissions in content." },
+      { title: "Contact", content: "Derb, 37 Derb Fhal Zefriti, Laksour, Marrakech 40000, Morocco. Email: hello@derb.so" },
+    ],
+  },
+  "intellectual-property": {
+    title: "Intellectual Property",
+    sections: [
+      { title: "Ownership", content: "All intellectual property on https://derb.so is owned by or licensed to Derb." },
+      { title: "Copyrighted Material", content: "Website design and layout, written content and copy, photography and images, videos and multimedia, and descriptions are all protected." },
+      { title: "Permitted Use", content: "You may view content for personal, non-commercial use, share links to our pages, print pages for personal reference, and quote brief excerpts with proper attribution." },
+      { title: "Prohibited Use", content: "Without written permission, you may not copy, reproduce, or duplicate content, modify or create derivative works, distribute or use content commercially, remove copyright notices, or scrape content using automated tools." },
+      { title: "Permission Requests", content: "To request permission to use our content, contact hello@derb.so with subject line 'IP License Request'." },
+      { title: "Contact", content: "Derb, 37 Derb Fhal Zefriti, Laksour, Marrakech 40000, Morocco. Email: hello@derb.so" },
+    ],
+  },
+};
 
 export async function getLegalPageContent(pageId: string): Promise<{
   title: string;
   sections: { title: string; content: string }[];
 }> {
-  try {
-    const { data, error } = await nexus
-      .from("nexus_legal_pages")
-      .select("*")
-      .eq("page_id", pageId)
-      .order("section_order", { ascending: true });
-    if (error || !data || data.length === 0) {
-      return { title: "", sections: [] };
-    }
-    const title = data[0].page_title;
-    const sections = await Promise.all(
-      data.map(async (s: any) => ({
-        title: s.section_title,
-        content: await replaceTemplateVariables(s.section_content),
-      }))
-    );
-    return { title, sections };
-  } catch (err) {
-    console.error("[Nexus] Legal page error:", err);
-    return { title: "", sections: [] };
-  }
+  const page = LEGAL_PAGES[pageId];
+  if (!page) return { title: "", sections: [] };
+  return page;
 }
 
 export async function getLegalPageBySlug(slug: string): Promise<{ title: string; content: string } | null> {
-  try {
-    const pageContent = await getLegalPageContent(slug);
-    if (!pageContent.title && pageContent.sections.length === 0) return null;
-    const content = pageContent.sections
-      .map((s) => `<h2>${s.title}</h2>\n${s.content}`)
-      .join("\n\n");
-    return { title: pageContent.title, content };
-  } catch (error) {
-    console.error(`[Nexus] Error fetching legal page ${slug}:`, error);
-    return null;
-  }
+  const page = LEGAL_PAGES[slug];
+  if (!page) return null;
+  const content = page.sections
+    .map((s) => `<h2>${s.title}</h2>\n${s.content}`)
+    .join("\n\n");
+  return { title: page.title, content };
 }
 
 // ============================================================
-// Content Sites Network (shared footer)
+// Content Sites Network (hardcoded — empty)
 // ============================================================
 
 export interface NexusContentSite {
@@ -159,21 +133,7 @@ export interface NexusContentSite {
 }
 
 export async function getNexusContentSites(): Promise<NexusContentSite[]> {
-  try {
-    const { data, error } = await nexus
-      .from("nexus_content_sites")
-      .select("*")
-      .eq("is_active", true)
-      .order("display_order", { ascending: true });
-    if (error) {
-      console.error("[Nexus] Content sites error:", error.message);
-      return [];
-    }
-    return (data as NexusContentSite[]) || [];
-  } catch (err) {
-    console.error("[Nexus] Content sites fetch failed:", err);
-    return [];
-  }
+  return [];
 }
 
 // ============================================================
@@ -181,7 +141,5 @@ export async function getNexusContentSites(): Promise<NexusContentSite[]> {
 // ============================================================
 
 export function getSiteId(): string {
-  return SITE_ID;
+  return "derb";
 }
-
-export { nexus };
