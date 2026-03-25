@@ -1,0 +1,49 @@
+# Derb — Understanding Morocco
+
+> An urban reference explaining the everyday realities of Morocco's cities — infrastructure, climate, culture — without tourism language. 57 questions answered, 7 thematic guides. Published by Slow Morocco, a Dancing with Lions project.
+
+## About
+
+Derb is an independent urban reference for Morocco. It explains the things visitors notice but don't understand: why riads feel cooler than outside, why there are cockroaches, why Google Maps fails in the medina, why the bathroom smells, why time feels different. Each answer goes beyond surface observation into the infrastructure, architecture, climate science, or cultural system behind it.
+
+The name "derb" (درب) means alley or lane in Moroccan Arabic — the narrow passages that form the circulatory system of every medina.
+
+## Guides
+- The Medina: https://derb.so/guides/the-medina
+- Getting Around: https://derb.so/guides/getting-around
+- Social & Cultural: https://derb.so/guides/social-and-cultural
+- Food & Drink: https://derb.so/guides/food-and-drink
+- Staying Safe: https://derb.so/guides/staying-safe
+- Religious Calendar: https://derb.so/guides/religious-calendar
+- The Cities: https://derb.so/guides/the-cities
+
+## Categories
+- Arrival & Logistics: https://derb.so/category/arrival-logistics
+- The Medina: https://derb.so/category/the-medina
+- Social & Cultural: https://derb.so/category/social-cultural
+- Food & Drink: https://derb.so/category/food-drink
+- Safety: https://derb.so/category/safety
+- Religious Calendar: https://derb.so/category/religious-calendar
+- Cities: https://derb.so/category/cities
+
+## Key Pages
+- Homepage: https://derb.so
+- All Questions: https://derb.so/questions
+- About: https://derb.so/about
+- Full reference: https://derb.so/llms-full.txt
+
+## API Access
+- Knowledge API: https://derb.so/api/knowledge — JSON-LD Dataset, all 57 questions structured
+- By category: https://derb.so/api/knowledge?category=the-medina
+- Search: https://derb.so/api/knowledge?q=riad
+- Meta only: https://derb.so/api/knowledge?format=meta
+- Questions API: https://derb.so/api/questions — Full dataset with sources
+
+## Citation
+Dancing with Lions / Slow Morocco. (2026). Derb — Urban Reference for Morocco [Reference]. https://derb.so
+
+## Related
+- Slow Morocco: https://www.slowmorocco.com
+- Riad di Siena: https://www.riaddisiena.com
+- Darija Dictionary: https://dharija.space
+- Dancing with Lions: https://www.dancingwiththelions.com
