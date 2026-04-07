@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
@@ -110,6 +111,18 @@ export default function RootLayout({
         <meta name="dc.subject" content="Morocco; Urban Systems; Cultural Infrastructure; Travel Reference" />
         <meta name="dc.language" content="en" />
         <meta name="dc.type" content="Text" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-MS7XFWC2NP"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MS7XFWC2NP');
+          `}
+        </Script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       </head>
