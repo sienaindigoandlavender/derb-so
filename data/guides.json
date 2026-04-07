@@ -20,7 +20,11 @@
       "why-are-the-floors-stained-or-uneven",
       "why-does-the-wifi-barely-work",
       "why-does-the-electricity-flicker",
-      "why-are-there-cats-everywhere"
+      "why-are-there-cats-everywhere",
+      "why-are-the-doors-so-low",
+      "why-is-everything-on-the-rooftop",
+      "what-are-the-colorful-tiles",
+      "why-is-the-water-pressure-so-low"
     ]
   },
   {
@@ -36,7 +40,12 @@
       "whats-the-difference-between-petit-and-grand-taxis",
       "how-do-trains-work",
       "how-do-buses-work",
-      "what-plugs-do-they-use"
+      "what-plugs-do-they-use",
+      "how-do-i-get-a-sim-card",
+      "how-do-i-get-from-the-airport-to-my-riad",
+      "do-i-need-a-visa",
+      "how-much-should-i-tip",
+      "where-should-i-exchange-money"
     ]
   },
   {
@@ -55,7 +64,10 @@
       "why-does-everyone-want-cash",
       "how-does-bargaining-work",
       "why-does-everyone-ask-where-im-from",
-      "why-do-people-stare"
+      "why-do-people-stare",
+      "why-does-everyone-speak-so-many-languages",
+      "why-do-shops-close-in-the-afternoon",
+      "can-i-enter-a-mosque"
     ]
   },
   {
@@ -70,7 +82,10 @@
       "why-does-mint-tea-taste-different-here",
       "can-you-eat-vegan",
       "can-you-drink-alcohol",
-      "why-is-my-stomach-upset"
+      "why-is-my-stomach-upset",
+      "why-is-couscous-only-on-fridays",
+      "what-street-food-is-safe-to-eat",
+      "what-is-a-typical-moroccan-breakfast"
     ]
   },
   {
@@ -85,7 +100,9 @@
       "what-is-the-police-touristique",
       "how-do-i-tell-a-real-guide-from-a-fake-one",
       "what-do-i-do-if-i-get-lost-at-night",
-      "why-do-the-streets-look-sketchy"
+      "why-do-the-streets-look-sketchy",
+      "is-it-safe-to-walk-alone-as-a-woman",
+      "what-about-pickpockets"
     ]
   },
   {
@@ -109,7 +126,10 @@
       "why-does-agadir-look-nothing-like-other-moroccan-cities",
       "is-casablanca-worth-visiting",
       "is-rabat-the-capital",
-      "is-taghazout-still-a-surf-village"
+      "is-taghazout-still-a-surf-village",
+      "what-is-essaouira-like",
+      "is-chefchaouen-more-than-the-blue-walls",
+      "can-you-do-the-sahara-as-a-day-trip"
     ]
   }
 ]

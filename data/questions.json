@@ -1063,5 +1063,410 @@
     "backlinks": [],
     "tags": [],
     "sources": []
+  },
+  {
+    "slug": "how-do-i-get-a-sim-card",
+    "title": "How do I get a SIM card?",
+    "category": "arrival-logistics",
+    "shortAnswer": "Airport kiosks or any phone shop. Three networks: Maroc Telecom, Orange, inwi.",
+    "sections": [
+      {
+        "content": "Maroc Telecom has the widest coverage, especially in rural and mountain areas. Orange and inwi are cheaper and fine in cities. A prepaid SIM with 20GB of data costs 50–100 MAD. You'll need your passport. Top up at any corner shop displaying the operator's logo."
+      },
+      {
+        "content": "eSIM works on newer phones — Airalo and Orange sell them online before you arrive. Useful if you want data from the moment you land. Wifi in riads is unreliable, so mobile data is your backup for maps, translation, and messaging."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-does-the-wifi-barely-work"],
+    "searchTerms": ["morocco sim card", "morocco mobile data", "esim morocco"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "how-do-i-get-from-the-airport-to-my-riad",
+    "title": "How do I get from the airport to my riad?",
+    "category": "arrival-logistics",
+    "shortAnswer": "Fixed-fare taxi from the rank outside arrivals. Your riad sends someone to meet you at the medina gate.",
+    "sections": [
+      {
+        "content": "Marrakech Menara airport to the medina: fixed fare of 100–150 MAD (posted on a sign at the taxi rank). Ignore anyone approaching you inside the terminal — walk outside to the official rank. The taxi takes you to the nearest gate or drop-off point. From there, your riad will have arranged someone to walk you through the derbs to the door."
+      },
+      {
+        "content": "Most riads offer airport transfers for 150–250 MAD if arranged in advance. Worth it on a first visit — especially arriving at night. Confirm the price and the meeting point by WhatsApp before you fly."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-cant-taxi-take-me-to-the-door", "why-is-the-riad-so-hard-to-find"],
+    "searchTerms": ["marrakech airport taxi", "airport to medina", "airport transfer morocco"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "do-i-need-a-visa",
+    "title": "Do I need a visa?",
+    "category": "arrival-logistics",
+    "shortAnswer": "Citizens of 69 countries can enter visa-free for up to 90 days.",
+    "sections": [
+      {
+        "content": "EU, UK, US, Canada, Australia, and most of South America — no visa required for stays up to 90 days. Your passport must be valid for at least six months from the date of entry. There is no visa-on-arrival system — if your nationality requires a visa, apply at a Moroccan consulate before travelling."
+      },
+      {
+        "content": "Overstaying is taken seriously. Extensions are theoretically possible through the local police prefecture, but the process is slow and uncertain. If you overstay, expect questioning at departure and a potential ban on re-entry."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": [],
+    "searchTerms": ["morocco visa", "visa free morocco", "morocco passport requirements"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "how-much-should-i-tip",
+    "title": "How much should I tip?",
+    "category": "arrival-logistics",
+    "shortAnswer": "Small, frequent, and in cash.",
+    "sections": [
+      {
+        "content": "Restaurants: 10–15% if service isn't included (check the bill for *service compris*). Cafés: round up or leave 5–10 MAD. Riad staff: 50–100 MAD per day, left at checkout. Guides: 100–200 MAD for a half-day. Taxi drivers: round up to the nearest 5 or 10 MAD. Porters, parking attendants, someone who walks you to your riad: 10–20 MAD."
+      },
+      {
+        "content": "Tipping is expected, not optional. Many people in the service economy rely on tips as a core part of their income. Carry small notes — 10 and 20 MAD denominations go fast."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-does-everyone-want-cash"],
+    "searchTerms": ["tipping morocco", "how much to tip marrakech", "morocco tip guide"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "where-should-i-exchange-money",
+    "title": "Where should I exchange money?",
+    "category": "arrival-logistics",
+    "shortAnswer": "ATMs give the best rate. Avoid the airport bureau de change.",
+    "sections": [
+      {
+        "content": "ATMs are everywhere — BMCE, Attijariwafa, and Banque Populaire are the most common. They dispense dirhams at the interbank rate, which is better than any exchange counter. Most charge 20–30 MAD per withdrawal. Check your home bank's foreign transaction fees before relying on this."
+      },
+      {
+        "content": "The Moroccan dirham (MAD) is a semi-closed currency — you can't easily buy it abroad before you arrive, and you can't take large amounts out of the country. Exchange leftover dirhams back at the airport on departure. Bureaux de change in the medina offer decent rates if you're exchanging euros or dollars in cash. The airport rate is always the worst."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-does-everyone-want-cash"],
+    "searchTerms": ["morocco money exchange", "moroccan dirham", "atm morocco"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "why-are-the-doors-so-low",
+    "title": "Why are the doors so low?",
+    "category": "the-medina",
+    "shortAnswer": "Defence, humility, and keeping mounted riders out.",
+    "sections": [
+      {
+        "content": "Low doorways forced anyone entering to bow — a gesture of humility crossing a threshold. They also prevented entry on horseback, which mattered in a city where raids and tribal conflicts were routine for centuries. The large outer doors (*bab*) have a smaller door cut into them — the small one is for daily use, the full door only opens for moving furniture or animals."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-is-the-riad-so-hard-to-find", "what-is-a-medina"],
+    "searchTerms": ["moroccan doors low", "riad small doors", "medina door design"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "why-is-everything-on-the-rooftop",
+    "title": "Why is everything on the rooftop?",
+    "category": "the-medina",
+    "shortAnswer": "The rooftop is the riad's outdoor room — the only private open-air space.",
+    "sections": [
+      {
+        "content": "Medina houses face inward. There are no gardens, no balconies, no front yards. The rooftop is where laundry dries, solar water heaters sit, satellite dishes point, and families spend summer evenings. In riads converted to guesthouses, the terrace becomes the breakfast spot, the sunset bar, the place to escape the courtyard heat. It's the only point where you can see beyond your own walls."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-can-you-hear-everything", "why-is-it-so-cold-inside-in-winter"],
+    "searchTerms": ["riad rooftop", "marrakech terrace", "moroccan rooftop culture"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "what-are-the-colorful-tiles",
+    "title": "What are the colorful tiles everywhere?",
+    "category": "the-medina",
+    "shortAnswer": "Zellige — hand-cut geometric mosaic tilework.",
+    "sections": [
+      {
+        "content": "Each tile is hand-shaped from a glazed clay slab using a hammer and chisel, then assembled face-down into geometric patterns. The craft dates to the 10th century and is centred in Fes. No two panels are identical because the process is manual — slight variations in colour, size, and angle are features, not flaws. The geometric patterns follow Islamic art principles: no figurative imagery, infinite mathematical repetition."
+      },
+      {
+        "content": "Zellige cracks over time because the tiles are porous and the buildings they cover shift with temperature and moisture. Cracked zellige in an old riad is a sign of age and authenticity. Modern reproductions are factory-cut and uniform — you can spot the difference immediately."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-are-the-floors-stained-or-uneven", "why-are-the-walls-stained-or-bubbling"],
+    "searchTerms": ["zellige tiles", "moroccan tiles", "geometric tiles morocco"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "why-is-the-water-pressure-so-low",
+    "title": "Why is the water pressure so low?",
+    "category": "the-medina",
+    "shortAnswer": "Old pipes, shared supply lines, and rooftop tanks.",
+    "sections": [
+      {
+        "content": "Most medina buildings rely on a rooftop tank that fills from the mains overnight and feeds the building by gravity during the day. Gravity pressure drops the higher your floor is relative to the tank — ground-floor bathrooms often have better flow than upper rooms. Multiple properties share the same supply pipe from the street, so when several riads fill their tanks or run showers at the same time, pressure drops across the block."
+      },
+      {
+        "content": "The mains infrastructure in older quarters dates to the protectorate era — narrow pipes, corroded joints, and low municipal pressure. Some riads install booster pumps, but many don't. Hot water pressure is often worse than cold, because it passes through an undersized water heater before reaching you. A trickle in the shower at 8am on a busy morning is the system working as it can, not a malfunction."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-does-the-bathroom-smell", "why-does-the-electricity-flicker"],
+    "searchTerms": ["riad water pressure", "marrakech shower pressure", "morocco low water pressure"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "why-does-everyone-speak-so-many-languages",
+    "title": "Why does everyone speak so many languages?",
+    "category": "social-cultural",
+    "shortAnswer": "Morocco's history layered Arabic, Tamazight, French, and Spanish on top of each other.",
+    "sections": [
+      {
+        "content": "Darija (Moroccan Arabic) is the street language — distinct enough from Gulf Arabic that speakers of each struggle to understand the other. Tamazight (Berber) is spoken natively by roughly a third of the population and became an official language in 2011. French is the language of business, higher education, and government administration — a legacy of the protectorate (1912–1956). Spanish is common in the north (Tangier, Tetouan, Nador) from Spain's separate protectorate zone."
+      },
+      {
+        "content": "In tourist areas, shopkeepers routinely switch between four or five languages mid-sentence. It's not a performance — it's practical multilingualism learned through commerce, not school. A few words of French or Darija (*shukran* — thank you, *la bas* — how are you) go further than fluent English."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-does-everyone-ask-where-im-from"],
+    "searchTerms": ["morocco languages", "darija", "do they speak french in morocco"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "why-do-shops-close-in-the-afternoon",
+    "title": "Why do shops close in the afternoon?",
+    "category": "social-cultural",
+    "shortAnswer": "Prayer, heat, and the midday meal — not siesta.",
+    "sections": [
+      {
+        "content": "Many shops in the medina close between roughly 1pm and 3pm. The midday break aligns with Dhuhr prayer, the heaviest heat of the day, and the main family meal. Shopkeepers eat at home with their families — lunch is the most important meal, not dinner. Tourist-facing businesses in Jemaa el-Fna and the main souks often stay open, but deeper in the medina, the shutters come down. Everything reopens by late afternoon and stays open into the evening."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-does-time-work-differently-here"],
+    "searchTerms": ["morocco shops closed", "marrakech opening hours", "souk closed afternoon"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "can-i-enter-a-mosque",
+    "title": "Can I enter a mosque as a non-Muslim?",
+    "category": "social-cultural",
+    "shortAnswer": "Almost nowhere. Two exceptions in the entire country.",
+    "sections": [
+      {
+        "content": "Non-Muslims are not permitted to enter mosques in Morocco. The restriction was formalised during the French protectorate under Resident-General Lyautey, who wanted to avoid colonial friction in religious spaces. It has remained in place since independence. The only two exceptions: the Hassan II Mosque in Casablanca (guided tours outside prayer times) and the Tinmel Mosque in the High Atlas (partially ruined, open as a historical site). Every other mosque — including the Koutoubia, the Kairaouine in Fes, and neighbourhood mosques — is closed to non-Muslim visitors."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["can-you-go-inside-the-koutoubia-mosque", "is-casablanca-worth-visiting"],
+    "searchTerms": ["can you visit mosque morocco", "non muslim mosque morocco", "hassan ii mosque tour"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "why-is-couscous-only-on-fridays",
+    "title": "Why is couscous only on Fridays?",
+    "category": "food-drink",
+    "shortAnswer": "Friday is the communal day — couscous is the communal dish.",
+    "sections": [
+      {
+        "content": "Friday is the Islamic day of congregation. Families gather after the midday Jumu'ah prayer for the biggest meal of the week, and that meal is couscous — hand-rolled semolina steamed over a broth of vegetables and meat. It's not a rule, but it's deeply ingrained. Restaurants that serve couscous daily are catering to tourists. If you want the real version, eat it on a Friday, ideally in someone's home."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["how-do-you-eat-from-a-shared-tagine"],
+    "searchTerms": ["couscous friday morocco", "why couscous friday", "moroccan couscous tradition"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "what-street-food-is-safe-to-eat",
+    "title": "What street food is safe to eat?",
+    "category": "food-drink",
+    "shortAnswer": "Follow the queue. High turnover means fresh food.",
+    "sections": [
+      {
+        "content": "Stalls where locals line up are the safest — high turnover means nothing sits. Snail soup (*babbouche*) from the carts in Jemaa el-Fna, grilled merguez, *msemen* from the flatbread stands, fresh-squeezed orange juice (4–5 MAD), and roasted corn are all standard street food. The risk isn't spice or unfamiliarity — it's food that's been sitting uncovered in heat. Avoid pre-cut fruit and anything lukewarm."
+      },
+      {
+        "content": "The numbered stalls in Jemaa el-Fna are more theatre than food — locals eat at the smaller, less visible stalls on the edges. If in doubt, look for the stall with the shortest gap between cooking and serving."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-is-my-stomach-upset"],
+    "searchTerms": ["morocco street food safe", "jemaa el fna food", "marrakech street food"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "what-is-a-typical-moroccan-breakfast",
+    "title": "What is a typical Moroccan breakfast?",
+    "category": "food-drink",
+    "shortAnswer": "Bread, olive oil, honey, amlou, and mint tea. More substantial than you'd expect.",
+    "sections": [
+      {
+        "content": "Moroccan breakfast centres on bread — *khobz* (round loaves), *msemen* (layered flatbread), *baghrir* (spongy semolina pancakes with hundreds of tiny holes), and *harcha* (semolina griddle bread). These come with olive oil, butter, honey, *amlou* (a paste of argan oil, almonds, and honey), soft cheese, jam, and hard-boiled eggs. Mint tea or coffee with milk (*nous nous* — \"half half\")."
+      },
+      {
+        "content": "Riad breakfasts are generous — often the best meal of the day. Street-side, a *msemen* with honey and a coffee costs 15–20 MAD."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["why-does-mint-tea-taste-different-here"],
+    "searchTerms": ["moroccan breakfast", "msemen", "baghrir", "riad breakfast"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "is-it-safe-to-walk-alone-as-a-woman",
+    "title": "Is it safe to walk alone as a woman?",
+    "category": "safety",
+    "shortAnswer": "Generally yes, with awareness. Verbal harassment is common; physical risk is low.",
+    "sections": [
+      {
+        "content": "Solo women travellers are common in Morocco and most report feeling safe. What's also common is unsolicited attention — comments, catcalls, persistent conversation attempts, and being followed for a block or two. This is irritating rather than dangerous, but it's real and frequent, especially in Marrakech and Fes medinas. It tends to come from younger men and drops sharply outside tourist areas."
+      },
+      {
+        "content": "Practical steps: walk with purpose, don't engage with persistent approaches, and learn *la shukran* (no thank you) and *sir f'halek* (go away). Dress isn't the main factor — Moroccan women also experience street harassment regardless of clothing — but covering shoulders and knees reduces attention. At night, stick to lit streets or take a taxi. The medina is safest during the hours when families are out — mornings, late afternoons, early evenings."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["what-do-i-do-if-i-get-lost-at-night", "what-is-the-police-touristique"],
+    "searchTerms": ["solo female travel morocco", "is morocco safe for women", "woman alone marrakech"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "what-about-pickpockets",
+    "title": "What about pickpockets?",
+    "category": "safety",
+    "shortAnswer": "Present in crowds, rare in quiet streets.",
+    "sections": [
+      {
+        "content": "Pickpocketing concentrates where tourists concentrate — Jemaa el-Fna, the main souk entrances, bus stations, and crowded festival nights. The method is standard: distraction (someone bumps you, asks you a question, points at something) while a second person reaches for your pocket or open bag. Phone snatching from motorbikes happens occasionally on medina edges and main roads."
+      },
+      {
+        "content": "Practical: front pockets or a cross-body bag. Phone in hand, not back pocket. Don't carry more cash than you need for the day. Leave your passport in the riad safe — a photo on your phone is enough for ID. Morocco's violent crime rate is low; the risk is opportunistic theft, not confrontation."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["what-is-the-police-touristique", "why-do-the-streets-look-sketchy"],
+    "searchTerms": ["pickpockets marrakech", "morocco theft", "is marrakech safe"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "what-is-essaouira-like",
+    "title": "What is Essaouira like?",
+    "category": "cities",
+    "shortAnswer": "Wind, seafood, and a medina you can actually navigate.",
+    "sections": [
+      {
+        "content": "Essaouira is Marrakech's coastal counterpoint — 2.5 hours west by bus. The medina is compact, grid-like (built by a French architect in the 18th century), and walkable without getting lost. The Atlantic wind (*alizé*) blows constantly — it's 10–15°C cooler than Marrakech in summer, which makes it a relief, but it also means the beach is for walking and kitesurfing, not sunbathing."
+      },
+      {
+        "content": "The port is working — sardine boats unload daily and the catch goes straight to the grills at the harbour. The town has a strong arts scene, a relaxed pace, and a famous annual Gnaoua music festival (usually June). It's where Moroccans go to escape the heat."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["how-do-buses-work"],
+    "searchTerms": ["essaouira morocco", "marrakech to essaouira", "essaouira beach wind"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "is-chefchaouen-more-than-the-blue-walls",
+    "title": "Is Chefchaouen more than the blue walls?",
+    "category": "cities",
+    "shortAnswer": "The blue is real. So is the Rif mountain setting, the hiking, and the hash.",
+    "sections": [
+      {
+        "content": "The blue-washed walls are genuine — originally associated with the town's Jewish community (blue symbolising the sky and heaven), now maintained as tradition and, increasingly, tourism branding. Chefchaouen sits at 600m in the Rif Mountains. The air is cooler, the pace is slower, and the medina is small enough to explore in a few hours."
+      },
+      {
+        "content": "Beyond the blue: the Rif offers serious hiking — the Talassemtane National Park surrounds the town, with trails through cedar and fir forests. The region is also Morocco's cannabis heartland — you'll be offered it openly and repeatedly. Possession is technically illegal but enforcement in Chefchaouen is minimal. Getting there: CTM bus from Fes (~4 hours) or Tangier (~3 hours). No train."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["how-do-buses-work"],
+    "searchTerms": ["chefchaouen blue city", "chefchaouen worth visiting", "chefchaouen hiking"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
+  },
+  {
+    "slug": "can-you-do-the-sahara-as-a-day-trip",
+    "title": "Can you do the Sahara as a day trip?",
+    "category": "cities",
+    "shortAnswer": "No. The nearest dunes are a 9-hour drive from Marrakech.",
+    "sections": [
+      {
+        "content": "Merzouga (Erg Chebbi dunes) is 560km from Marrakech — about 9 hours by road through the Atlas Mountains and the Draa Valley. Zagora is closer (~6.5 hours) but its dunes are smaller and less dramatic. Any \"Sahara day trip\" sold in Marrakech is either a drive to a patch of flat desert that isn't the Sahara, or a punishing 18-hour round trip. The real experience requires at least two nights — one in the desert camp, and travel days either side."
+      },
+      {
+        "content": "The drive itself is half the point — the Tizi n'Tichka pass (2,260m), the Aït Benhaddou kasbah, the Todra Gorge, and the Draa palm groves are all on the route. Most people book a private driver or join a small-group tour. Self-driving is possible but demanding — mountain roads are narrow and truck traffic is heavy."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-04-07",
+    "relatedSlugs": ["how-do-buses-work", "how-do-trains-work"],
+    "searchTerms": ["sahara day trip marrakech", "merzouga from marrakech", "morocco desert tour"],
+    "backlinks": [],
+    "tags": [],
+    "sources": []
   }
 ]
