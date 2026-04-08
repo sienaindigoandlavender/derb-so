@@ -1,0 +1,128 @@
+[
+  {
+    "darija": "derb",
+    "arabic": "درب",
+    "english": "alley / neighborhood",
+    "pronunciation": "DERB",
+    "note": "A small residential alley in the medina, or the neighborhood it defines. The basic unit of medina social life."
+  },
+  {
+    "darija": "mdina qdima",
+    "arabic": "مدينة قديمة",
+    "english": "old medina",
+    "pronunciation": "mdi-NA qdi-MA",
+    "note": "The historic walled city center. Narrow winding streets, souks, riads."
+  },
+  {
+    "darija": "bab",
+    "arabic": "باب",
+    "english": "door / gate",
+    "pronunciation": "BAB",
+    "note": "The monumental gates of Moroccan cities — Bab Agnaou, Bab Doukkala. Used for navigation."
+  },
+  {
+    "darija": "zanqa",
+    "arabic": "زنقة",
+    "english": "street / alley",
+    "pronunciation": "ZAN-qa",
+    "note": "The narrow streets of the medina. Used for addresses: zanqa X, derb Y."
+  },
+  {
+    "darija": "riad",
+    "arabic": "رياض",
+    "english": "riad",
+    "pronunciation": "ri-YAD",
+    "note": "House with interior courtyard. From the Arabic for garden."
+  },
+  {
+    "darija": "suq",
+    "arabic": "سوق",
+    "english": "market / souk",
+    "pronunciation": "SUQ",
+    "note": "The traditional market. Organized by trade — spice souk, leather souk, carpet souk."
+  },
+  {
+    "darija": "7anut",
+    "arabic": "حانوت",
+    "english": "corner shop",
+    "pronunciation": "HA-nut",
+    "note": "The neighborhood corner store. Sells everything from bread to phone credit. Every derb has one."
+  },
+  {
+    "darija": "zelij",
+    "arabic": "زليج",
+    "english": "zellige tiles",
+    "pronunciation": "ze-LIJ",
+    "note": "Hand-cut geometric mosaic tilework. Found in riads, mosques, and fountains across Morocco."
+  },
+  {
+    "darija": "wst ddar",
+    "arabic": "وسط الدار",
+    "english": "courtyard",
+    "pronunciation": "wst d-DAR",
+    "note": "The central open-air courtyard of a riad. The heart of traditional Moroccan domestic life."
+  },
+  {
+    "darija": "qsba",
+    "arabic": "قصبة",
+    "english": "citadel / casbah",
+    "pronunciation": "QS-ba",
+    "note": "A fortified quarter or citadel. Historically where the ruler and garrison lived."
+  },
+  {
+    "darija": "atay",
+    "arabic": "أتاي",
+    "english": "mint tea",
+    "pronunciation": "a-TAY",
+    "note": "THE Moroccan drink. Gunpowder green tea, fresh spearmint, and lots of sugar. Refusing is rude."
+  },
+  {
+    "darija": "tajin",
+    "arabic": "طاجين",
+    "english": "tagine",
+    "pronunciation": "TA-jin",
+    "note": "Both the conical clay pot and the slow-cooked dish. The most iconic Moroccan dish."
+  },
+  {
+    "darija": "khobz",
+    "arabic": "خبز",
+    "english": "bread",
+    "pronunciation": "KHOBZ",
+    "note": "Round flatbread, the staple of every meal. Never thrown away — given to the poor or fed to animals."
+  },
+  {
+    "darija": "ferran",
+    "arabic": "فرّان",
+    "english": "communal oven",
+    "pronunciation": "fer-RAN",
+    "note": "The neighborhood bread oven where families send their dough to be baked. A social institution."
+  },
+  {
+    "darija": "salam",
+    "arabic": "سلام",
+    "english": "hello / peace",
+    "pronunciation": "sa-LAM",
+    "note": "The universal Moroccan greeting. Used any time of day. Often followed by labas? (how are you?)."
+  },
+  {
+    "darija": "balak",
+    "arabic": "بالاك",
+    "english": "watch out!",
+    "pronunciation": "BA-lak",
+    "note": "You'll hear this constantly in the medina — from motorbikes, donkeys, and carts squeezing through."
+  },
+  {
+    "darija": "taksi",
+    "arabic": "طاكسي",
+    "english": "taxi",
+    "pronunciation": "TAK-si",
+    "note": "Petit taxi (within city, by meter — in theory) and grand taxi (between cities, shared)."
+  },
+  {
+    "darija": "mnara",
+    "arabic": "منارة",
+    "english": "minaret",
+    "pronunciation": "mna-RA",
+    "note": "The tower of a mosque from which the call to prayer is broadcast. A medina landmark."
+  }
+]

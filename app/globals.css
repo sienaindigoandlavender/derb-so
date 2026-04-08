@@ -499,6 +499,127 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 400; letter-spacin
   padding-top: 0.1rem;
 }
 
+/* DARIJA SPOTLIGHT */
+.darija-section {
+  background: var(--surface);
+  border-top: 1px solid var(--rule);
+  padding: 4rem 2rem 4.5rem;
+}
+.darija-section-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.darija-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.darija-label {
+  font-family: var(--font-sans);
+  font-size: 0.55rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--terracotta);
+  white-space: nowrap;
+}
+.darija-intro {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--fg-soft);
+  max-width: 540px;
+  margin-bottom: 2.5rem;
+}
+.darija-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border-top: 1px solid var(--rule);
+}
+@media (min-width: 640px) {
+  .darija-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 960px) {
+  .darija-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+.darija-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.5rem 1.25rem 1.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+@media (min-width: 640px) {
+  .darija-card { padding: 1.5rem 1.25rem; }
+  .darija-card:not(:nth-child(2n)) { border-right: 1px solid var(--rule); }
+}
+@media (min-width: 960px) {
+  .darija-card:not(:nth-child(2n)) { border-right: none; }
+  .darija-card:not(:nth-child(3n)) { border-right: 1px solid var(--rule); }
+}
+.darija-card-top {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+.darija-word {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--foreground);
+  letter-spacing: -0.01em;
+}
+.darija-arabic {
+  font-size: 1rem;
+  color: var(--fg-faded);
+  direction: rtl;
+}
+.darija-pron {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--terracotta);
+}
+.darija-english {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--foreground);
+}
+.darija-note {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.55;
+  color: var(--fg-soft);
+  margin-top: 0.25rem;
+}
+.darija-cta {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+.darija-cta p {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--fg-soft);
+}
+.darija-cta a {
+  font-weight: 500;
+  color: var(--terracotta);
+  border-bottom: 1px solid rgba(196, 90, 60, 0.3);
+  transition: border-color 0.2s;
+}
+.darija-cta a:hover {
+  border-color: var(--terracotta);
+}
+
 /* FOOTER NOTE */
 .home-footer-note {
   background: var(--surface);

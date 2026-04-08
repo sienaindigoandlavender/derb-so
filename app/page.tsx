@@ -1,5 +1,6 @@
 import Link from "next/link";
 import HomeSearch from "@/components/HomeSearch";
+import DarijaSpotlight from "@/components/DarijaSpotlight";
 import { getGuides } from "@/lib/guides";
 import { getQuestions } from "@/lib/questions";
 import { categoryLabels, Category } from "@/lib/types";
@@ -83,6 +84,9 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      {/* DARIJA SPOTLIGHT */}
+      <DarijaSpotlight />
 
       {/* FOOTER NOTE */}
       <div className="home-footer-note">
