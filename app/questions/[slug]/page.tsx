@@ -52,11 +52,13 @@ export async function generateMetadata({
       modifiedTime: question.lastUpdated,
       section: categoryLabels[question.category],
       authors: ["Derb"],
+      images: [{ url: "https://derb.so/og-image.png", width: 1200, height: 630, alt: question.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: question.title,
       description,
+      images: ["https://derb.so/og-image.png"],
     },
   };
 }

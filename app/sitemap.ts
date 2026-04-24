@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const guideUrls = guides.map((g) => ({
     url: `${baseUrl}/guides/${g.slug}`,
-    lastModified: new Date(),
+    lastModified: new Date("2026-04-24"),
     changeFrequency: 'weekly' as const,
     priority: 0.9,
   }));
@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categories = Object.keys(categoryLabels) as Category[];
   const categoryUrls = categories.map((c) => ({
     url: `${baseUrl}/category/${c}`,
-    lastModified: new Date(),
+    lastModified: new Date("2026-04-24"),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }));
