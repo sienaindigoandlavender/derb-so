@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: "article",
       url: `https://derb.so/guides/${guide.slug}`,
       siteName: "Derb",
+      images: [{ url: "https://derb.so/og-image.png", width: 1200, height: 630, alt: guide.title }],
     },
   };
 }

@@ -6,3 +6,4 @@ out/
 .env.production.local
 .env.development.local
 npm-debug.log*
+*.tsbuildinfo
