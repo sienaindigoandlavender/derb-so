@@ -118,7 +118,13 @@
       "Morocco taxi types explained",
       "grand taxi Morocco how to use"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "url": "https://www.slowmorocco.com/morocco",
+        "type": "story",
+        "title": "Morocco — Slow Morocco"
+      }
+    ],
     "tags": [],
     "sources": [
       {
@@ -219,7 +225,18 @@
       "old walled city Morocco medina",
       "difference between medina and ville nouvelle"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "url": "https://www.slowmorocco.com/places",
+        "type": "place",
+        "title": "Places — Slow Morocco"
+      },
+      {
+        "url": "https://darija.io",
+        "type": "story",
+        "title": "Darija Dictionary"
+      }
+    ],
     "tags": [],
     "sources": [
       {
@@ -320,7 +337,18 @@
       "find riad in medina",
       "no signs on riad Marrakech"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "url": "https://www.riaddisiena.com",
+        "type": "place",
+        "title": "Riad di Siena — Marrakech"
+      },
+      {
+        "url": "https://www.slowmorocco.com/places",
+        "type": "place",
+        "title": "Places — Slow Morocco"
+      }
+    ],
     "tags": [],
     "sources": [
       {
@@ -349,7 +377,18 @@
       "thermal mass riad cold",
       "Marrakech in winter how cold"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "url": "https://www.riaddisiena.com",
+        "type": "place",
+        "title": "Riad di Siena — Marrakech"
+      },
+      {
+        "url": "https://www.slowmorocco.com/stories",
+        "type": "story",
+        "title": "Stories — Slow Morocco"
+      }
+    ],
     "tags": [],
     "sources": [
       {
@@ -522,7 +561,13 @@
       "handmade tile imperfections Morocco",
       "why are riad floors uneven"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "url": "https://www.slowmorocco.com/stories",
+        "type": "story",
+        "title": "Stories — Slow Morocco"
+      }
+    ],
     "tags": [],
     "sources": []
   },
@@ -669,7 +714,13 @@
       "snake charmer photo cost Marrakech",
       "ask before photographing Morocco"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "url": "https://www.slowmorocco.com/morocco",
+        "type": "story",
+        "title": "Morocco — Slow Morocco"
+      }
+    ],
     "tags": [],
     "sources": [
       {
@@ -722,7 +773,13 @@
       "Article 489 Morocco penal code",
       "Morocco same-sex laws tourists"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "url": "https://www.slowmorocco.com/morocco",
+        "type": "story",
+        "title": "Morocco — Slow Morocco"
+      }
+    ],
     "tags": [],
     "sources": [
       {
@@ -1025,7 +1082,13 @@
       "Carrefour alcohol Morocco",
       "Moroccan beer wine brands"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "url": "https://www.slowmorocco.com/morocco",
+        "type": "story",
+        "title": "Morocco — Slow Morocco"
+      }
+    ],
     "tags": [],
     "sources": [
       {
@@ -1291,7 +1354,18 @@
       "what happens during Eid al-Adha Morocco",
       "Morocco sheep festival explained"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "url": "https://www.slowmorocco.com/stories",
+        "type": "story",
+        "title": "Stories — Slow Morocco"
+      },
+      {
+        "url": "https://darija.io",
+        "type": "story",
+        "title": "Darija Dictionary"
+      }
+    ],
     "tags": [],
     "sources": [
       {
@@ -1426,7 +1500,13 @@
       "Morocco capital city history",
       "Morocco imperial cities Fes Marrakech Meknes Rabat"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "url": "https://www.slowmorocco.com/destinations",
+        "type": "story",
+        "title": "Destinations — Slow Morocco"
+      }
+    ],
     "tags": [],
     "sources": [
       {
