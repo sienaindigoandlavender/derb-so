@@ -19,7 +19,13 @@
       "why no cars in medina streets",
       "Morocco medina car free zone"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "text": "Getting Around Morocco",
+        "url": "https://www.slowmorocco.com/morocco/getting-around",
+        "type": "story"
+      }
+    ],
     "tags": [],
     "sources": []
   },
@@ -43,7 +49,13 @@
       "do you pay tourist tax in Morocco",
       "Moroccan accommodation tax explained"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "text": "Morocco Travel Guide",
+        "url": "https://www.slowmorocco.com/morocco",
+        "type": "story"
+      }
+    ],
     "tags": [],
     "sources": []
   },
@@ -70,7 +82,13 @@
       "Uber alternative Morocco",
       "is there Lyft in Marrakech"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "text": "Getting Around Morocco",
+        "url": "https://www.slowmorocco.com/morocco/getting-around",
+        "type": "story"
+      }
+    ],
     "tags": [],
     "sources": []
   },
@@ -94,7 +112,13 @@
       "how to ask taxi to use meter Morocco",
       "Marrakech taxi fare meter dispute"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "text": "Getting Around Morocco",
+        "url": "https://www.slowmorocco.com/morocco/getting-around",
+        "type": "story"
+      }
+    ],
     "tags": [],
     "sources": []
   },
@@ -120,9 +144,9 @@
     ],
     "backlinks": [
       {
-        "url": "https://www.slowmorocco.com/morocco",
-        "type": "story",
-        "title": "Morocco — Slow Morocco"
+        "text": "Getting Around Morocco — Slow Morocco",
+        "url": "https://www.slowmorocco.com/morocco/getting-around",
+        "type": "story"
       }
     ],
     "tags": [],
@@ -153,7 +177,13 @@
       "trains in Morocco for tourists",
       "Morocco train network explained"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "text": "Getting Around Morocco",
+        "url": "https://www.slowmorocco.com/morocco/getting-around",
+        "type": "story"
+      }
+    ],
     "tags": [],
     "sources": []
   },
@@ -177,7 +207,13 @@
       "Morocco long distance bus",
       "how to travel Morocco by bus"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "text": "Getting Around Morocco",
+        "url": "https://www.slowmorocco.com/morocco/getting-around",
+        "type": "story"
+      }
+    ],
     "tags": [],
     "sources": []
   },
@@ -201,7 +237,13 @@
       "Morocco electricity voltage",
       "do I need adapter for Morocco"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "text": "Morocco Travel Guide",
+        "url": "https://www.slowmorocco.com/morocco",
+        "type": "story"
+      }
+    ],
     "tags": [],
     "sources": []
   },
@@ -227,14 +269,14 @@
     ],
     "backlinks": [
       {
+        "text": "Places — Slow Morocco",
         "url": "https://www.slowmorocco.com/places",
-        "type": "place",
-        "title": "Places — Slow Morocco"
+        "type": "place"
       },
       {
+        "text": "Darija Dictionary",
         "url": "https://darija.io",
-        "type": "story",
-        "title": "Darija Dictionary"
+        "type": "story"
       }
     ],
     "tags": [],
@@ -265,7 +307,13 @@
       "why GPS inaccurate Morocco medina",
       "Google Maps fail Marrakech old city"
     ],
-    "backlinks": [],
+    "backlinks": [
+      {
+        "text": "Morocco Travel Guide",
+        "url": "https://www.slowmorocco.com/morocco",
+        "type": "story"
+      }
+    ],
     "tags": [],
     "sources": []
   },
@@ -339,14 +387,14 @@
     ],
     "backlinks": [
       {
+        "text": "Riad di Siena — Marrakech",
         "url": "https://www.riaddisiena.com",
-        "type": "place",
-        "title": "Riad di Siena — Marrakech"
+        "type": "place"
       },
       {
+        "text": "Places — Slow Morocco",
         "url": "https://www.slowmorocco.com/places",
-        "type": "place",
-        "title": "Places — Slow Morocco"
+        "type": "place"
       }
     ],
     "tags": [],
@@ -379,14 +427,9 @@
     ],
     "backlinks": [
       {
+        "text": "Riad di Siena — Marrakech",
         "url": "https://www.riaddisiena.com",
-        "type": "place",
-        "title": "Riad di Siena — Marrakech"
-      },
-      {
-        "url": "https://www.slowmorocco.com/stories",
-        "type": "story",
-        "title": "Stories — Slow Morocco"
+        "type": "place"
       }
     ],
     "tags": [],
@@ -716,9 +759,9 @@
     ],
     "backlinks": [
       {
+        "text": "Morocco Travel Guide",
         "url": "https://www.slowmorocco.com/morocco",
-        "type": "story",
-        "title": "Morocco — Slow Morocco"
+        "type": "story"
       }
     ],
     "tags": [],
@@ -775,9 +818,9 @@
     ],
     "backlinks": [
       {
-        "url": "https://www.slowmorocco.com/morocco",
-        "type": "story",
-        "title": "Morocco — Slow Morocco"
+        "text": "Is Morocco Safe?",
+        "url": "https://www.slowmorocco.com/morocco/is-morocco-safe",
+        "type": "story"
       }
     ],
     "tags": [],
@@ -1084,9 +1127,9 @@
     ],
     "backlinks": [
       {
+        "text": "Morocco Travel Guide",
         "url": "https://www.slowmorocco.com/morocco",
-        "type": "story",
-        "title": "Morocco — Slow Morocco"
+        "type": "story"
       }
     ],
     "tags": [],
@@ -1356,14 +1399,14 @@
     ],
     "backlinks": [
       {
+        "text": "Stories — Slow Morocco",
         "url": "https://www.slowmorocco.com/stories",
-        "type": "story",
-        "title": "Stories — Slow Morocco"
+        "type": "story"
       },
       {
+        "text": "Darija Dictionary",
         "url": "https://darija.io",
-        "type": "story",
-        "title": "Darija Dictionary"
+        "type": "story"
       }
     ],
     "tags": [],
@@ -1502,9 +1545,9 @@
     ],
     "backlinks": [
       {
-        "url": "https://www.slowmorocco.com/destinations",
-        "type": "story",
-        "title": "Destinations — Slow Morocco"
+        "text": "Morocco — Slow Morocco",
+        "url": "https://www.slowmorocco.com/morocco",
+        "type": "story"
       }
     ],
     "tags": [],
