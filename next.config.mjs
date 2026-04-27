@@ -30,6 +30,21 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/questions/why-streets-feel-narrower",
+        destination: "/questions/what-is-a-medina",
+        permanent: true,
+      },
+      {
+        source: "/questions/why-ground-feels-warmer",
+        destination: "/questions/why-is-it-so-cold-inside-in-winter",
+        permanent: true,
+      },
+      {
+        source: "/questions/why-houses-inward-facing",
+        destination: "/questions/why-is-the-riad-so-hard-to-find",
+        permanent: true,
+      },
     ];
   },
 };

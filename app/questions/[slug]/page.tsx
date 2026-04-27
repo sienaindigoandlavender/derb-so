@@ -113,7 +113,12 @@ function generateQuestionSchema(question: ReturnType<typeof getQuestionBySlug>) 
         answerCount: 1,
         acceptedAnswer: {
           "@type": "Answer",
-          text: question.shortAnswer || question.sections[0]?.content || "",
+          text: [
+            question.shortAnswer,
+            ...question.sections.map((s) => s.content),
+          ]
+            .filter(Boolean)
+            .join(" "),
           url: pageUrl,
           dateModified: question.lastUpdated,
         },
