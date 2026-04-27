@@ -19,6 +19,12 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.derb.so" }],
+        destination: "https://derb.so/:path*",
+        permanent: true,
+      },
+      {
         source: "/",
         has: [{ type: "query", key: "page_id" }],
         destination: "/",
@@ -42,6 +48,11 @@ const nextConfig = {
       },
       {
         source: "/questions/why-houses-inward-facing",
+        destination: "/questions/why-is-the-riad-so-hard-to-find",
+        permanent: true,
+      },
+      {
+        source: "/questions/why-riad-far-from-square",
         destination: "/questions/why-is-the-riad-so-hard-to-find",
         permanent: true,
       },
