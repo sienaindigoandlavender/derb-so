@@ -1585,5 +1585,116 @@
     "backlinks": [],
     "tags": [],
     "sources": []
+  },
+  {
+    "slug": "why-is-it-so-humid-inside-the-riad",
+    "title": "Why is it so humid inside the riad?",
+    "category": "the-medina",
+    "shortAnswer": "The courtyard is open to the sky, and the walls drink water.",
+    "sections": [
+      {
+        "content": "A riad is built around an open central courtyard — the wast al-dar. Rain falls into it. The fountain runs into it. The citrus tree gets watered into it. Every bedroom door opens onto that air, not onto a corridor, so there is no humidity barrier between the courtyard and the bed. By morning the towels are damp."
+      },
+      {
+        "content": "The walls compound it. Traditional construction is rammed earth or fired brick, finished in tadelakt — a polished lime plaster the Almohads were already using in the 12th century. Tadelakt breathes. It absorbs moisture from the air in winter and releases it slowly back, which is exactly what you want in summer at 45°C and exactly what makes January feel like a damp cave. Drywall would fix it. Nobody uses drywall."
+      },
+      {
+        "content": "Then the geology. Marrakech sits on a high water table fed by Atlas snowmelt, and the medieval city was watered by a network of khettara — underground channels engineered around 1078. Many medina houses are built directly over wells. Floor tiles laid on a bed of sand wick whatever rises. The rainy season runs November to March; in an unheated riad the indoor humidity in those months commonly sits between 70 and 85 percent. Hang nothing you need to wear the next day."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-05-10",
+    "relatedSlugs": [
+      "why-is-it-so-cold-inside-in-winter",
+      "why-dont-riads-have-windows"
+    ],
+    "searchTerms": [
+      "why is it humid inside a riad",
+      "Marrakech riad humidity winter",
+      "tadelakt moisture absorption",
+      "damp riad Morocco morning",
+      "riad condensation humidity percentage"
+    ],
+    "backlinks": [
+      {
+        "text": "Riad di Siena — Marrakech",
+        "url": "https://www.riaddisiena.com",
+        "type": "place"
+      },
+      {
+        "text": "Inside the Riad — Slow Morocco",
+        "url": "https://www.slowmorocco.com/morocco/inside-the-riad",
+        "type": "story"
+      }
+    ],
+    "tags": [],
+    "sources": [
+      {
+        "text": "Tadelakt — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Tadelakt"
+      },
+      {
+        "text": "Riad — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Riad"
+      },
+      {
+        "text": "Khettara — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Qanat"
+      }
+    ]
+  },
+  {
+    "slug": "why-dont-riads-have-windows",
+    "title": "Why don't riads have windows?",
+    "category": "the-medina",
+    "shortAnswer": "The courtyard is the window. The street gets nothing.",
+    "sections": [
+      {
+        "content": "A riad faces inward. Light, air, and sky enter from the open courtyard at the centre, and every room hangs off that void. Outward windows would defeat the design. The Arabic riyad means garden; the garden is the orientation. The street is only where the door happens to be."
+      },
+      {
+        "content": "There is also the principle of hurma — the inviolability of the household. Classical Maliki jurisprudence, which has governed Moroccan cities since the Almoravids in the 11th century, treats a sight-line into a neighbour's interior as a real harm. No window may look down onto another roof. No balcony may face another door. The blank wall to the derb isn't shyness, it's law. When upper-floor windows do exist, they're screened by moucharabieh — carved wooden lattice that lets the woman inside see out without letting the man outside see in."
+      },
+      {
+        "content": "Climate finishes the argument. The derbs are one to two metres wide, deliberately narrow for shade. Outside in July it's 45°C of dust, donkeys, motorbikes, and the goldsmith's hammer three doors down. Windows onto that would let in heat, noise, and the smell of the tannery. The blank wall keeps all of it out. The riad you wake up in is silent because the architecture is doing its job."
+      }
+    ],
+    "illustrations": [],
+    "lastUpdated": "2026-05-10",
+    "relatedSlugs": [
+      "why-is-the-riad-so-hard-to-find",
+      "why-is-it-so-humid-inside-the-riad",
+      "why-is-it-so-cold-inside-in-winter"
+    ],
+    "searchTerms": [
+      "why don't riads have windows",
+      "Moroccan house no windows on street",
+      "riad inward facing courtyard design",
+      "moucharabieh wooden lattice Morocco",
+      "hurma Islamic privacy architecture"
+    ],
+    "backlinks": [
+      {
+        "text": "Riad di Siena — Marrakech",
+        "url": "https://www.riaddisiena.com",
+        "type": "place"
+      },
+      {
+        "text": "Inside the Riad — Slow Morocco",
+        "url": "https://www.slowmorocco.com/morocco/inside-the-riad",
+        "type": "story"
+      }
+    ],
+    "tags": [],
+    "sources": [
+      {
+        "text": "Riad — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Riad"
+      },
+      {
+        "text": "Mashrabiya — Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mashrabiya"
+      }
+    ]
   }
 ]
