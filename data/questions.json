@@ -1276,21 +1276,36 @@
     "slug": "how-do-i-tell-a-real-guide-from-a-fake-one",
     "title": "How do I tell a real guide from a fake one?",
     "category": "safety",
-    "shortAnswer": "Official guides carry a large circular brass badge.",
+    "shortAnswer": "Official guides carry a brass badge. Don't follow anyone else — they want money and can get unpleasant.",
     "sections": [
       {
-        "content": "It's issued by the Ministry of Tourism — visible, hard to miss. Official guides have completed a government training programme and are licensed for specific cities. Anyone without the badge offering to \"show you around\" is freelance. They may know the medina well, but there's no accountability if the tour ends at a cousin's carpet shop. Locals who offer unsolicited directions often expect a tip — 10 to 20 dirhams is standard if you accept."
+        "content": "Official guides wear a large circular brass disc on the chest, issued by the Ministère du Tourisme — number engraved, photo card backed by a national register. They've completed a multi-year programme and are certified for one specific city: a Marrakech guide cannot officially guide Fes. Any riad owner or hotel concierge can verify a number by phone before you set off."
+      },
+      {
+        "content": "The rule for everyone else is simple: don't follow anyone who offers to help. The boy who says today is the special Berber market is steering you to a cousin's shop. The man who says \"the square is this way\" and walks you there expects 50 to 100 dirhams when you arrive, and can turn unpleasant — sometimes loudly so — if you don't pay. Common scripts: this street is closed, the palace is closed, the museum closed an hour ago, the tannery is just around the corner, the photo spot is right down here. None of it is true. Keep walking, don't slow down, don't make eye contact, don't say thank you. Thank-you in Darija (\"shukran\") is read as the start of a conversation, not the end of one."
+      },
+      {
+        "content": "Even an unlicensed local who genuinely knows the medina is a risk: there is no accountability when the route ends at a cousin's carpet shop, and the soft pressure to buy is the whole point of the walk. Real informal help — a neighbour pointing you toward your riad on the day of arrival, a shopkeeper drawing you a map — is a different exchange, usually 10 to 20 dirhams for the courtesy. The difference is who started the conversation. If they approached you, they want money."
+      },
+      {
+        "content": "If a self-appointed guide attaches themselves anyway, the calmest exit is to step into a shop — any shop — and pretend to browse. They won't follow. Or ask a uniformed officer for directions: the Brigade Touristique is visible on the main squares in Marrakech, Fes, Casablanca, Rabat, Tangier, and Agadir."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
-    "relatedSlugs": [],
+    "lastUpdated": "2026-05-10",
+    "relatedSlugs": [
+      "what-do-i-do-if-i-get-lost-at-night",
+      "why-do-the-streets-look-sketchy",
+      "what-is-the-police-touristique"
+    ],
     "searchTerms": [
       "how to spot fake guide Marrakech",
-      "official guide badge Morocco",
+      "official guide badge Morocco brass",
       "licensed guide Morocco how to verify",
       "carpet shop scam guide Marrakech",
-      "real medina guide vs fake"
+      "medina is closed today scam",
+      "Moroccan fake guide harassment",
+      "do not follow guides Morocco"
     ],
     "backlinks": [],
     "tags": [],
