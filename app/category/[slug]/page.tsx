@@ -114,11 +114,7 @@ export default async function CategoryPage({ params }: PageProps) {
     name: meta.h1,
     description: meta.description,
     url: `${siteUrl}/category/${slug}`,
-    isPartOf: {
-      "@type": "WebSite",
-      name: "Derb",
-      url: siteUrl,
-    },
+    isPartOf: { "@type": "WebSite", name: "Derb", url: siteUrl },
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: questions.length,
@@ -135,105 +131,87 @@ export default async function CategoryPage({ params }: PageProps) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Derb",
-        item: siteUrl,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Questions",
-        item: `${siteUrl}/questions`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: meta.h1,
-        item: `${siteUrl}/category/${slug}`,
-      },
+      { "@type": "ListItem", position: 1, name: "Derb", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Questions", item: `${siteUrl}/questions` },
+      { "@type": "ListItem", position: 3, name: meta.h1, item: `${siteUrl}/category/${slug}` },
     ],
   };
 
   return (
-    <div className="container">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+    <div className="max-w-content mx-auto px-6 py-16">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <div className="max-w-prose">
-        {/* Breadcrumb */}
-        <nav className="mb-8" aria-label="Breadcrumb">
-          <ol className="flex items-center gap-2 text-small text-muted">
-            <li>
-              <a href="/" className="hover:opacity-70 transition-opacity">
-                Derb
-              </a>
-            </li>
-            <li className="opacity-40">/</li>
-            <li>
-              <a
-                href="/questions"
-                className="hover:opacity-70 transition-opacity"
-              >
-                Questions
-              </a>
-            </li>
-            <li className="opacity-40">/</li>
-            <li className="opacity-70">{meta.h1}</li>
-          </ol>
-        </nav>
+      <nav
+        className="font-mono text-meta uppercase tracking-wide text-tertiary mb-8 flex items-center gap-2"
+        aria-label="Breadcrumb"
+      >
+        <Link href="/" className="hover:text-accent transition-colors">Derb</Link>
+        <span aria-hidden>/</span>
+        <Link href="/questions" className="hover:text-accent transition-colors">Questions</Link>
+        <span aria-hidden>/</span>
+        <span>{meta.h1}</span>
+      </nav>
 
-        <header className="mb-10">
-          <h1 className="text-display font-serif mb-4">{meta.h1}</h1>
-          <p className="text-body text-muted">{meta.intro}</p>
-        </header>
+      <header className="max-w-prose mb-12">
+        <p className="font-mono text-meta uppercase tracking-wide text-accent mb-3">
+          Category
+        </p>
+        <h1 className="font-serif text-5xl leading-tight text-ink mb-4">
+          {meta.h1}
+        </h1>
+        <p className="text-lg text-secondary">{meta.intro}</p>
+      </header>
 
-        <div className="category-question-list">
-          {questions.map((q) => (
+      <ol className="border-t border-border">
+        {questions.map((q, i) => (
+          <li key={q.slug} className="border-b border-border">
             <Link
-              key={q.slug}
               href={`/questions/${q.slug}`}
-              className="category-question-item"
+              className="flex items-baseline gap-4 py-5 group"
             >
-              <span className="category-question-title">{q.title}</span>
-              {q.shortAnswer && (
-                <span className="category-question-short">
-                  {q.shortAnswer.length > 120
-                    ? q.shortAnswer.slice(0, 120) + "…"
-                    : q.shortAnswer}
+              <span className="font-mono text-meta text-tertiary w-8 shrink-0 pt-1">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className="flex-1 min-w-0 max-w-prose">
+                <span className="block font-serif text-xl text-ink group-hover:text-accent transition-colors">
+                  {q.title}
                 </span>
-              )}
+                {q.shortAnswer && (
+                  <span className="block text-secondary mt-1">
+                    {q.shortAnswer.length > 160
+                      ? q.shortAnswer.slice(0, 160) + "…"
+                      : q.shortAnswer}
+                  </span>
+                )}
+              </span>
+              <span className="font-mono text-meta text-accent opacity-0 group-hover:opacity-100 transition-opacity shrink-0 pt-2">
+                →
+              </span>
             </Link>
-          ))}
-        </div>
+          </li>
+        ))}
+      </ol>
 
-        {/* Other categories */}
-        <nav className="mt-16 pt-8 border-t border-border">
-          <p className="text-small font-medium text-muted uppercase tracking-wide mb-4">
-            Other categories
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {validCategories
-              .filter((c) => c !== category)
-              .map((c) => (
+      <nav className="mt-16 pt-8 border-t border-border">
+        <p className="font-mono text-meta uppercase tracking-wide text-tertiary mb-4">
+          Other categories
+        </p>
+        <ul className="flex flex-wrap gap-x-5 gap-y-2">
+          {validCategories
+            .filter((c) => c !== category)
+            .map((c) => (
+              <li key={c}>
                 <Link
-                  key={c}
                   href={`/category/${c}`}
-                  className="tag hover:opacity-70 transition-opacity"
+                  className="text-ink hover:text-accent border-b border-border hover:border-accent transition-colors"
                 >
                   {categoryLabels[c]}
                 </Link>
-              ))}
-          </div>
-        </nav>
-      </div>
+              </li>
+            ))}
+        </ul>
+      </nav>
     </div>
   );
 }

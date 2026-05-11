@@ -60,75 +60,102 @@ export default async function GuidePage({ params }: PageProps) {
   const prevGuide = allGuides[(currentIndex - 1 + allGuides.length) % allGuides.length];
 
   return (
-    <div className="guide-page">
-
-      {/* Dark hero — structural, not decorative */}
-      <div className="guide-hero">
-        <div className="guide-hero-inner">
-          <nav className="guide-breadcrumb">
-            <Link href="/">Derb</Link>
-            <span>/</span>
-            <Link href="/guides">Guides</Link>
-          </nav>
-          <p className="guide-number">
-            {String(currentIndex + 1).padStart(2, "0")} / {String(allGuides.length).padStart(2, "0")}
-          </p>
-          <h1 className="guide-title">{guide.title}</h1>
-          <p className="guide-subtitle">{guide.subtitle}</p>
-          <p className="guide-description">{guide.description}</p>
-          <p className="guide-count">{questions.length} observations</p>
-        </div>
-      </div>
-
-      {/* Single-canvas question list — no coloured zones */}
-      <div className="guide-body">
-        <div className="guide-body-inner">
-          <ol className="guide-question-list">
-            {questions.map((q, i) => {
-              if (!q) return null;
-              const isFeatured = i === 0;
-              return (
-                <li
-                  key={q.slug}
-                  className={`guide-q-item ${isFeatured ? "guide-q-item--lead" : ""}`}
-                  id={q.slug}
-                >
-                  <Link href={`/questions/${q.slug}`} className="guide-q-link">
-                    <span className="guide-q-num">{String(i + 1).padStart(2, "0")}</span>
-                    <span className="guide-q-body">
-                      <span className="guide-q-title">{q.title}</span>
-                      {q.shortAnswer && (
-                        <span className="guide-q-answer">
-                          {renderInlineLinks(q.shortAnswer)}
-                        </span>
-                      )}
-                      {isFeatured && q.sections[0] && (
-                        <span className="guide-q-excerpt">
-                          {q.sections[0].content.slice(0, 220)}{q.sections[0].content.length > 220 ? "…" : ""}
-                        </span>
-                      )}
-                    </span>
-                    <span className="guide-q-arrow">→</span>
-                  </Link>
-                </li>
-              );
-            })}
-          </ol>
-        </div>
-      </div>
-
-      {/* Guide navigation */}
-      <nav className="guide-nav">
-        <Link href={`/guides/${prevGuide.slug}`} className="guide-nav-link">
-          <span className="guide-nav-label">← Previous</span>
-          <span className="guide-nav-title">{prevGuide.title}</span>
-        </Link>
-        <Link href={`/guides/${nextGuide.slug}`} className="guide-nav-link guide-nav-link--next">
-          <span className="guide-nav-label">Next →</span>
-          <span className="guide-nav-title">{nextGuide.title}</span>
-        </Link>
+    <div className="max-w-content mx-auto px-6 py-16">
+      <nav
+        className="font-mono text-meta uppercase tracking-wide text-tertiary mb-8 flex items-center gap-2"
+        aria-label="Breadcrumb"
+      >
+        <Link href="/" className="hover:text-accent transition-colors">Derb</Link>
+        <span aria-hidden>/</span>
+        <Link href="/guides" className="hover:text-accent transition-colors">Guides</Link>
       </nav>
 
+      <header className="max-w-prose mb-12">
+        <p className="font-mono text-meta uppercase tracking-wide text-accent mb-3">
+          Guide {String(currentIndex + 1).padStart(2, "0")} / {String(allGuides.length).padStart(2, "0")}
+        </p>
+        <h1 className="font-serif text-5xl leading-tight text-ink mb-3">
+          {guide.title}
+        </h1>
+        {guide.subtitle ? (
+          <p className="font-serif italic text-xl text-tertiary mb-4">
+            {guide.subtitle}
+          </p>
+        ) : null}
+        {guide.description ? (
+          <p className="text-lg text-secondary">{guide.description}</p>
+        ) : null}
+        <p className="font-mono text-meta uppercase tracking-wide text-tertiary mt-6 pt-4 border-t border-border">
+          {questions.length} observations
+        </p>
+      </header>
+
+      <ol className="border-t border-border">
+        {questions.map((q, i) => {
+          if (!q) return null;
+          const isFeatured = i === 0;
+          return (
+            <li key={q.slug} id={q.slug} className="border-b border-border">
+              <Link
+                href={`/questions/${q.slug}`}
+                className={`flex items-baseline gap-6 group ${isFeatured ? "py-8" : "py-6"}`}
+              >
+                <span className="font-mono text-meta text-tertiary w-10 shrink-0 pt-1">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="flex-1 min-w-0 max-w-prose">
+                  <span
+                    className={`block font-serif text-ink group-hover:text-accent transition-colors ${
+                      isFeatured ? "text-2xl md:text-3xl" : "text-xl"
+                    }`}
+                  >
+                    {q.title}
+                  </span>
+                  {q.shortAnswer ? (
+                    <span className="block text-secondary mt-2">
+                      {renderInlineLinks(q.shortAnswer)}
+                    </span>
+                  ) : null}
+                  {isFeatured && q.sections[0] ? (
+                    <span className="block text-tertiary mt-3 border-l border-border pl-4">
+                      {q.sections[0].content.slice(0, 220)}
+                      {q.sections[0].content.length > 220 ? "…" : ""}
+                    </span>
+                  ) : null}
+                </span>
+                <span className="font-mono text-meta text-accent opacity-0 group-hover:opacity-100 transition-opacity shrink-0 pt-2">
+                  →
+                </span>
+              </Link>
+            </li>
+          );
+        })}
+      </ol>
+
+      <nav className="mt-16 grid grid-cols-1 md:grid-cols-2 border-t border-border">
+        <Link
+          href={`/guides/${prevGuide.slug}`}
+          className="block py-6 md:pr-8 md:border-r border-border group"
+        >
+          <p className="font-mono text-meta uppercase tracking-wide text-tertiary mb-1">
+            ← Previous guide
+          </p>
+          <p className="font-serif text-xl text-ink group-hover:text-accent transition-colors">
+            {prevGuide.title}
+          </p>
+        </Link>
+        <Link
+          href={`/guides/${nextGuide.slug}`}
+          className="block py-6 md:pl-8 md:text-right group"
+        >
+          <p className="font-mono text-meta uppercase tracking-wide text-tertiary mb-1">
+            Next guide →
+          </p>
+          <p className="font-serif text-xl text-ink group-hover:text-accent transition-colors">
+            {nextGuide.title}
+          </p>
+        </Link>
+      </nav>
     </div>
   );
 }

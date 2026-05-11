@@ -192,15 +192,15 @@ export function Illustration({ id, caption, inline = true }: IllustrationProps) 
   }
 
   return (
-    <figure className={`illustration ${inline ? 'illustration--inline' : ''}`}>
-      <div className="illustration-inner">
-        <div className="text-foreground" style={{ color: 'rgba(255,255,255,0.7)' }}>
-          {svg}
-        </div>
-        {caption && (
-          <figcaption>{caption}</figcaption>
-        )}
+    <figure className={`my-10 max-w-prose ${inline ? "" : "max-w-content"}`}>
+      <div className="bg-codebg border border-border p-8 flex items-center justify-center">
+        <div className="text-secondary w-full max-w-md">{svg}</div>
       </div>
+      {caption && (
+        <figcaption className="mt-3 font-mono text-meta uppercase tracking-wide text-tertiary">
+          {caption}
+        </figcaption>
+      )}
     </figure>
   );
 }

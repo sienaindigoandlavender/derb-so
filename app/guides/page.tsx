@@ -13,44 +13,61 @@ export default function GuidesPage() {
   const guides = getGuides();
 
   return (
-    <div className="guides-index">
-      {/* Header */}
-      <div className="guides-index-header">
-        <div className="guides-index-header-inner">
-          <nav className="guide-breadcrumb">
-            <Link href="/">Derb</Link>
-          </nav>
-          <h1 className="guides-index-title">Guides</h1>
-          <p className="guides-index-subtitle">
-            Seven ways into Morocco
-          </p>
-        </div>
-      </div>
+    <div className="max-w-content mx-auto px-6 py-16">
+      <nav
+        className="font-mono text-meta uppercase tracking-wide text-tertiary mb-8 flex items-center gap-2"
+        aria-label="Breadcrumb"
+      >
+        <Link href="/" className="hover:text-accent transition-colors">Derb</Link>
+        <span aria-hidden>/</span>
+        <span>Guides</span>
+      </nav>
 
-      {/* List */}
-      <div className="guides-list-wrap">
-        <ol className="guides-list">
-          {guides.map((guide, i) => {
-            const questions = getGuideQuestions(guide.slug);
-            return (
-              <li key={guide.slug} className={`guides-list-item ${i === 0 ? "guides-list-item--lead" : ""}`}>
-                <Link href={`/guides/${guide.slug}`} className="guides-list-link">
-                  <span className="guides-list-num">{String(i + 1).padStart(2, "0")}</span>
-                  <span className="guides-list-body">
-                    <span className="guides-list-title">{guide.title}</span>
-                    <span className="guides-list-sub">{guide.subtitle}</span>
-                    <span className="guides-list-desc">{guide.description}</span>
+      <header className="max-w-prose mb-16">
+        <h1 className="font-serif text-5xl leading-tight text-ink mb-4">
+          Guides
+        </h1>
+        <p className="text-lg text-secondary">
+          Seven ways into Morocco — thematic entry points that group related
+          questions, observations, and references.
+        </p>
+      </header>
+
+      <ol className="border-t border-border">
+        {guides.map((guide, i) => {
+          const questions = getGuideQuestions(guide.slug);
+          return (
+            <li key={guide.slug} className="border-b border-border">
+              <Link
+                href={`/guides/${guide.slug}`}
+                className="flex items-baseline gap-6 py-8 group"
+              >
+                <span className="font-mono text-meta text-tertiary w-10 shrink-0 pt-1">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="flex-1 min-w-0 max-w-prose">
+                  <span className="block font-serif text-2xl md:text-3xl text-ink group-hover:text-accent transition-colors">
+                    {guide.title}
                   </span>
-                  <span className="guides-list-meta">
-                    <span className="guides-list-count">{questions.length}</span>
-                    <span className="guides-list-arrow">→</span>
-                  </span>
-                </Link>
-              </li>
-            );
-          })}
-        </ol>
-      </div>
+                  {guide.subtitle ? (
+                    <span className="block font-serif italic text-tertiary mt-1">
+                      {guide.subtitle}
+                    </span>
+                  ) : null}
+                  {guide.description ? (
+                    <span className="block text-secondary mt-2">
+                      {guide.description}
+                    </span>
+                  ) : null}
+                </span>
+                <span className="font-mono text-meta uppercase tracking-wide text-tertiary shrink-0 pt-2">
+                  {questions.length} obs
+                </span>
+              </Link>
+            </li>
+          );
+        })}
+      </ol>
     </div>
   );
 }

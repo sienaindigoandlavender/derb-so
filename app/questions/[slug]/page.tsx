@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import {
   getQuestionBySlug,
   getAllSlugs,
@@ -144,18 +145,6 @@ function renderInlineLinks(text: string) {
   });
 }
 
-// Guide hero colors — matches guide pages and homepage shelf
-const guideHeroColors: Record<string, string> = {
-  "the-medina": "#a0522d",
-  "inside-the-riad": "#6b4226",
-  "the-senses": "#1a5c5a",
-  "getting-around": "#1a3c8f",
-  "food-and-drink": "#8b6914",
-  "the-rituals": "#2d6a4f",
-  "staying-safe": "#8b3a2a",
-  "the-cities": "#2d2d2d",
-};
-
 export default async function QuestionPage({ params }: PageProps) {
   const { slug } = await params;
   const question = getQuestionBySlug(slug);
@@ -167,14 +156,13 @@ export default async function QuestionPage({ params }: PageProps) {
   const related = getRelatedQuestions(slug, 4);
   const schemas = generateQuestionSchema(question);
   const guide = getGuideForQuestion(slug);
-  const heroColor = guide ? guideHeroColors[guide.slug] || "#2a2725" : "#2a2725";
 
   const renderContent = () => {
     const elements: React.ReactNode[] = [];
 
     question.sections.forEach((section, index) => {
       elements.push(
-        <div key={`section-${index}`} className="mb-8">
+        <div key={`section-${index}`}>
           {section.heading && <h2>{section.heading}</h2>}
           <p>{renderInlineLinks(section.content)}</p>
         </div>
@@ -195,8 +183,7 @@ export default async function QuestionPage({ params }: PageProps) {
   };
 
   return (
-    <div className="question-page">
-      {/* JSON-LD */}
+    <article className="max-w-content mx-auto px-6 py-16">
       {schemas &&
         schemas.map((schema, i) => (
           <script
@@ -206,167 +193,140 @@ export default async function QuestionPage({ params }: PageProps) {
           />
         ))}
 
-      {/* ZONE 1 — Guide-colored hero */}
-      <div className="question-hero" style={{ background: heroColor }}>
-        <div className="question-hero-inner">
-          <nav className="question-breadcrumb" aria-label="Breadcrumb">
-            <a href="/">Derb</a>
-            <span>/</span>
-            {guide ? (
-              <a href={`/guides/${guide.slug}`}>{guide.title}</a>
-            ) : (
-              <a href={`/category/${question.category}`}>
-                {categoryLabels[question.category]}
-              </a>
-            )}
-          </nav>
+      {/* Breadcrumb */}
+      <nav
+        className="font-mono text-meta uppercase tracking-wide text-tertiary mb-8 flex flex-wrap items-center gap-x-2"
+        aria-label="Breadcrumb"
+      >
+        <Link href="/" className="hover:text-accent transition-colors">Derb</Link>
+        <span aria-hidden>/</span>
+        {guide ? (
+          <Link href={`/guides/${guide.slug}`} className="hover:text-accent transition-colors">
+            {guide.title}
+          </Link>
+        ) : (
+          <Link
+            href={`/category/${question.category}`}
+            className="hover:text-accent transition-colors"
+          >
+            {categoryLabels[question.category]}
+          </Link>
+        )}
+      </nav>
 
-          <h1 className="question-title">{question.title}</h1>
-          {question.subtitle && (
-            <p className="question-subtitle">{question.subtitle}</p>
-          )}
-        </div>
-      </div>
+      {/* Title */}
+      <header className="max-w-prose mb-10">
+        <p className="font-mono text-meta uppercase tracking-wide text-accent mb-3">
+          {categoryLabels[question.category]}
+        </p>
+        <h1 className="font-serif text-4xl md:text-5xl leading-tight text-ink mb-4">
+          {question.title}
+        </h1>
+        {question.subtitle && (
+          <p className="text-lg text-secondary">{question.subtitle}</p>
+        )}
+      </header>
 
-      {/* ZONE 2 — Terracotta-pale short answer */}
+      {/* Short answer */}
       {question.shortAnswer && (
-        <div className="question-short-answer">
-          <div className="question-short-answer-inner">
-            <p className="question-short-answer-label">The short answer</p>
-            <p className="question-short-answer-text">{question.shortAnswer}</p>
-          </div>
-        </div>
+        <aside className="max-w-prose mb-12 border-l-2 border-accent pl-5 py-1">
+          <p className="font-mono text-meta uppercase tracking-wide text-accent mb-2">
+            The short answer
+          </p>
+          <p className="font-serif text-lg text-ink leading-relaxed">
+            {question.shortAnswer}
+          </p>
+        </aside>
       )}
 
-      {/* ZONE 3 — White body */}
-      <div className="question-body">
-        <div className="question-body-inner">
-          <div className="prose">{renderContent()}</div>
-        </div>
-      </div>
+      {/* Body */}
+      <div className="prose-content">{renderContent()}</div>
 
-      {/* ZONE 4 — White footer content */}
-      <div className="question-footer-zone">
-        <div className="question-footer-inner">
-          {/* Sources */}
-          {question.sources && question.sources.length > 0 && (
-            <div style={{ paddingTop: '1.5rem', borderTop: '1px solid var(--rule)' }}>
-              <p style={{
-                fontFamily: 'var(--font-sans)',
-                fontSize: '0.55rem',
-                fontWeight: 500,
-                textTransform: 'uppercase',
-                letterSpacing: '0.12em',
-                color: 'var(--fg-faded)',
-                marginBottom: '0.75rem',
-              }}>
-                Sources
-              </p>
-              <ul style={{ listStyle: 'none' }}>
-                {question.sources.map((source, idx) => (
-                  <li key={idx} style={{
-                    fontFamily: 'var(--font-sans)',
-                    fontSize: '0.8rem',
-                    fontWeight: 300,
-                    color: 'var(--fg-soft)',
-                    marginBottom: '0.35rem',
-                  }}>
-                    {source.url ? (
-                      <a
-                        href={source.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ textDecoration: 'underline', textUnderlineOffset: '2px', transition: 'color 0.2s' }}
-                      >
-                        {source.text}
-                      </a>
-                    ) : (
-                      source.text
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {/* Backlinks */}
-          {question.backlinks && question.backlinks.length > 0 && (
-            <nav className="backlinks-section" aria-label="Go deeper on Slow Morocco">
-              <p style={{
-                fontFamily: 'var(--font-sans)',
-                fontSize: '0.55rem',
-                fontWeight: 500,
-                textTransform: 'uppercase',
-                letterSpacing: '0.12em',
-                color: 'var(--fg-faded)',
-                marginBottom: '1rem',
-              }}>
-                Go deeper
-              </p>
-              <div className="backlinks-grid">
-                {question.backlinks.map((link, idx) => (
+      {/* Sources */}
+      {question.sources && question.sources.length > 0 && (
+        <section className="max-w-prose mt-12 pt-8 border-t border-border">
+          <p className="font-mono text-meta uppercase tracking-wide text-tertiary mb-3">
+            Sources
+          </p>
+          <ul className="space-y-2 text-secondary">
+            {question.sources.map((source, idx) => (
+              <li key={idx}>
+                {source.url ? (
                   <a
-                    key={idx}
-                    href={link.url}
+                    href={source.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="backlink-item"
+                    className="border-b border-border hover:text-accent hover:border-accent transition-colors"
                   >
-                    <span className="backlink-type-badge" data-type={link.type}>
-                      {link.type === 'glossary' ? 'Term' : link.type === 'place' ? 'Place' : 'Link'}
-                    </span>
-                    <span className="backlink-text">{link.text}</span>
-                    <span className="backlink-source">Slow Morocco</span>
+                    {source.text}
                   </a>
-                ))}
-              </div>
-            </nav>
-          )}
+                ) : (
+                  source.text
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
-          {/* Related */}
-          {related.length > 0 && (
-            <nav className="related-questions" aria-label="Related questions">
-              <p style={{
-                fontFamily: 'var(--font-sans)',
-                fontSize: '0.55rem',
-                fontWeight: 500,
-                textTransform: 'uppercase',
-                letterSpacing: '0.12em',
-                color: 'var(--fg-faded)',
-                marginBottom: '1rem',
-              }}>
-                Related
-              </p>
-              <div className="related-grid">
-                {related.map((rq) => (
-                  <a key={rq.slug} href={`/questions/${rq.slug}`} className="related-link">
-                    <span className="related-link-title">{rq.title}</span>
-                    <span className="related-link-category">{categoryLabels[rq.category]}</span>
-                  </a>
-                ))}
-              </div>
-            </nav>
-          )}
+      {/* Backlinks */}
+      {question.backlinks && question.backlinks.length > 0 && (
+        <section className="max-w-prose mt-10 pt-8 border-t border-border">
+          <p className="font-mono text-meta uppercase tracking-wide text-tertiary mb-3">
+            Go deeper
+          </p>
+          <ul className="flex flex-wrap gap-2">
+            {question.backlinks.map((link, idx) => (
+              <li key={idx}>
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-border px-3 py-1 text-sm hover:border-accent hover:text-accent transition-colors"
+                >
+                  <span className="font-mono text-meta uppercase tracking-wide text-tertiary">
+                    {link.type === "glossary" ? "Term" : link.type === "place" ? "Place" : "Link"}
+                  </span>
+                  <span>{link.text}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
-          {/* Footer */}
-          <footer style={{
-            marginTop: '3rem',
-            paddingTop: '2rem',
-            borderTop: '1px solid var(--rule)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-          }}>
-            <span></span>
-            <a
-              href="/questions"
-              style={{ fontFamily: 'var(--font-sans)', fontSize: '0.75rem', color: 'var(--terracotta)' }}
-            >
-              ← All questions
-            </a>
-          </footer>
-        </div>
-      </div>
-    </div>
+      {/* Related */}
+      {related.length > 0 && (
+        <section className="mt-10 pt-8 border-t border-border">
+          <p className="font-mono text-meta uppercase tracking-wide text-tertiary mb-4">
+            Related
+          </p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+            {related.map((rq) => (
+              <li key={rq.slug}>
+                <Link
+                  href={`/questions/${rq.slug}`}
+                  className="block group border-t border-border pt-3"
+                >
+                  <p className="font-serif text-lg text-ink group-hover:text-accent transition-colors">
+                    {rq.title}
+                  </p>
+                  <p className="font-mono text-meta uppercase tracking-wide text-tertiary mt-1">
+                    {categoryLabels[rq.category]}
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <footer className="mt-16 pt-6 border-t border-border flex items-center justify-between font-mono text-meta uppercase tracking-wide text-tertiary">
+        <span>Last updated · {question.lastUpdated}</span>
+        <Link href="/questions" className="hover:text-accent transition-colors">
+          ← All questions
+        </Link>
+      </footer>
+    </article>
   );
 }
