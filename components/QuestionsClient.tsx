@@ -9,6 +9,15 @@ interface QuestionsClientProps {
   questions: Question[];
 }
 
+function tagButtonClasses(active: boolean) {
+  return [
+    "inline-flex items-center px-3 py-1 font-mono text-meta uppercase tracking-wide border transition-colors",
+    active
+      ? "border-accent text-accent"
+      : "border-border text-tertiary hover:border-accent hover:text-accent",
+  ].join(" ");
+}
+
 function QuestionsInner({ questions }: QuestionsClientProps) {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") || "";
@@ -52,6 +61,7 @@ function QuestionsInner({ questions }: QuestionsClientProps) {
 
   useEffect(() => {
     applyFilters(searchQuery, activeCategory, activeTag);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleSearch = (query: string) => {
@@ -71,72 +81,75 @@ function QuestionsInner({ questions }: QuestionsClientProps) {
   };
 
   return (
-    <>
+    <div>
       {/* Search */}
-      <div className="mb-8">
+      <div className="max-w-prose mb-6">
         <input
           type="text"
-          className="search-input"
-          placeholder="Questions or keywords..."
+          placeholder="Search questions, terms, places…"
           value={searchQuery}
           onChange={(e) => handleSearch(e.target.value)}
           aria-label="Search questions"
+          className="w-full bg-transparent border-b border-border py-2 font-serif italic text-ink placeholder:text-tertiary focus:outline-none focus:border-accent transition-colors"
         />
       </div>
 
-      {/* Active tag indicator */}
+      {/* Active tag */}
       {activeTag && (
-        <div className="flex items-center gap-2 mb-4">
-          <span className="text-xs text-muted uppercase tracking-wide">Filtered by</span>
+        <div className="flex items-center gap-2 mb-4 font-mono text-meta uppercase tracking-wide text-tertiary">
+          <span>Filtered by</span>
           <button
+            type="button"
             onClick={clearTag}
-            className="tag opacity-100 flex items-center gap-1"
+            className="inline-flex items-center gap-2 border border-accent px-3 py-1 text-accent"
           >
             {activeTag}
-            <span className="text-muted ml-1">×</span>
+            <span aria-hidden>×</span>
           </button>
         </div>
       )}
 
-      {/* Category filters */}
-      <div className="flex flex-wrap gap-2 mb-8">
+      {/* Category filter */}
+      <div className="flex flex-wrap gap-2 mb-10">
         <button
+          type="button"
           onClick={() => handleCategoryChange("")}
-          className={`tag transition-opacity ${activeCategory === "" ? "opacity-100" : "opacity-50 hover:opacity-80"}`}
+          className={tagButtonClasses(activeCategory === "")}
         >
           All
         </button>
         {(Object.keys(categoryLabels) as Category[]).map((cat) => (
           <button
             key={cat}
+            type="button"
             onClick={() => handleCategoryChange(cat)}
-            className={`tag transition-opacity ${activeCategory === cat ? "opacity-100" : "opacity-50 hover:opacity-80"}`}
+            className={tagButtonClasses(activeCategory === cat)}
           >
             {categoryLabels[cat]}
           </button>
         ))}
       </div>
 
-      {/* Questions */}
+      {/* Results */}
       <section>
-        <h2 className="text-small font-medium text-muted uppercase tracking-wide mb-6">
+        <h2 className="font-mono text-meta uppercase tracking-wide text-tertiary mb-6">
           {filteredQuestions.length === questions.length
-            ? `${questions.length} Questions`
+            ? `${questions.length} questions`
             : `${filteredQuestions.length} result${filteredQuestions.length !== 1 ? "s" : ""}`}
         </h2>
         {filteredQuestions.length > 0 ? (
           <Accordion questions={filteredQuestions} />
         ) : (
-          <p className="text-muted py-8">No questions match your search.</p>
+          <p className="text-secondary py-8">No questions match your search.</p>
         )}
       </section>
-    </>
+    </div>
   );
 }
 
 export default function QuestionsClient({ questions }: QuestionsClientProps) {
   return (
-    <Suspense fallback={<div className="text-muted">Loading...</div>}>
+    <Suspense fallback={<div className="text-tertiary">Loading…</div>}>
       <QuestionsInner questions={questions} />
     </Suspense>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 interface Section {
@@ -15,16 +16,18 @@ interface LegalContent {
 interface NexusLegalPageProps {
   pageId: string;
   fallbackTitle: string;
-  localApiEndpoint?: string; // Optional local API fallback
+  localApiEndpoint?: string;
 }
 
-export default function NexusLegalPage({ pageId, fallbackTitle, localApiEndpoint }: NexusLegalPageProps) {
+export default function NexusLegalPage({
+  pageId,
+  fallbackTitle,
+  localApiEndpoint,
+}: NexusLegalPageProps) {
   const [content, setContent] = useState<LegalContent | null>(null);
   const [loading, setLoading] = useState(true);
-  const [useNexus, setUseNexus] = useState(true);
 
   useEffect(() => {
-    // Try Nexus first
     fetch(`/api/sheets/nexus-legal?page=${pageId}`)
       .then((res) => {
         if (!res.ok) throw new Error("Nexus not available");
@@ -39,20 +42,19 @@ export default function NexusLegalPage({ pageId, fallbackTitle, localApiEndpoint
         }
       })
       .catch(() => {
-        // Fallback to local API if available
         if (localApiEndpoint) {
-          setUseNexus(false);
           fetch(localApiEndpoint)
             .then((res) => res.json())
             .then((data) => {
-              // Convert local format to Nexus format
               if (Array.isArray(data)) {
                 setContent({
                   title: fallbackTitle,
-                  sections: data.map((s: { Title: string; Content: string }) => ({
-                    title: s.Title,
-                    content: s.Content,
-                  })),
+                  sections: data.map(
+                    (s: { Title: string; Content: string }) => ({
+                      title: s.Title,
+                      content: s.Content,
+                    })
+                  ),
                 });
               }
               setLoading(false);
@@ -64,71 +66,50 @@ export default function NexusLegalPage({ pageId, fallbackTitle, localApiEndpoint
       });
   }, [pageId, localApiEndpoint, fallbackTitle]);
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-[#f5f0e8] text-[#2a2520]">
-        <section className="pt-32 pb-12 md:pt-40 md:pb-16">
-          <div className="container mx-auto px-6 lg:px-16 max-w-3xl">
-            <p className="text-xs tracking-[0.3em] uppercase text-[#2a2520]/40 mb-6">
-              Legal
-            </p>
-            <h1 className="font-serif text-4xl md:text-5xl text-[#2a2520]/90">
-              {fallbackTitle}
-            </h1>
-          </div>
-        </section>
-        <section className="pb-24 md:pb-32">
-          <div className="container mx-auto px-6 lg:px-16 max-w-3xl">
-            <div className="border-t border-[#2a2520]/10 pt-12">
-              <div className="animate-pulse space-y-4">
-                <div className="h-4 bg-[#2a2520]/10 rounded w-3/4"></div>
-                <div className="h-4 bg-[#2a2520]/10 rounded w-1/2"></div>
-                <div className="h-4 bg-[#2a2520]/10 rounded w-5/6"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    );
-  }
-
   return (
-    <div className="min-h-screen bg-[#f5f0e8] text-[#2a2520]">
-      {/* Hero */}
-      <section className="pt-32 pb-12 md:pt-40 md:pb-16">
-        <div className="container mx-auto px-6 lg:px-16 max-w-3xl">
-          <p className="text-xs tracking-[0.3em] uppercase text-[#2a2520]/40 mb-6">
-            Legal
-          </p>
-          <h1 className="font-serif text-4xl md:text-5xl text-[#2a2520]/90">
-            {content?.title || fallbackTitle}
-          </h1>
-        </div>
-      </section>
+    <div className="max-w-content mx-auto px-6 py-16">
+      <nav
+        className="font-mono text-meta uppercase tracking-wide text-tertiary mb-8 flex items-center gap-2"
+        aria-label="Breadcrumb"
+      >
+        <Link href="/" className="hover:text-accent transition-colors">Derb</Link>
+        <span aria-hidden>/</span>
+        <span>{content?.title || fallbackTitle}</span>
+      </nav>
 
-      {/* Content */}
-      <section className="pb-24 md:pb-32">
-        <div className="container mx-auto px-6 lg:px-16 max-w-3xl">
-          <div className="border-t border-[#2a2520]/10 pt-12">
-            {content?.sections && content.sections.length > 0 ? (
-              <div className="space-y-10">
-                {content.sections.map((section, index) => (
-                  <div key={index}>
-                    {section.title && section.title !== "Intro" && (
-                      <h2 className="font-serif text-xl text-[#2a2520]/90 mb-4">{section.title}</h2>
-                    )}
-                    <p className="text-[#2a2520]/50 leading-relaxed whitespace-pre-line">
-                      {section.content}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <p className="text-[#2a2520]/50">Content not available.</p>
-            )}
-          </div>
+      <header className="max-w-prose mb-12">
+        <p className="font-mono text-meta uppercase tracking-wide text-accent mb-3">
+          Legal
+        </p>
+        <h1 className="font-serif text-5xl leading-tight text-ink">
+          {content?.title || fallbackTitle}
+        </h1>
+      </header>
+
+      {loading ? (
+        <div className="max-w-prose pt-8 border-t border-border space-y-3 animate-pulse">
+          <div className="h-3 bg-border rounded w-3/4" />
+          <div className="h-3 bg-border rounded w-1/2" />
+          <div className="h-3 bg-border rounded w-5/6" />
         </div>
-      </section>
+      ) : content?.sections && content.sections.length > 0 ? (
+        <div className="space-y-10 max-w-prose pt-8 border-t border-border">
+          {content.sections.map((section, index) => (
+            <section key={index}>
+              {section.title && section.title !== "Intro" && (
+                <h2 className="font-serif text-2xl text-ink mb-3">
+                  {section.title}
+                </h2>
+              )}
+              <p className="text-secondary whitespace-pre-line">
+                {section.content}
+              </p>
+            </section>
+          ))}
+        </div>
+      ) : (
+        <p className="text-secondary max-w-prose">Content not available.</p>
+      )}
     </div>
   );
 }

@@ -1,16 +1,37 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { Source_Serif_4, Inter, IBM_Plex_Mono } from "next/font/google";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
-import Footer from "@/components/Footer";
 
 const siteUrl = "https://derb.so";
+
+const serif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+const sans = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const mono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#1c1917" },
-    { media: "(prefers-color-scheme: dark)", color: "#1c1917" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#ffffff" },
   ],
 };
 
@@ -18,7 +39,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: "Derb — Understanding Morocco | Urban Reference Guide",
-    template: "%s | Derb",
+    template: "%s — Derb",
   },
   description:
     "Why do riads feel cooler? Why are there cockroaches? Why does time feel different? Derb explains the everyday realities of Morocco's cities—infrastructure, climate, culture—without tourism language.",
@@ -93,14 +114,13 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${serif.variable} ${sans.variable} ${mono.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="alternate" type="application/rss+xml" title="Derb — Urban Reference for Morocco" href="/feed.xml" />
-        {/* GEO / AI citation metadata */}
         <meta name="citation_title" content="Derb — Understanding Morocco: Urban Reference Guide" />
         <meta name="citation_author" content="Slow Morocco, Dancing with Lions" />
         <meta name="citation_language" content="en" />
@@ -126,15 +146,9 @@ export default function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
       </head>
       <body>
-        <div className="min-h-screen flex flex-col">
-          <header className="site-header">
-            <div className="site-header-inner">
-              <a href="/" className="site-logo">Derb</a>
-            </div>
-          </header>
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
+        <Header />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
