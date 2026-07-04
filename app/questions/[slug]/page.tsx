@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 import Link from "next/link";
 import {
   getQuestionBySlug,
@@ -150,7 +150,9 @@ export default async function QuestionPage({ params }: PageProps) {
   const question = getQuestionBySlug(slug);
 
   if (!question) {
-    notFound();
+    // Deleted/renamed question. 301 to the index instead of a 404 so
+    // removals never accumulate in the GSC "Not found" report.
+    permanentRedirect("/questions");
   }
 
   const related = getRelatedQuestions(slug, 4);

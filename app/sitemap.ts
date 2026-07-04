@@ -3,10 +3,8 @@ import { getQuestions } from '@/lib/questions';
 import { getGuides } from '@/lib/guides';
 import { Category, categoryLabels } from '@/lib/types';
 
-// Safely encode URL segments
-function safeSitemapUrl(url: string): string {
-  return url.replace(/&/g, '&amp;');
-}
+// NOTE: no manual XML escaping here — Next.js escapes sitemap XML itself;
+// pre-escaping & to &amp; would double-escape to &amp;amp; and break URLs.
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://derb.so';
@@ -14,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const guides = getGuides();
 
   const questionUrls = questions.map((q) => ({
-    url: safeSitemapUrl(`${baseUrl}/questions/${q.slug}`),
+    url: `${baseUrl}/questions/${q.slug}`,
     lastModified: new Date(q.lastUpdated),
     changeFrequency: 'monthly' as const,
     priority: 0.8,

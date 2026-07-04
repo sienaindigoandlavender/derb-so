@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 import Link from "next/link";
 import { getGuideBySlug, getGuides, getGuideQuestions } from "@/lib/guides";
 
@@ -51,7 +51,7 @@ function renderInlineLinks(text: string) {
 export default async function GuidePage({ params }: PageProps) {
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
-  if (!guide) notFound();
+  if (!guide) permanentRedirect("/guides"); // deleted guide -> index, not 404
 
   const questions = getGuideQuestions(slug);
   const allGuides = getGuides();

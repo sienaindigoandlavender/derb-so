@@ -32,14 +32,10 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: 'PerplexityBot',
         allow: ['/', '/api/questions/', '/api/knowledge/'],
       },
-      {
-        userAgent: 'Googlebot',
-        allow: '/',
-      },
-      {
-        userAgent: 'Bingbot',
-        allow: '/',
-      },
+      // NOTE: no named Googlebot/Bingbot groups — a named group REPLACES
+      // the * group for that bot and would cancel the /api disallows above.
+      // Search engines are welcome by default. The AI-bot groups above are
+      // intentional: they carry extra /api/questions + /api/knowledge allows.
     ],
     sitemap: 'https://derb.so/sitemap.xml',
     host: 'https://derb.so',
