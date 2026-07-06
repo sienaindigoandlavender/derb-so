@@ -155,7 +155,8 @@
         "text": "Visa policy of Morocco — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Visa_policy_of_Morocco"
       }
-    ]
+    ],
+    "seoTitle": "Do I Need a Visa for Morocco?"
   },
   {
     "slug": "why-cant-taxi-take-me-to-the-door",
@@ -191,14 +192,17 @@
     "slug": "what-is-the-tourist-tax",
     "title": "What is the tourist tax?",
     "category": "arrival-logistics",
-    "shortAnswer": "A government levy (taxe de séjour) of approximately €2.50 per person per night.",
+    "shortAnswer": "A per-person, per-night city tax your riad collects at checkout — usually in cash.",
     "sections": [
       {
-        "content": "Children under 12 are exempt. Some properties include it in the room rate, others add it at checkout — both are legal. The tourist tax is usually paid in cash."
+        "content": "The line on your bill is actually two small taxes stacked together — the taxe de séjour for the city and the taxe de promotion touristique for the country. Together they run from a few dirhams to thirty-odd per person per night, depending on the city and how grandly your accommodation is classified. A palace pays palace rates; a guesthouse pays guesthouse rates. Children usually ride free or reduced."
+      },
+      {
+        "content": "The part that catches people out: many riads quote rooms without it, since the booking platforms display it inconsistently, and then ask for it in cash at checkout — even when the room was prepaid online. That's normal, not a hustle; the riad passes it on to the city and needs its paper trail. If you like your surprises elsewhere, ask at check-in how much the total will be and set the coins aside with your passport."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
+    "lastUpdated": "2026-07-04",
     "relatedSlugs": [],
     "searchTerms": [
       "Morocco tourist tax taxe de séjour",
@@ -215,7 +219,8 @@
       }
     ],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "What Is the Tourist Tax in Morocco? (Taxe de Séjour)"
   },
   {
     "slug": "is-there-a-ride-hailing-app",
@@ -254,14 +259,20 @@
     "slug": "how-do-i-get-a-petit-taxi-to-use-the-meter",
     "title": "How do I get a petit taxi to use the meter?",
     "category": "arrival-logistics",
-    "shortAnswer": "Say compteur before the car moves.",
+    "shortAnswer": "Say “compteur, s'il vous plaît” before the car moves — or agree the price before you sit down.",
     "sections": [
       {
-        "content": "If the driver refuses, agree a price or try the next one — there's always another. Taxis are colour-coded by city: Marrakech ochre, Casablanca red, Rabat blue, Fes red, Tangier light blue."
+        "content": "One word, said at the window before you get in: compteur. Petit taxis are legally required to run the meter, and drivers know it — most rides inside Marrakech land between 15 and 40 dirhams. After about 9pm the night tariff adds roughly half again, and that part is official, not inspiration."
+      },
+      {
+        "content": "You will, of course, meet the broken meter. It breaks most reliably near hotels, the square, and the train station, where a flat 50 or 100 dirhams gets quoted to arrivals who don't yet know that's three rides' worth. The cure isn't an argument — it's the next taxi. Better still, flag one that's moving rather than one that's parked and waiting: taxis in traffic are working, taxis lurking at tourist spots are fishing, and the two run on different economies."
+      },
+      {
+        "content": "If you do agree a price, agree it completely before the door closes, and carry small notes. A driver asked to break a 200 discovers a shortage of change with truly impressive reliability."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
+    "lastUpdated": "2026-07-04",
     "relatedSlugs": [],
     "searchTerms": [
       "petit taxi meter Marrakech",
@@ -278,7 +289,8 @@
       }
     ],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "How to Get a Petit Taxi to Use the Meter in Morocco"
   },
   {
     "slug": "whats-the-difference-between-petit-and-grand-taxis",
@@ -343,7 +355,8 @@
       }
     ],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "How Do Trains Work in Morocco? ONCF Explained"
   },
   {
     "slug": "how-do-buses-work",
@@ -373,7 +386,8 @@
       }
     ],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "How Do Buses Work in Morocco?"
   },
   {
     "slug": "what-plugs-do-they-use",
@@ -409,15 +423,24 @@
     "slug": "why-is-the-riad-so-hard-to-find",
     "title": "Why is the riad so hard to find?",
     "category": "the-medina",
-    "shortAnswer": "The door is designed to blend into the wall.",
+    "shortAnswer": "Because a derb is a dead-end, house numbers restart in every one, and GPS can't see past the walls.",
     "sections": [
       {
-        "content": "Same colour, no sign, no shop front. This is deliberate: in medina architecture, the exterior reveals nothing about what's inside. Most riads send someone to meet you at a recognisable drop-off point, or guide you in by WhatsApp voice or video call."
+        "content": "Because a medina address is not really an address — it's a set of nesting dolls. Derb Moulay Abdelkader n°7 means: find a dead-end alley by name, then find a number that exists only inside that alley. Number 7 lives again in the next derb, thirty meters away, entirely unbothered by the coincidence. There's no grid, no sequence, and the entrance to the derb itself is often an unmarked archway between two shops selling identical slippers."
+      },
+      {
+        "content": "GPS, bless it, makes things worse. The signal drifts ten to twenty meters between four-story walls, and the map often shows a wall where a passage is. The blue dot will place you, with total confidence, one derb over — on the wrong side of a two-meter-thick earthen wall you'd need ten minutes to walk around. Why the GPS lies is its own entry."
+      },
+      {
+        "content": "The system worked for eight centuries because addresses were social, not cartographic — you asked for a family, and the neighborhood walked you there. Riads know this, which is why the good ones offer to meet you at the nearest landmark. Take the offer. It isn't an upsell; it's the address working exactly as designed."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
-    "relatedSlugs": [],
+    "lastUpdated": "2026-07-04",
+    "relatedSlugs": [
+      "why-is-my-gps-wrong",
+      "why-cant-taxi-take-me-to-the-door"
+    ],
     "searchTerms": [
       "can't find my riad Marrakech",
       "riad door hidden in wall",
@@ -443,7 +466,8 @@
         "text": "Riad — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Riad"
       }
-    ]
+    ],
+    "seoTitle": "Why Is the Riad So Hard to Find? Medina Addresses Explained"
   },
   {
     "slug": "why-dont-riads-have-windows",
@@ -497,7 +521,8 @@
         "text": "Mashrabiya — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Mashrabiya"
       }
-    ]
+    ],
+    "seoTitle": "Why Don’t Riads Have Windows? Moroccan Architecture Explained"
   },
   {
     "slug": "why-is-it-so-humid-inside-the-riad",
@@ -637,7 +662,10 @@
     ],
     "illustrations": [],
     "lastUpdated": "2026-04-24",
-    "relatedSlugs": [],
+    "relatedSlugs": [
+      "why-is-it-so-humid-inside-the-riad",
+      "can-i-drink-the-tap-water"
+    ],
     "searchTerms": [
       "riad bathroom sewer smell",
       "why does my Morocco riad bathroom smell",
@@ -647,7 +675,8 @@
     ],
     "backlinks": [],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "Why Does the Bathroom Smell in Morocco? Dry Traps Explained"
   },
   {
     "slug": "whats-the-smell-of-woodsmoke-at-night",
@@ -766,7 +795,8 @@
         "text": "Medina of Marrakesh — UNESCO World Heritage Centre",
         "url": "https://whc.unesco.org/en/list/331"
       }
-    ]
+    ],
+    "seoTitle": "What Is a Medina? The Moroccan City Explained"
   },
   {
     "slug": "why-is-my-gps-wrong",
@@ -796,21 +826,31 @@
       }
     ],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "Why Is My GPS Wrong in the Medina?"
   },
   {
     "slug": "what-does-balak-mean",
     "title": "What does \"Balak!\" mean?",
     "category": "the-medina",
-    "shortAnswer": "Move aside.",
+    "shortAnswer": "“Mind out” — and something large is about to occupy the space you're standing in.",
     "sections": [
       {
-        "content": "A donkey or handcart is behind you and can't stop. It's not rude — it's a warning. The unwritten rule: the thing hardest to stop has right of way."
+        "content": "Balak is Darija for “mind out,” and in the medina it is less a word than a weather warning. It announces a handcart, a mule stacked with gas bottles, or a motorbike — all of which have right of way for the simple reason that they cannot stop. Volume is the forecast: a conversational balak means drift to the right; a shouted BALAK BALAK means become part of the wall, now."
+      },
+      {
+        "content": "The etiquette takes one sentence to learn: step toward the wall, never across the alley. The carter is already steering for the gap you're about to leave, and the only real collisions happen when a visitor stands in the middle deciding. Locals don't even pause their conversations — they heard the wheels before the word."
+      },
+      {
+        "content": "It comes from the Arabic bal, attention — as in red-balek, pay attention. Learn it on day one. It is the single most useful word in the medina, narrowly ahead of la shukran, and considerably ahead of hello."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
-    "relatedSlugs": [],
+    "lastUpdated": "2026-07-04",
+    "relatedSlugs": [
+      "why-is-my-gps-wrong",
+      "what-language-should-i-speak"
+    ],
     "searchTerms": [
       "what does balak mean Morocco",
       "balak Marrakech medina meaning",
@@ -820,21 +860,31 @@
     ],
     "backlinks": [],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "What Does “Balak” Mean in the Medina?"
   },
   {
     "slug": "why-can-you-hear-everything",
     "title": "Why can you hear everything?",
     "category": "the-medina",
-    "shortAnswer": "The courtyard is a vertical amphitheatre.",
+    "shortAnswer": "The courtyard is a light well, an air well — and a sound well.",
     "sections": [
       {
-        "content": "Hard surfaces — zellige tile, lime plaster, stone — reflect rather than absorb sound. A conversation at the breakfast table carries to the second-floor balcony. Traditional wooden doors have gaps at the bottom designed for airflow, not soundproofing."
+        "content": "A riad has no corridors. Every room opens onto the central courtyard, and the courtyard opens to the sky — which cools the house beautifully and lights it beautifully and, less advertised, works like the bell of a trumpet. A chair scraped at breakfast rises up the well and arrives in every bedroom, clear and strangely intimate, as though the chair were in the room with you."
+      },
+      {
+        "content": "The walls join in. Medina houses lean shoulder to shoulder, sharing party walls — your bedroom wall may well be the back of the neighbor's kitchen — and rammed earth carries low sounds generously. The cedar doors are solid and handsome and seal against absolutely nothing. So the house hears itself completely: the fountain, the dawn birds, the housekeeper's bucket making its seven o'clock rounds."
+      },
+      {
+        "content": "None of this was an oversight. The riad was built for one extended family, and a house where the grandmother could hear everything was a house that ran itself. It only became a flaw when strangers started sleeping in it."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
-    "relatedSlugs": [],
+    "lastUpdated": "2026-07-04",
+    "relatedSlugs": [
+      "why-is-it-so-loud-at-430am",
+      "why-dont-riads-have-windows"
+    ],
     "searchTerms": [
       "riad noisy can hear everything",
       "why are riads so loud",
@@ -844,21 +894,30 @@
     ],
     "backlinks": [],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "Why Can You Hear Everything in a Riad?"
   },
   {
     "slug": "why-are-the-beds-so-hard",
     "title": "Why are the beds so hard?",
     "category": "the-medina",
-    "shortAnswer": "That's how they're meant to feel in Morocco.",
+    "shortAnswer": "You may be sleeping on wool — carded, stuffed, and stitched by hand.",
     "sections": [
       {
-        "content": "Moroccan mattresses are traditionally firm — wool-stuffed or high-density foam on solid bases. The tradition comes from the *sedari*, the firm cushioned benches that line the walls of Moroccan living rooms and double as seating and sleeping surfaces. Firmness is a sign of quality, not neglect."
+        "content": "There's a fair chance you're sleeping on wool — carded, stuffed into a cotton case, and stitched by hand, resting on a wooden banquette. No springs, no foam, no apologies. New, it's dense; after a year it settles into something a judo instructor would approve of. Households keep it civilized through the ndaf, the wool carder, who comes once a year, unpicks the whole mattress, fluffs the wool back to life with a tool like an enormous bow, and sews it up again. Maintained this way, a mattress outlives its owners' opinions of it."
+      },
+      {
+        "content": "The firmness has a second job. The sedari lining every Moroccan salon is seating by day and beds by night — the room converts, which is how a medina house swallows twelve relatives at Eid without anyone blinking. A mattress that moonlights as a sofa cannot afford to be soft."
+      },
+      {
+        "content": "Tourist riads mostly buy sprung mattresses now, so a hard bed in a renovated riad is usually a choice or a budget rather than a heritage. But if it's dense, smells faintly of lanolin, and sits on a carved wooden base — congratulations, you're sleeping the way the house always slept."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
-    "relatedSlugs": [],
+    "lastUpdated": "2026-07-04",
+    "relatedSlugs": [
+      "why-is-it-so-cold-inside-in-winter"
+    ],
     "searchTerms": [
       "Morocco riad firm mattress",
       "why are Moroccan beds hard",
@@ -868,7 +927,8 @@
     ],
     "backlinks": [],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "Why Are the Beds So Hard in Morocco?"
   },
   {
     "slug": "why-are-there-cockroaches-in-a-clean-riad",
@@ -898,15 +958,24 @@
     "slug": "why-is-it-so-loud-at-430am",
     "title": "Why is it so loud at 4:30am?",
     "category": "the-medina",
-    "shortAnswer": "The call to prayer (Fajr) from minarets.",
+    "shortAnswer": "The fajr call to prayer — and in the medina, five mosques answer each other.",
     "sections": [
       {
-        "content": "In the medina, you're within range of several mosques at once, and the calls don't synchronise perfectly — they arrive as overlapping waves. Stone walls and open courtyards amplify rather than absorb the sound. Most people stop noticing within two or three nights."
+        "content": "That is the adhan for fajr, the dawn prayer, and it arrives roughly an hour and a half before sunrise — which in a Marrakech June means half past four, or earlier if the muezzin is feeling punctual. The medina keeps a mosque in nearly every quarter, so you never hear one call. You hear five or six, each starting a minute after the last, overlapping into something between a round and a conversation. People cross continents for that sound. It's just rarely mentioned that it comes with the sunrise attached."
+      },
+      {
+        "content": "And it moves. Prayer follows the sun, not the clock, so the call drifts earlier through spring and later through autumn — the 4:30 that woke you in June is a civilized 6:40 by December. During Ramadan a second voice joins in: the nafar, a man with a horn or drum who walks the streets waking households for the pre-dawn meal. The job has existed for centuries, and he collects his tips at Eid, as he should."
+      },
+      {
+        "content": "Most people stop hearing it by the third night, the way one stops hearing a fountain. If you don't, ask for a room set back from the courtyard — the courtyard amplifies everything, which is a story of its own."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
-    "relatedSlugs": [],
+    "lastUpdated": "2026-07-04",
+    "relatedSlugs": [
+      "why-can-you-hear-everything",
+      "why-does-call-to-prayer-time-change"
+    ],
     "searchTerms": [
       "call to prayer 4:30am Marrakech",
       "Fajr prayer Morocco loud",
@@ -916,7 +985,8 @@
     ],
     "backlinks": [],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "Why Is It So Loud at 4:30am in Morocco? The Fajr Call Explained"
   },
   {
     "slug": "what-was-the-2023-earthquake",
@@ -946,15 +1016,24 @@
     "slug": "why-are-the-walls-stained-or-bubbling",
     "title": "Why are the walls stained or bubbling?",
     "category": "the-medina",
-    "shortAnswer": "Efflorescence — mineral salts pushed to the surface by moisture.",
+    "shortAnswer": "Rising damp. The wall is drinking groundwater, and the salt is coming out to breathe.",
     "sections": [
       {
-        "content": "The medina sits on a high water table, and the centuries-old walls wick moisture upward through porous materials. When the water evaporates, it leaves white crystalline deposits on plaster and paint. This is the nature of the building, not a sign of neglect."
+        "content": "That tide line of stains and blistered paint along the bottom meter of the wall is rising damp, and the wall is doing exactly what it was built to do. Marrakech sits on a shallow water table fed by Atlas snowmelt, and traditional walls — rammed earth, fired brick, lime plaster — are porous on purpose. They drink from the ground like a paper towel standing in a saucer. As the moisture evaporates from the surface, the salts it carried crystallize just under the paint, and the crystals push. Hence the bubbles."
+      },
+      {
+        "content": "The lovely irony is that modern repairs make it worse. Cement render and plastic paint seal the wall's face, so the water simply climbs higher looking for an exit — which is why you'll sometimes see a pristine ground floor and stains blooming at head height, like the wall is rolling its eyes. Lime breathes; cement suffocates. The old builders knew, which is why a wall re-limed every generation for four hundred years often looks better than one renovated in 1995."
+      },
+      {
+        "content": "So it isn't neglect, and it isn't a leak. It's the building's circulation, made visible. A well-kept riad simply re-plasters the lower walls on a cycle, the way one repaints a boat."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
-    "relatedSlugs": [],
+    "lastUpdated": "2026-07-04",
+    "relatedSlugs": [
+      "why-is-it-so-humid-inside-the-riad",
+      "why-are-the-floors-stained-or-uneven"
+    ],
     "searchTerms": [
       "efflorescence riad walls",
       "white stains on riad walls",
@@ -964,7 +1043,8 @@
     ],
     "backlinks": [],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "Why Are Moroccan Walls Stained or Bubbling? Rising Damp Explained"
   },
   {
     "slug": "why-are-the-floors-stained-or-uneven",
@@ -1066,7 +1146,8 @@
     ],
     "backlinks": [],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "Why Are There Cats Everywhere in Morocco?"
   },
   {
     "slug": "is-it-rude-to-refuse-tea",
@@ -1152,21 +1233,28 @@
         "text": "Jemaa el-Fnaa — UNESCO Intangible Cultural Heritage",
         "url": "https://ich.unesco.org/en/RL/cultural-space-of-jemaa-el-fna-square-00014"
       }
-    ]
+    ],
+    "seoTitle": "Can I Photograph People in Morocco?"
   },
   {
     "slug": "can-you-show-affection-in-public",
     "title": "Can you show affection in public?",
     "category": "social-cultural",
-    "shortAnswer": "Kissing or heavy physical contact is culturally out of place and legally punishable.",
+    "shortAnswer": "Hand-holding, yes. Kissing, no — for everyone, married or not.",
     "sections": [
       {
-        "content": "Article 483 of the Penal Code. Walking together, a light touch, a hand on the back — fine. This applies equally to everyone, Moroccan and foreign."
+        "content": "Hands, yes. Lips, no — and that applies to everyone, married, unmarried, or celebrating an anniversary. The public sphere here is modest by common consent, and the rules press harder on Moroccans than they ever will on you. A couple holding hands or walking arm in arm draws no attention in the cities. A kiss in the street draws exactly the kind you don't want — usually just stares, in principle a public-indecency complaint, though for visitors it rarely travels past disapproval."
+      },
+      {
+        "content": "The confusing part is that Morocco is enormously physical — just not romantically, not in public. Men greet with kisses on the cheek, women walk entwined, friends drape over each other in cafés for hours. The line was never touch; it's romance made public. And it ends at the riad door. The courtyard wall is where the public sphere stops — which is, historically, precisely what it was built to do."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
-    "relatedSlugs": [],
+    "lastUpdated": "2026-07-04",
+    "relatedSlugs": [
+      "why-are-men-holding-hands",
+      "is-morocco-safe-for-lgbtq-visitors"
+    ],
     "searchTerms": [
       "PDA in Morocco legal",
       "kissing in public Morocco illegal",
@@ -1176,21 +1264,31 @@
     ],
     "backlinks": [],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "Can You Show Affection in Public in Morocco?"
   },
   {
     "slug": "is-morocco-safe-for-lgbtq-visitors",
     "title": "Is Morocco safe for LGBTQ+ visitors?",
     "category": "social-cultural",
-    "shortAnswer": "Same-sex sexual activity is illegal under Article 489 — 6 months to 3 years.",
+    "shortAnswer": "Visitors come in numbers and incidents are rare — but same-sex acts are illegal, so discretion is the operating rule.",
     "sections": [
       {
-        "content": "Actively enforced: 838 prosecutions between 2017 and 2020. The law applies to everyone — Moroccan, foreign, men, women. Discretion is essential, not optional."
+        "content": "Start with the law, because it shapes everything else. Article 489 of the penal code criminalizes same-sex acts, with penalties of six months to three years. Enforcement against foreign visitors is rare, and the cases that do happen almost always involve Moroccan nationals — but the law is why the rest of this entry sounds the way it does."
+      },
+      {
+        "content": "The daily reality is gentler than the statute. Same-sex couples travel Morocco constantly, book double rooms in riads, and are almost never asked a thing — tourist hospitality is pragmatic, and Marrakech in particular has a long, quietly acknowledged history as a destination. The house rule is the same one every couple lives by here: no romance in public. Two men holding hands reads as ordinary friendship, as it has for generations; a kiss in the street does not, for anyone."
+      },
+      {
+        "content": "Where genuine care is due: dating apps have been used for entrapment-style robberies in some cities, so meeting strangers that way carries real risk. Keep public behavior neutral, choose a riad with warm reviews from LGBTQ travelers, and the trip tends to unfold like anybody else's."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
-    "relatedSlugs": [],
+    "lastUpdated": "2026-07-04",
+    "relatedSlugs": [
+      "can-you-show-affection-in-public",
+      "why-are-men-holding-hands"
+    ],
     "searchTerms": [
       "is Morocco safe for gay travellers",
       "LGBTQ rights in Morocco",
@@ -1215,20 +1313,27 @@
         "text": "LGBT rights in Morocco — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/LGBT_rights_in_Morocco"
       }
-    ]
+    ],
+    "seoTitle": "Is Morocco Safe for LGBTQ Visitors? The Law & the Reality"
   },
   {
     "slug": "should-you-remove-shoes",
     "title": "Should you remove shoes?",
     "category": "social-cultural",
-    "shortAnswer": "In homes, riad living areas, and mosques — yes.",
+    "shortAnswer": "In homes, riad living areas, and mosques — yes. The row of shoes at the door is the sign.",
     "sections": [
       {
-        "content": "The cue is visible: a row of shoes at the door, a mat, or your host in slippers. In shops and commercial spaces, shoes stay on."
+        "content": "Look down at the doorway and the house will tell you. A row of shoes at the threshold, a mat, your host padding about in babouches — that's the answer. Moroccan homes are divided into shod and unshod territory, and the border usually runs along the edge of the carpet. You can cross a tiled courtyard in your street shoes, but the moment you drift toward the sedari, the low banquette seating where life actually happens, off they come."
+      },
+      {
+        "content": "It's practical long before it's religious. People pray on the floor, eat around a low table on that same carpet, and the street outside has donkeys, drains, and dust with strong opinions. Shoes carry the street in, and nobody wants the street on the carpet where the baby sleeps after lunch. Mosques are the one absolute — nothing past the door, ever. Carpet shops, charmingly, play it both ways: shoes on while you browse, off the moment the good pieces are unrolled at your feet. That's when you know the visit has become serious."
+      },
+      {
+        "content": "Shops, cafés, tiled riad courtyards — shoes stay on. And when in doubt, count the shoes by the door and quietly add yours to the collection."
       }
     ],
     "illustrations": [],
-    "lastUpdated": "2026-04-24",
+    "lastUpdated": "2026-07-04",
     "relatedSlugs": [],
     "searchTerms": [
       "do you remove shoes in Morocco riad",
@@ -1239,7 +1344,8 @@
     ],
     "backlinks": [],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "Do You Remove Shoes in Morocco? Homes, Riads & Mosques"
   },
   {
     "slug": "why-does-time-work-differently-here",
@@ -1667,7 +1773,8 @@
         "text": "Moroccan wine — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Moroccan_wine"
       }
-    ]
+    ],
+    "seoTitle": "Can You Drink Alcohol in Morocco?"
   },
   {
     "slug": "why-is-my-stomach-upset",
@@ -1932,7 +2039,8 @@
     ],
     "backlinks": [],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "Should I Take a Horse Carriage in Marrakech?"
   },
   {
     "slug": "what-is-the-police-touristique",
@@ -2162,7 +2270,8 @@
         "text": "Cannabis in Morocco — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Cannabis_in_Morocco"
       }
-    ]
+    ],
+    "seoTitle": "Is Hashish Legal in Morocco?"
   },
   {
     "slug": "what-is-ramadan",
@@ -2239,7 +2348,8 @@
         "text": "Eid al-Adha — Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Eid_al-Adha"
       }
-    ]
+    ],
+    "seoTitle": "What Is Eid al-Adha in Morocco?"
   },
   {
     "slug": "when-are-public-holidays",
@@ -2269,7 +2379,8 @@
     ],
     "backlinks": [],
     "tags": [],
-    "sources": []
+    "sources": [],
+    "seoTitle": "Public Holidays in Morocco — Dates & What Closes"
   },
   {
     "slug": "why-does-call-to-prayer-time-change",
@@ -2458,7 +2569,8 @@
         "text": "Rabat — Encyclopædia Britannica",
         "url": "https://www.britannica.com/place/Rabat-national-capital-Morocco"
       }
-    ]
+    ],
+    "seoTitle": "Is Rabat the Capital of Morocco?"
   },
   {
     "slug": "is-taghazout-still-a-surf-village",
