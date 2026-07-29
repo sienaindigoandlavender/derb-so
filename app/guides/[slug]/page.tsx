@@ -12,6 +12,12 @@ export async function generateStaticParams() {
   return guides.map((g) => ({ slug: g.slug }));
 }
 
+// All valid guide slugs are hardcoded and enumerated above. Any off-list slug
+// is invalid and should 404 cleanly rather than hit permanentRedirect("/guides")
+// below (redirecting a dead page to a generic index = soft 404 to Google).
+// Renamed slugs still 301 to their target via next.config edge redirects.
+export const dynamicParams = false;
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
