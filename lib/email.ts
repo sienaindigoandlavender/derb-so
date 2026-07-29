@@ -220,7 +220,7 @@ export async function sendOwnerNotificationEmail(data: BookingEmailData) {
     </table>
     
     <div class="actions">
-      <a href="https://www.derb.so/admin/bookings" class="btn">View in Admin</a>
+      <a href="https://derb.so/admin/bookings" class="btn">View in Admin</a>
     </div>
   </div>
 </body>
