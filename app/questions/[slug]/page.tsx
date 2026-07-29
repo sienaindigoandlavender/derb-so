@@ -21,6 +21,13 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ slug }));
 }
 
+// All valid slugs are hardcoded and enumerated above, so any slug not in the
+// static list is invalid and should return a clean 404 — not fall through to
+// the permanentRedirect("/questions") below, which Google treats as a soft 404.
+// Renamed slugs still 301 to their specific target via next.config redirects
+// (those fire at the edge, before this route).
+export const dynamicParams = false;
+
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
